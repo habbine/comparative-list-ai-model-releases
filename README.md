@@ -21,6 +21,22 @@ Then:
 
 For scripts and spreadsheets use [`data/ai_model_releases.csv`](data/ai_model_releases.csv) or the workbook (see [How to use it](#how-to-use-it)).
 
+## Fork it and run your own
+
+The explorer is a single HTML page with the data embedded, and it can be rebuilt from the CSV with no dependencies beyond Python 3.8.
+
+1. **Fork** the repository on GitHub (button at the top right), then clone your fork.
+2. **Edit the data:** change or add rows in [`data/ai_model_releases.csv`](data/ai_model_releases.csv). Keep the header row and the `model_id` primary key. Leave a cell empty when a value is not verified; empty means unknown, never zero.
+3. **Check it:** `python3 scripts/check_dataset.py` (row count, counting rules, dates).
+4. **Rebuild the page:** `python3 scripts/build_explorer.py`. This rewrites the data inside `docs/index.html`. Open the file in a browser to see the result.
+5. **Publish it (optional):** in your fork, Settings, Pages, deploy from branch `main`, folder `/docs`. Your explorer is then at `https://<your-username>.github.io/comparative-list-ai-model-releases/`.
+
+Notes:
+
+- The explorer needs no server and makes no outside requests, so any static host works.
+- Rebuilding from the CSV uses the CSV values only. Six models whose context window is a free-text note on the page today (for example "32K (0.5B,1.5B); 128K (7B,72B)") show it as blank after a rebuild; the text is kept in the Notes column.
+- You may reuse and adapt everything under CC BY 4.0. Keep the credit line in the page footer and cite the original (see [Licence](#licence)). Corrections to the original dataset are welcome as issues or pull requests.
+
 **Files**
 
 - [`data/ai_model_releases.xlsx`](data/ai_model_releases.xlsx): the workbook for reading and filtering (8 sheets).
