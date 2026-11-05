@@ -1,0 +1,7728 @@
+{
+ "checked_on": "2026-11-05",
+ "method": "Automated re-check of each row against its cited vendor page and model card (plus other pages on the same vendor site where the cited page did not carry the field). Only what a page states counts as confirmed; a field the page does not state is unverifiable, never confirmed. Dataset values here are those before the corrections of the same date.",
+ "models": [
+  {
+   "model_id": "anthropic__claude-1",
+   "confirmed": [
+    "announced",
+    "first_available",
+    "api_available"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "status",
+     "reason": "no lifecycle/deprecation info on vendor_page or model_card as fetched (deprecations page not in row sources)"
+    },
+    {
+     "field": "retired_on",
+     "reason": "no lifecycle/deprecation info on vendor_page or model_card as fetched (deprecations page not in row sources)"
+    },
+    {
+     "field": "licence",
+     "reason": "licence not stated on fetched pages"
+    },
+    {
+     "field": "input_modalities",
+     "reason": "input modalities not explicitly stated on fetched pages"
+    }
+   ]
+  },
+  {
+   "model_id": "anthropic__claude-instant-1",
+   "confirmed": [
+    "announced",
+    "first_available",
+    "api_available"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "status",
+     "reason": "no lifecycle/deprecation info on vendor_page or model_card as fetched (deprecations page not in row sources)"
+    },
+    {
+     "field": "retired_on",
+     "reason": "no lifecycle/deprecation info on vendor_page or model_card as fetched (deprecations page not in row sources)"
+    },
+    {
+     "field": "licence",
+     "reason": "licence not stated on fetched pages"
+    },
+    {
+     "field": "input_modalities",
+     "reason": "input modalities not explicitly stated on fetched pages"
+    }
+   ]
+  },
+  {
+   "model_id": "anthropic__claude-2",
+   "confirmed": [
+    "announced",
+    "first_available",
+    "general_availability",
+    "api_available",
+    "count_date",
+    "context_window_tokens"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "status",
+     "reason": "no lifecycle/deprecation info on vendor_page or model_card as fetched (deprecations page not in row sources)"
+    },
+    {
+     "field": "retired_on",
+     "reason": "no lifecycle/deprecation info on vendor_page or model_card as fetched (deprecations page not in row sources)"
+    },
+    {
+     "field": "licence",
+     "reason": "licence not stated on fetched pages"
+    },
+    {
+     "field": "input_modalities",
+     "reason": "input modalities not explicitly stated on fetched pages"
+    }
+   ]
+  },
+  {
+   "model_id": "anthropic__claude-instant-1-2",
+   "confirmed": [],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "first_available",
+     "reason": "vendor_page (introducing-claude, Mar 14 2023) does not mention Claude Instant 1.2; no page fetched states its dates/context"
+    },
+    {
+     "field": "general_availability",
+     "reason": "vendor_page (introducing-claude, Mar 14 2023) does not mention Claude Instant 1.2; no page fetched states its dates/context"
+    },
+    {
+     "field": "api_available",
+     "reason": "vendor_page (introducing-claude, Mar 14 2023) does not mention Claude Instant 1.2; no page fetched states its dates/context"
+    },
+    {
+     "field": "count_date",
+     "reason": "vendor_page (introducing-claude, Mar 14 2023) does not mention Claude Instant 1.2; no page fetched states its dates/context"
+    },
+    {
+     "field": "status",
+     "reason": "vendor_page (introducing-claude, Mar 14 2023) does not mention Claude Instant 1.2; no page fetched states its dates/context"
+    },
+    {
+     "field": "retired_on",
+     "reason": "vendor_page (introducing-claude, Mar 14 2023) does not mention Claude Instant 1.2; no page fetched states its dates/context"
+    },
+    {
+     "field": "context_window_tokens",
+     "reason": "vendor_page (introducing-claude, Mar 14 2023) does not mention Claude Instant 1.2; no page fetched states its dates/context"
+    },
+    {
+     "field": "licence",
+     "reason": "vendor_page (introducing-claude, Mar 14 2023) does not mention Claude Instant 1.2; no page fetched states its dates/context"
+    },
+    {
+     "field": "input_modalities",
+     "reason": "vendor_page (introducing-claude, Mar 14 2023) does not mention Claude Instant 1.2; no page fetched states its dates/context"
+    }
+   ]
+  },
+  {
+   "model_id": "anthropic__claude-2-1",
+   "confirmed": [
+    "announced",
+    "first_available",
+    "general_availability",
+    "api_available",
+    "count_date",
+    "context_window_tokens"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "status",
+     "reason": "no lifecycle/deprecation info on vendor_page or model_card as fetched (deprecations page not in row sources)"
+    },
+    {
+     "field": "retired_on",
+     "reason": "no lifecycle/deprecation info on vendor_page or model_card as fetched (deprecations page not in row sources)"
+    },
+    {
+     "field": "licence",
+     "reason": "licence not stated on fetched pages"
+    },
+    {
+     "field": "input_modalities",
+     "reason": "input modalities not explicitly stated on fetched pages"
+    }
+   ]
+  },
+  {
+   "model_id": "anthropic__claude-3-opus",
+   "confirmed": [
+    "announced",
+    "first_available",
+    "general_availability",
+    "api_available",
+    "count_date",
+    "context_window_tokens",
+    "input_usd_per_1m_tokens",
+    "output_usd_per_1m_tokens"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "status",
+     "reason": "no lifecycle/deprecation info on vendor_page or model_card as fetched (deprecations page not in row sources)"
+    },
+    {
+     "field": "retired_on",
+     "reason": "no lifecycle/deprecation info on vendor_page or model_card as fetched (deprecations page not in row sources)"
+    },
+    {
+     "field": "max_output_tokens",
+     "reason": "max output not stated on fetched pages"
+    },
+    {
+     "field": "licence",
+     "reason": "licence not stated on fetched pages"
+    },
+    {
+     "field": "input_modalities",
+     "reason": "input modalities not explicitly stated on fetched pages"
+    }
+   ]
+  },
+  {
+   "model_id": "anthropic__claude-3-sonnet",
+   "confirmed": [
+    "announced",
+    "first_available",
+    "general_availability",
+    "api_available",
+    "count_date",
+    "context_window_tokens",
+    "input_usd_per_1m_tokens",
+    "output_usd_per_1m_tokens"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "status",
+     "reason": "no lifecycle/deprecation info on vendor_page or model_card as fetched (deprecations page not in row sources)"
+    },
+    {
+     "field": "retired_on",
+     "reason": "no lifecycle/deprecation info on vendor_page or model_card as fetched (deprecations page not in row sources)"
+    },
+    {
+     "field": "max_output_tokens",
+     "reason": "max output not stated on fetched pages"
+    },
+    {
+     "field": "licence",
+     "reason": "licence not stated on fetched pages"
+    },
+    {
+     "field": "input_modalities",
+     "reason": "input modalities not explicitly stated on fetched pages"
+    }
+   ]
+  },
+  {
+   "model_id": "anthropic__claude-3-haiku",
+   "confirmed": [
+    "announced",
+    "first_available",
+    "general_availability",
+    "api_available",
+    "count_date",
+    "context_window_tokens",
+    "input_usd_per_1m_tokens",
+    "output_usd_per_1m_tokens",
+    "input_modalities"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "status",
+     "reason": "no lifecycle/deprecation info on vendor_page or model_card as fetched (deprecations page not in row sources)"
+    },
+    {
+     "field": "retired_on",
+     "reason": "no lifecycle/deprecation info on vendor_page or model_card as fetched (deprecations page not in row sources)"
+    },
+    {
+     "field": "max_output_tokens",
+     "reason": "max output not stated on fetched pages"
+    },
+    {
+     "field": "licence",
+     "reason": "licence not stated on fetched pages"
+    }
+   ]
+  },
+  {
+   "model_id": "anthropic__claude-3-5-sonnet",
+   "confirmed": [
+    "context_window_tokens",
+    "input_usd_per_1m_tokens",
+    "output_usd_per_1m_tokens",
+    "knowledge_cutoff",
+    "input_modalities"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "announced",
+     "reason": "page body gives no date; fetch metadata conflicts (page 2024-06-21, model card PDF 2024-06-20)"
+    },
+    {
+     "field": "first_available",
+     "reason": "page body gives no date; fetch metadata conflicts (page 2024-06-21, model card PDF 2024-06-20)"
+    },
+    {
+     "field": "general_availability",
+     "reason": "page body gives no date; fetch metadata conflicts (page 2024-06-21, model card PDF 2024-06-20)"
+    },
+    {
+     "field": "api_available",
+     "reason": "page body gives no date; fetch metadata conflicts (page 2024-06-21, model card PDF 2024-06-20)"
+    },
+    {
+     "field": "count_date",
+     "reason": "page body gives no date; fetch metadata conflicts (page 2024-06-21, model card PDF 2024-06-20)"
+    },
+    {
+     "field": "status",
+     "reason": "no lifecycle/deprecation info on vendor_page or model_card as fetched (deprecations page not in row sources)"
+    },
+    {
+     "field": "retired_on",
+     "reason": "no lifecycle/deprecation info on vendor_page or model_card as fetched (deprecations page not in row sources)"
+    },
+    {
+     "field": "max_output_tokens",
+     "reason": "max output not stated on fetched pages"
+    },
+    {
+     "field": "licence",
+     "reason": "licence not stated on fetched pages"
+    }
+   ]
+  },
+  {
+   "model_id": "anthropic__claude-3-5-sonnet-upgraded",
+   "confirmed": [
+    "announced",
+    "first_available",
+    "general_availability",
+    "api_available",
+    "count_date",
+    "knowledge_cutoff"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "status",
+     "reason": "no lifecycle/deprecation info on vendor_page or model_card as fetched (deprecations page not in row sources)"
+    },
+    {
+     "field": "retired_on",
+     "reason": "no lifecycle/deprecation info on vendor_page or model_card as fetched (deprecations page not in row sources)"
+    },
+    {
+     "field": "context_window_tokens",
+     "reason": "context window not stated on fetched pages"
+    },
+    {
+     "field": "max_output_tokens",
+     "reason": "max output not stated on fetched pages"
+    },
+    {
+     "field": "input_usd_per_1m_tokens",
+     "reason": "price not stated numerically on fetched pages (only relative to prior model)"
+    },
+    {
+     "field": "output_usd_per_1m_tokens",
+     "reason": "price not stated numerically on fetched pages (only relative to prior model)"
+    },
+    {
+     "field": "licence",
+     "reason": "licence not stated on fetched pages"
+    },
+    {
+     "field": "input_modalities",
+     "reason": "input modalities not explicitly stated on fetched pages"
+    }
+   ]
+  },
+  {
+   "model_id": "anthropic__claude-3-5-haiku",
+   "confirmed": [
+    "announced",
+    "input_modalities"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "first_available",
+     "reason": "page only says \"later this month\" (Oct 2024); no exact availability date"
+    },
+    {
+     "field": "general_availability",
+     "reason": "page only says \"later this month\" (Oct 2024); no exact availability date"
+    },
+    {
+     "field": "api_available",
+     "reason": "page only says \"later this month\" (Oct 2024); no exact availability date"
+    },
+    {
+     "field": "count_date",
+     "reason": "page only says \"later this month\" (Oct 2024); no exact availability date"
+    },
+    {
+     "field": "status",
+     "reason": "no lifecycle/deprecation info on vendor_page or model_card as fetched (deprecations page not in row sources)"
+    },
+    {
+     "field": "retired_on",
+     "reason": "no lifecycle/deprecation info on vendor_page or model_card as fetched (deprecations page not in row sources)"
+    },
+    {
+     "field": "context_window_tokens",
+     "reason": "context window not stated on fetched pages"
+    },
+    {
+     "field": "max_output_tokens",
+     "reason": "max output not stated on fetched pages"
+    },
+    {
+     "field": "licence",
+     "reason": "licence not stated on fetched pages"
+    }
+   ]
+  },
+  {
+   "model_id": "anthropic__claude-3-7-sonnet",
+   "confirmed": [
+    "announced",
+    "first_available",
+    "general_availability",
+    "api_available",
+    "count_date",
+    "knowledge_cutoff",
+    "input_usd_per_1m_tokens",
+    "output_usd_per_1m_tokens",
+    "reasoning_mode"
+   ],
+   "discrepancies": [
+    {
+     "field": "max_output_tokens",
+     "dataset": "64000",
+     "source": "page states \"output limit of 128K tokens\" (thinking budget up to 128K); no 64K figure on page",
+     "url": "https://www.anthropic.com/news/claude-3-7-sonnet"
+    }
+   ],
+   "unverifiable": [
+    {
+     "field": "status",
+     "reason": "no lifecycle/deprecation info on vendor_page or model_card as fetched (deprecations page not in row sources)"
+    },
+    {
+     "field": "retired_on",
+     "reason": "no lifecycle/deprecation info on vendor_page or model_card as fetched (deprecations page not in row sources)"
+    },
+    {
+     "field": "context_window_tokens",
+     "reason": "context window not stated on fetched pages"
+    },
+    {
+     "field": "licence",
+     "reason": "licence not stated on fetched pages"
+    },
+    {
+     "field": "input_modalities",
+     "reason": "input modalities not explicitly stated on fetched pages"
+    }
+   ]
+  },
+  {
+   "model_id": "anthropic__claude-opus-4",
+   "confirmed": [
+    "announced",
+    "first_available",
+    "general_availability",
+    "api_available",
+    "count_date",
+    "input_usd_per_1m_tokens",
+    "output_usd_per_1m_tokens"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "status",
+     "reason": "no lifecycle/deprecation info on vendor_page or model_card as fetched (deprecations page not in row sources)"
+    },
+    {
+     "field": "retired_on",
+     "reason": "no lifecycle/deprecation info on vendor_page or model_card as fetched (deprecations page not in row sources)"
+    },
+    {
+     "field": "context_window_tokens",
+     "reason": "context window not stated on fetched pages"
+    },
+    {
+     "field": "max_output_tokens",
+     "reason": "max output not stated on fetched pages"
+    },
+    {
+     "field": "knowledge_cutoff",
+     "reason": "knowledge cutoff not stated on fetched pages (card text fetched did not give it)"
+    },
+    {
+     "field": "cached_input_usd_per_1m_tokens",
+     "reason": "cached-input price not stated on fetched pages"
+    },
+    {
+     "field": "licence",
+     "reason": "licence not stated on fetched pages"
+    },
+    {
+     "field": "input_modalities",
+     "reason": "input modalities not explicitly stated on fetched pages"
+    }
+   ]
+  },
+  {
+   "model_id": "anthropic__claude-sonnet-4",
+   "confirmed": [
+    "announced",
+    "first_available",
+    "general_availability",
+    "api_available",
+    "count_date",
+    "input_usd_per_1m_tokens",
+    "output_usd_per_1m_tokens"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "status",
+     "reason": "no lifecycle/deprecation info on vendor_page or model_card as fetched (deprecations page not in row sources)"
+    },
+    {
+     "field": "retired_on",
+     "reason": "no lifecycle/deprecation info on vendor_page or model_card as fetched (deprecations page not in row sources)"
+    },
+    {
+     "field": "context_window_tokens",
+     "reason": "context window not stated on fetched pages"
+    },
+    {
+     "field": "max_output_tokens",
+     "reason": "max output not stated on fetched pages"
+    },
+    {
+     "field": "knowledge_cutoff",
+     "reason": "knowledge cutoff not stated on fetched pages (card text fetched did not give it)"
+    },
+    {
+     "field": "cached_input_usd_per_1m_tokens",
+     "reason": "cached-input price not stated on fetched pages"
+    },
+    {
+     "field": "licence",
+     "reason": "licence not stated on fetched pages"
+    },
+    {
+     "field": "input_modalities",
+     "reason": "input modalities not explicitly stated on fetched pages"
+    }
+   ]
+  },
+  {
+   "model_id": "anthropic__claude-opus-4-1",
+   "confirmed": [
+    "announced",
+    "first_available",
+    "general_availability",
+    "api_available",
+    "count_date"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "status",
+     "reason": "no lifecycle/deprecation info on vendor_page or model_card as fetched (deprecations page not in row sources)"
+    },
+    {
+     "field": "retired_on",
+     "reason": "no lifecycle/deprecation info on vendor_page or model_card as fetched (deprecations page not in row sources)"
+    },
+    {
+     "field": "context_window_tokens",
+     "reason": "context window not stated on fetched pages"
+    },
+    {
+     "field": "max_output_tokens",
+     "reason": "max output not stated on fetched pages"
+    },
+    {
+     "field": "knowledge_cutoff",
+     "reason": "knowledge cutoff not stated on fetched pages (card text fetched did not give it)"
+    },
+    {
+     "field": "input_usd_per_1m_tokens",
+     "reason": "price not stated numerically on fetched pages (only relative to prior model)"
+    },
+    {
+     "field": "cached_input_usd_per_1m_tokens",
+     "reason": "cached-input price not stated on fetched pages"
+    },
+    {
+     "field": "output_usd_per_1m_tokens",
+     "reason": "price not stated numerically on fetched pages (only relative to prior model)"
+    },
+    {
+     "field": "licence",
+     "reason": "licence not stated on fetched pages"
+    },
+    {
+     "field": "input_modalities",
+     "reason": "input modalities not explicitly stated on fetched pages"
+    }
+   ]
+  },
+  {
+   "model_id": "anthropic__claude-sonnet-4-5",
+   "confirmed": [
+    "announced",
+    "first_available",
+    "general_availability",
+    "api_available",
+    "count_date",
+    "input_usd_per_1m_tokens",
+    "output_usd_per_1m_tokens"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "status",
+     "reason": "no lifecycle/deprecation info on vendor_page or model_card as fetched (deprecations page not in row sources)"
+    },
+    {
+     "field": "retired_on",
+     "reason": "no lifecycle/deprecation info on vendor_page or model_card as fetched (deprecations page not in row sources)"
+    },
+    {
+     "field": "context_window_tokens",
+     "reason": "context window not stated on fetched pages"
+    },
+    {
+     "field": "max_output_tokens",
+     "reason": "max output not stated on fetched pages"
+    },
+    {
+     "field": "knowledge_cutoff",
+     "reason": "knowledge cutoff not stated on fetched pages (card text fetched did not give it)"
+    },
+    {
+     "field": "cached_input_usd_per_1m_tokens",
+     "reason": "cached-input price not stated on fetched pages"
+    },
+    {
+     "field": "licence",
+     "reason": "licence not stated on fetched pages"
+    },
+    {
+     "field": "input_modalities",
+     "reason": "input modalities not explicitly stated on fetched pages"
+    }
+   ]
+  },
+  {
+   "model_id": "anthropic__claude-haiku-4-5",
+   "confirmed": [
+    "announced",
+    "first_available",
+    "general_availability",
+    "api_available",
+    "count_date",
+    "input_usd_per_1m_tokens",
+    "output_usd_per_1m_tokens",
+    "context_window_tokens"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "status",
+     "reason": "no lifecycle/deprecation info on vendor_page or model_card as fetched (deprecations page not in row sources)"
+    },
+    {
+     "field": "max_output_tokens",
+     "reason": "max output not stated on fetched pages"
+    },
+    {
+     "field": "knowledge_cutoff",
+     "reason": "knowledge cutoff not stated on fetched pages (card text fetched did not give it)"
+    },
+    {
+     "field": "cached_input_usd_per_1m_tokens",
+     "reason": "cached-input price not stated on fetched pages"
+    },
+    {
+     "field": "licence",
+     "reason": "licence not stated on fetched pages"
+    },
+    {
+     "field": "input_modalities",
+     "reason": "input modalities not explicitly stated on fetched pages"
+    }
+   ]
+  },
+  {
+   "model_id": "anthropic__claude-opus-4-5",
+   "confirmed": [
+    "announced",
+    "first_available",
+    "general_availability",
+    "api_available",
+    "count_date",
+    "input_usd_per_1m_tokens",
+    "output_usd_per_1m_tokens"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "status",
+     "reason": "no lifecycle/deprecation info on vendor_page or model_card as fetched (deprecations page not in row sources)"
+    },
+    {
+     "field": "context_window_tokens",
+     "reason": "context window not stated on fetched pages"
+    },
+    {
+     "field": "max_output_tokens",
+     "reason": "max output not stated on fetched pages"
+    },
+    {
+     "field": "knowledge_cutoff",
+     "reason": "knowledge cutoff not stated on fetched pages (card text fetched did not give it)"
+    },
+    {
+     "field": "cached_input_usd_per_1m_tokens",
+     "reason": "cached-input price not stated on fetched pages"
+    },
+    {
+     "field": "licence",
+     "reason": "licence not stated on fetched pages"
+    },
+    {
+     "field": "input_modalities",
+     "reason": "input modalities not explicitly stated on fetched pages"
+    }
+   ]
+  },
+  {
+   "model_id": "anthropic__claude-opus-4-6",
+   "confirmed": [
+    "announced",
+    "first_available",
+    "general_availability",
+    "api_available",
+    "count_date",
+    "input_usd_per_1m_tokens",
+    "output_usd_per_1m_tokens",
+    "max_output_tokens"
+   ],
+   "discrepancies": [
+    {
+     "field": "context_window_tokens",
+     "dataset": "200000",
+     "source": "1M token context window in beta; premium pricing for prompts >200k (page does not state a 200K limit as such)",
+     "url": "https://www.anthropic.com/news/claude-opus-4-6"
+    }
+   ],
+   "unverifiable": [
+    {
+     "field": "status",
+     "reason": "no lifecycle/deprecation info on vendor_page or model_card as fetched (deprecations page not in row sources)"
+    },
+    {
+     "field": "licence",
+     "reason": "licence not stated on fetched pages"
+    },
+    {
+     "field": "input_modalities",
+     "reason": "input modalities not explicitly stated on fetched pages"
+    }
+   ]
+  },
+  {
+   "model_id": "anthropic__claude-sonnet-4-6",
+   "confirmed": [
+    "announced",
+    "first_available",
+    "general_availability",
+    "api_available",
+    "count_date",
+    "input_usd_per_1m_tokens",
+    "output_usd_per_1m_tokens"
+   ],
+   "discrepancies": [
+    {
+     "field": "context_window_tokens",
+     "dataset": "200000",
+     "source": "1M token context window in beta",
+     "url": "https://www.anthropic.com/news/claude-sonnet-4-6"
+    }
+   ],
+   "unverifiable": [
+    {
+     "field": "status",
+     "reason": "no lifecycle/deprecation info on vendor_page or model_card as fetched (deprecations page not in row sources)"
+    },
+    {
+     "field": "licence",
+     "reason": "licence not stated on fetched pages"
+    },
+    {
+     "field": "input_modalities",
+     "reason": "input modalities not explicitly stated on fetched pages"
+    }
+   ]
+  },
+  {
+   "model_id": "anthropic__claude-opus-4-7",
+   "confirmed": [
+    "announced",
+    "first_available",
+    "general_availability",
+    "api_available",
+    "count_date",
+    "input_usd_per_1m_tokens",
+    "output_usd_per_1m_tokens"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "status",
+     "reason": "no lifecycle/deprecation info on vendor_page or model_card as fetched (deprecations page not in row sources)"
+    },
+    {
+     "field": "licence",
+     "reason": "licence not stated on fetched pages"
+    },
+    {
+     "field": "input_modalities",
+     "reason": "input modalities not explicitly stated on fetched pages"
+    }
+   ]
+  },
+  {
+   "model_id": "anthropic__claude-opus-4-8",
+   "confirmed": [
+    "announced",
+    "first_available",
+    "general_availability",
+    "api_available",
+    "count_date",
+    "input_usd_per_1m_tokens",
+    "output_usd_per_1m_tokens"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "status",
+     "reason": "no lifecycle/deprecation info on vendor_page or model_card as fetched (deprecations page not in row sources)"
+    },
+    {
+     "field": "context_window_tokens",
+     "reason": "context window not stated on fetched pages"
+    },
+    {
+     "field": "max_output_tokens",
+     "reason": "max output not stated on fetched pages"
+    },
+    {
+     "field": "licence",
+     "reason": "licence not stated on fetched pages"
+    },
+    {
+     "field": "input_modalities",
+     "reason": "input modalities not explicitly stated on fetched pages"
+    }
+   ]
+  },
+  {
+   "model_id": "anthropic__claude-fable-5",
+   "confirmed": [
+    "announced",
+    "first_available",
+    "general_availability",
+    "api_available",
+    "count_date",
+    "input_usd_per_1m_tokens",
+    "output_usd_per_1m_tokens"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "status",
+     "reason": "no lifecycle/deprecation info on vendor_page or model_card as fetched (deprecations page not in row sources)"
+    },
+    {
+     "field": "context_window_tokens",
+     "reason": "context window not stated on fetched pages"
+    },
+    {
+     "field": "max_output_tokens",
+     "reason": "max output not stated on fetched pages"
+    },
+    {
+     "field": "licence",
+     "reason": "licence not stated on fetched pages"
+    },
+    {
+     "field": "input_modalities",
+     "reason": "input modalities not explicitly stated on fetched pages"
+    }
+   ]
+  },
+  {
+   "model_id": "anthropic__claude-sonnet-5",
+   "confirmed": [
+    "announced",
+    "first_available",
+    "general_availability",
+    "api_available",
+    "count_date",
+    "input_usd_per_1m_tokens",
+    "output_usd_per_1m_tokens",
+    "cached_input_usd_per_1m_tokens"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "status",
+     "reason": "no lifecycle/deprecation info on vendor_page or model_card as fetched (deprecations page not in row sources)"
+    },
+    {
+     "field": "context_window_tokens",
+     "reason": "context window not stated on fetched pages"
+    },
+    {
+     "field": "max_output_tokens",
+     "reason": "max output not stated on fetched pages"
+    },
+    {
+     "field": "licence",
+     "reason": "licence not stated on fetched pages"
+    },
+    {
+     "field": "input_modalities",
+     "reason": "input modalities not explicitly stated on fetched pages"
+    }
+   ]
+  },
+  {
+   "model_id": "anthropic__claude-opus-5",
+   "confirmed": [
+    "announced",
+    "first_available",
+    "general_availability",
+    "api_available",
+    "count_date",
+    "input_usd_per_1m_tokens",
+    "output_usd_per_1m_tokens",
+    "cached_input_usd_per_1m_tokens"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "status",
+     "reason": "no lifecycle/deprecation info on vendor_page or model_card as fetched (deprecations page not in row sources)"
+    },
+    {
+     "field": "context_window_tokens",
+     "reason": "context window not stated on fetched pages"
+    },
+    {
+     "field": "max_output_tokens",
+     "reason": "max output not stated on fetched pages"
+    },
+    {
+     "field": "licence",
+     "reason": "licence not stated on fetched pages"
+    },
+    {
+     "field": "input_modalities",
+     "reason": "input modalities not explicitly stated on fetched pages"
+    }
+   ]
+  },
+  {
+   "model_id": "anthropic__claude-fable-5-1",
+   "confirmed": [
+    "announced",
+    "first_available",
+    "general_availability",
+    "api_available",
+    "count_date",
+    "status",
+    "context_window_tokens",
+    "max_output_tokens",
+    "knowledge_cutoff",
+    "input_usd_per_1m_tokens",
+    "output_usd_per_1m_tokens",
+    "cached_input_usd_per_1m_tokens",
+    "input_modalities"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "licence",
+     "reason": "licence not stated on fetched pages"
+    }
+   ]
+  },
+  {
+   "model_id": "anthropic__claude-opus-5-5",
+   "confirmed": [
+    "announced",
+    "first_available",
+    "general_availability",
+    "api_available",
+    "count_date",
+    "context_window_tokens",
+    "max_output_tokens",
+    "knowledge_cutoff",
+    "input_usd_per_1m_tokens",
+    "output_usd_per_1m_tokens",
+    "cached_input_usd_per_1m_tokens"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "status",
+     "reason": "no lifecycle/deprecation info on vendor_page or model_card as fetched (deprecations page not in row sources)"
+    },
+    {
+     "field": "licence",
+     "reason": "licence not stated on fetched pages"
+    },
+    {
+     "field": "input_modalities",
+     "reason": "input modalities not explicitly stated on fetched pages"
+    }
+   ]
+  },
+  {
+   "model_id": "anthropic__claude-sonnet-5-5",
+   "confirmed": [
+    "announced",
+    "first_available",
+    "general_availability",
+    "api_available",
+    "count_date",
+    "context_window_tokens",
+    "max_output_tokens",
+    "knowledge_cutoff",
+    "input_usd_per_1m_tokens",
+    "output_usd_per_1m_tokens"
+   ],
+   "discrepancies": [
+    {
+     "field": "cached_input_usd_per_1m_tokens",
+     "dataset": "0.2",
+     "source": "$0.10 cache reads (page: half of Sonnet 5 $0.20); Haiku 5.5 page says price cut from $0.20 to $0.10 on 2026-10-07",
+     "url": "https://www.anthropic.com/claude-sonnet-5-5"
+    }
+   ],
+   "unverifiable": [
+    {
+     "field": "status",
+     "reason": "no lifecycle/deprecation info on vendor_page or model_card as fetched (deprecations page not in row sources)"
+    },
+    {
+     "field": "licence",
+     "reason": "licence not stated on fetched pages"
+    },
+    {
+     "field": "input_modalities",
+     "reason": "input modalities not explicitly stated on fetched pages"
+    }
+   ]
+  },
+  {
+   "model_id": "anthropic__claude-haiku-5-5",
+   "confirmed": [
+    "announced",
+    "first_available",
+    "general_availability",
+    "api_available",
+    "count_date",
+    "context_window_tokens",
+    "max_output_tokens",
+    "input_usd_per_1m_tokens",
+    "output_usd_per_1m_tokens",
+    "cached_input_usd_per_1m_tokens"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "status",
+     "reason": "no lifecycle/deprecation info on vendor_page or model_card as fetched (deprecations page not in row sources)"
+    },
+    {
+     "field": "licence",
+     "reason": "licence not stated on fetched pages"
+    },
+    {
+     "field": "input_modalities",
+     "reason": "input modalities not explicitly stated on fetched pages"
+    }
+   ]
+  },
+  {
+   "model_id": "deepseek__deepseek-llm-7b-67b-base-chat",
+   "confirmed": [
+    "context_window_tokens",
+    "licence",
+    "params_total_billions"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "count_date",
+     "reason": "GitHub page only shows repo creation date 2023-11-29, not a release statement"
+    },
+    {
+     "field": "announced",
+     "reason": "GitHub page only shows repo creation date 2023-11-29, not a release statement"
+    },
+    {
+     "field": "first_available",
+     "reason": "GitHub page only shows repo creation date 2023-11-29, not a release statement"
+    },
+    {
+     "field": "open_weights",
+     "reason": "GitHub page only shows repo creation date 2023-11-29, not a release statement"
+    },
+    {
+     "field": "status",
+     "reason": "page does not state current lifecycle status"
+    },
+    {
+     "field": "params_active_billions",
+     "reason": "page does not state active params"
+    },
+    {
+     "field": "architecture",
+     "reason": "page does not state architecture type"
+    },
+    {
+     "field": "input_modalities",
+     "reason": "page does not state input modalities"
+    }
+   ]
+  },
+  {
+   "model_id": "deepseek__deepseekmoe-16b",
+   "confirmed": [
+    "context_window_tokens",
+    "licence",
+    "params_total_billions",
+    "architecture"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "count_date",
+     "reason": "GitHub page only shows repo creation date 2024-01-02; no release date"
+    },
+    {
+     "field": "first_available",
+     "reason": "GitHub page only shows repo creation date 2024-01-02; no release date"
+    },
+    {
+     "field": "open_weights",
+     "reason": "GitHub page only shows repo creation date 2024-01-02; no release date"
+    },
+    {
+     "field": "status",
+     "reason": "page does not state current lifecycle status"
+    },
+    {
+     "field": "input_modalities",
+     "reason": "page does not state input modalities"
+    }
+   ]
+  },
+  {
+   "model_id": "deepseek__deepseek-vl-1-3b-7b",
+   "confirmed": [
+    "announced",
+    "first_available",
+    "count_date",
+    "open_weights",
+    "context_window_tokens",
+    "licence",
+    "input_modalities"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "status",
+     "reason": "page does not state current lifecycle status"
+    },
+    {
+     "field": "architecture",
+     "reason": "page does not state architecture type"
+    }
+   ]
+  },
+  {
+   "model_id": "deepseek__deepseek-v2",
+   "confirmed": [
+    "announced",
+    "first_available",
+    "count_date",
+    "open_weights",
+    "context_window_tokens",
+    "licence",
+    "params_total_billions",
+    "params_active_billions",
+    "architecture"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "status",
+     "reason": "page does not state current lifecycle status"
+    },
+    {
+     "field": "input_modalities",
+     "reason": "page does not state input modalities"
+    }
+   ]
+  },
+  {
+   "model_id": "deepseek__deepseek-v2-lite",
+   "confirmed": [
+    "announced",
+    "first_available",
+    "count_date",
+    "open_weights",
+    "context_window_tokens",
+    "licence",
+    "params_total_billions",
+    "params_active_billions",
+    "architecture"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "status",
+     "reason": "page does not state current lifecycle status"
+    },
+    {
+     "field": "input_modalities",
+     "reason": "page does not state input modalities"
+    }
+   ]
+  },
+  {
+   "model_id": "deepseek__deepseek-v2-5",
+   "confirmed": [
+    "announced",
+    "first_available",
+    "count_date",
+    "api_available",
+    "open_weights"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "general_availability",
+     "reason": "page does not use or date a general-availability milestone"
+    },
+    {
+     "field": "status",
+     "reason": "page does not state current lifecycle status"
+    },
+    {
+     "field": "architecture",
+     "reason": "page does not state architecture type"
+    },
+    {
+     "field": "input_modalities",
+     "reason": "page does not state input modalities"
+    }
+   ]
+  },
+  {
+   "model_id": "deepseek__deepseek-r1-lite-preview",
+   "confirmed": [
+    "announced",
+    "first_available",
+    "reasoning_mode"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "status",
+     "reason": "page does not state current lifecycle status"
+    },
+    {
+     "field": "licence",
+     "reason": "page only says open-source models coming soon; no licence or \"no weights\" statement"
+    },
+    {
+     "field": "input_modalities",
+     "reason": "page does not state input modalities"
+    }
+   ]
+  },
+  {
+   "model_id": "deepseek__deepseek-vl2-tiny-small-base",
+   "confirmed": [
+    "announced",
+    "first_available",
+    "count_date",
+    "open_weights",
+    "context_window_tokens",
+    "licence",
+    "params_active_billions",
+    "architecture",
+    "input_modalities"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "status",
+     "reason": "page does not state current lifecycle status"
+    }
+   ]
+  },
+  {
+   "model_id": "deepseek__deepseek-v3",
+   "confirmed": [
+    "announced",
+    "first_available",
+    "count_date",
+    "input_usd_per_1m_tokens",
+    "cached_input_usd_per_1m_tokens",
+    "output_usd_per_1m_tokens",
+    "params_total_billions",
+    "params_active_billions",
+    "architecture"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "general_availability",
+     "reason": "page does not use or date a general-availability milestone"
+    },
+    {
+     "field": "api_available",
+     "reason": "announcement page excerpt does not state API availability date"
+    },
+    {
+     "field": "open_weights",
+     "reason": "announcement page excerpt does not state weights release"
+    },
+    {
+     "field": "status",
+     "reason": "page does not state current lifecycle status"
+    },
+    {
+     "field": "licence",
+     "reason": "licence text not on fetched page; model card PDF text not extractable"
+    },
+    {
+     "field": "input_modalities",
+     "reason": "page does not state input modalities"
+    }
+   ]
+  },
+  {
+   "model_id": "deepseek__deepseek-r1",
+   "confirmed": [
+    "announced",
+    "first_available",
+    "count_date",
+    "api_available",
+    "open_weights",
+    "input_usd_per_1m_tokens",
+    "cached_input_usd_per_1m_tokens",
+    "output_usd_per_1m_tokens",
+    "licence",
+    "reasoning_mode"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "general_availability",
+     "reason": "page does not use or date a general-availability milestone"
+    },
+    {
+     "field": "status",
+     "reason": "page does not state current lifecycle status"
+    },
+    {
+     "field": "context_window_tokens",
+     "reason": "news page does not state context; model card PDF text not extractable"
+    },
+    {
+     "field": "params_total_billions",
+     "reason": "model card PDF text not extractable"
+    },
+    {
+     "field": "params_active_billions",
+     "reason": "model card PDF text not extractable"
+    },
+    {
+     "field": "architecture",
+     "reason": "news page/PDF do not state it in extractable text"
+    },
+    {
+     "field": "input_modalities",
+     "reason": "page does not state input modalities"
+    }
+   ]
+  },
+  {
+   "model_id": "deepseek__deepseek-r1-zero",
+   "confirmed": [
+    "context_window_tokens",
+    "licence",
+    "params_total_billions",
+    "params_active_billions",
+    "input_modalities",
+    "reasoning_mode"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "count_date",
+     "reason": "HF page gives no release date"
+    },
+    {
+     "field": "announced",
+     "reason": "HF page gives no release date (only paper date Jan 22, 2025)"
+    },
+    {
+     "field": "first_available",
+     "reason": "HF page gives no release date"
+    },
+    {
+     "field": "open_weights",
+     "reason": "HF page gives no weights release date"
+    },
+    {
+     "field": "status",
+     "reason": "page does not state current lifecycle status"
+    },
+    {
+     "field": "architecture",
+     "reason": "HF card table lists MoE for R1 only, not R1-Zero explicitly"
+    }
+   ]
+  },
+  {
+   "model_id": "deepseek__deepseek-v3-1",
+   "confirmed": [
+    "announced",
+    "first_available",
+    "count_date",
+    "api_available",
+    "open_weights",
+    "context_window_tokens",
+    "reasoning_mode"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "general_availability",
+     "reason": "page does not use or date a general-availability milestone"
+    },
+    {
+     "field": "status",
+     "reason": "page does not state current lifecycle status"
+    },
+    {
+     "field": "retired_on",
+     "reason": "news250821 does not state retirement; V4 page only retires aliases deepseek-chat/reasoner on 2026-07-24, not the model"
+    },
+    {
+     "field": "licence",
+     "reason": "page does not state licence"
+    },
+    {
+     "field": "params_total_billions",
+     "reason": "page does not state total params"
+    },
+    {
+     "field": "params_active_billions",
+     "reason": "page does not state active params"
+    },
+    {
+     "field": "architecture",
+     "reason": "page does not state architecture type"
+    },
+    {
+     "field": "input_modalities",
+     "reason": "page does not state input modalities"
+    }
+   ]
+  },
+  {
+   "model_id": "deepseek__deepseek-v3-1-terminus",
+   "confirmed": [
+    "announced",
+    "first_available",
+    "count_date",
+    "api_available",
+    "open_weights"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "general_availability",
+     "reason": "page does not use or date a general-availability milestone"
+    },
+    {
+     "field": "status",
+     "reason": "page does not state current lifecycle status"
+    },
+    {
+     "field": "architecture",
+     "reason": "page does not state architecture type"
+    },
+    {
+     "field": "input_modalities",
+     "reason": "page does not state input modalities"
+    }
+   ]
+  },
+  {
+   "model_id": "deepseek__deepseek-v3-2-exp",
+   "confirmed": [
+    "announced",
+    "first_available",
+    "count_date",
+    "api_available",
+    "open_weights"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "status",
+     "reason": "page does not state current lifecycle status"
+    },
+    {
+     "field": "architecture",
+     "reason": "page says DSA on V3.1-Terminus; MoE not stated; model card PDF text not extractable"
+    },
+    {
+     "field": "input_modalities",
+     "reason": "page does not state input modalities"
+    }
+   ]
+  },
+  {
+   "model_id": "deepseek__deepseek-v3-2",
+   "confirmed": [
+    "announced",
+    "first_available",
+    "count_date",
+    "api_available",
+    "open_weights"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "general_availability",
+     "reason": "page does not use or date a general-availability milestone"
+    },
+    {
+     "field": "status",
+     "reason": "page does not state current lifecycle status"
+    },
+    {
+     "field": "retired_on",
+     "reason": "v3.2 page states no retirement; V4 page only retires aliases deepseek-chat/reasoner on 2026-07-24"
+    },
+    {
+     "field": "licence",
+     "reason": "licence not on page; tech report excerpt does not state it"
+    },
+    {
+     "field": "architecture",
+     "reason": "MoE not stated in fetched page/paper excerpt"
+    },
+    {
+     "field": "input_modalities",
+     "reason": "page does not state input modalities"
+    }
+   ]
+  },
+  {
+   "model_id": "deepseek__deepseek-v3-2-speciale",
+   "confirmed": [
+    "announced",
+    "first_available",
+    "count_date",
+    "api_available",
+    "open_weights",
+    "retired_on",
+    "reasoning_mode"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "status",
+     "reason": "page gives end date 2025-12-15 for the temporary API but does not state a status"
+    },
+    {
+     "field": "licence",
+     "reason": "page does not state licence"
+    },
+    {
+     "field": "architecture",
+     "reason": "page does not state architecture type"
+    },
+    {
+     "field": "input_modalities",
+     "reason": "page does not state input modalities"
+    }
+   ]
+  },
+  {
+   "model_id": "deepseek__deepseek-v4-flash-preview",
+   "confirmed": [
+    "announced",
+    "first_available",
+    "count_date",
+    "api_available",
+    "open_weights",
+    "context_window_tokens",
+    "params_total_billions",
+    "params_active_billions",
+    "architecture",
+    "status"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "retired_on",
+     "reason": "V4.1 page (news260910) says V4-Flash retired but gives no separate retirement date"
+    },
+    {
+     "field": "licence",
+     "reason": "page does not state licence"
+    },
+    {
+     "field": "input_modalities",
+     "reason": "page does not state input modalities"
+    }
+   ]
+  },
+  {
+   "model_id": "deepseek__deepseek-v4-pro-preview",
+   "confirmed": [
+    "announced",
+    "first_available",
+    "count_date",
+    "general_availability",
+    "api_available",
+    "open_weights",
+    "context_window_tokens",
+    "params_total_billions",
+    "params_active_billions",
+    "architecture"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "status",
+     "reason": "V4.1 page says V4-Pro is being phased out (routing from 2026-09-14) but does not state \"legacy\""
+    },
+    {
+     "field": "licence",
+     "reason": "page does not state licence"
+    },
+    {
+     "field": "input_modalities",
+     "reason": "page does not state input modalities"
+    }
+   ]
+  },
+  {
+   "model_id": "deepseek__deepseek-v4-flash-vision-exp",
+   "confirmed": [
+    "announced",
+    "first_available",
+    "api_available",
+    "input_modalities",
+    "status"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "retired_on",
+     "reason": "V4.1 page says retired but gives no separate retirement date"
+    },
+    {
+     "field": "context_window_tokens",
+     "reason": "page says text capability matches V4-Flash but gives no context figure"
+    },
+    {
+     "field": "licence",
+     "reason": "page does not state licence/API-only"
+    },
+    {
+     "field": "architecture",
+     "reason": "page does not state architecture type"
+    }
+   ]
+  },
+  {
+   "model_id": "deepseek__deepseek-v4-1-flash",
+   "confirmed": [
+    "announced",
+    "first_available",
+    "count_date",
+    "api_available",
+    "licence",
+    "params_total_billions",
+    "architecture",
+    "input_modalities"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "general_availability",
+     "reason": "page does not use or date a general-availability milestone"
+    },
+    {
+     "field": "open_weights",
+     "reason": "page extract truncated; HF card shows MIT licence but no weights date"
+    },
+    {
+     "field": "status",
+     "reason": "page does not state current lifecycle status"
+    },
+    {
+     "field": "context_window_tokens",
+     "reason": "not in extracted text"
+    },
+    {
+     "field": "max_output_tokens",
+     "reason": "not in extracted text"
+    },
+    {
+     "field": "input_usd_per_1m_tokens",
+     "reason": "page mentions new pricing but figures not in extracted text"
+    },
+    {
+     "field": "cached_input_usd_per_1m_tokens",
+     "reason": "figures not in extracted text"
+    },
+    {
+     "field": "output_usd_per_1m_tokens",
+     "reason": "figures not in extracted text"
+    },
+    {
+     "field": "params_active_billions",
+     "reason": "page says 8B active for input and 16B for output (dataset 16 matches output only)"
+    }
+   ]
+  },
+  {
+   "model_id": "google__palm-2",
+   "confirmed": [
+    "announced",
+    "first_available"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "general_availability",
+     "reason": "keynote post does not give a GA date"
+    },
+    {
+     "field": "api_available",
+     "reason": "post says 'available in preview' but does not mention API"
+    },
+    {
+     "field": "count_date",
+     "reason": "GA date not stated"
+    },
+    {
+     "field": "status",
+     "reason": "status/retirement not covered by page"
+    },
+    {
+     "field": "retired_on",
+     "reason": "not covered by page"
+    },
+    {
+     "field": "licence",
+     "reason": "not stated"
+    },
+    {
+     "field": "input_modalities",
+     "reason": "text-only not stated"
+    }
+   ]
+  },
+  {
+   "model_id": "google__gemini-1-0-nano",
+   "confirmed": [
+    "announced",
+    "first_available",
+    "count_date"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "general_availability",
+     "reason": "page says Nano powers Pixel 8 Pro features; developer access via AICore only 'early preview'; no GA statement"
+    },
+    {
+     "field": "status",
+     "reason": "not stated"
+    },
+    {
+     "field": "licence",
+     "reason": "not stated"
+    },
+    {
+     "field": "input_modalities",
+     "reason": "modalities of Nano not stated"
+    }
+   ]
+  },
+  {
+   "model_id": "google__gemini-1-0-pro",
+   "confirmed": [
+    "announced",
+    "first_available",
+    "api_available"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "general_availability",
+     "reason": "2024-02-15 not on this page"
+    },
+    {
+     "field": "count_date",
+     "reason": "GA date not on this page"
+    },
+    {
+     "field": "status",
+     "reason": "not stated"
+    },
+    {
+     "field": "retired_on",
+     "reason": "not stated"
+    },
+    {
+     "field": "context_window_tokens",
+     "reason": "context size not stated"
+    },
+    {
+     "field": "licence",
+     "reason": "not stated"
+    },
+    {
+     "field": "input_modalities",
+     "reason": "Pro modalities not stated on page"
+    }
+   ]
+  },
+  {
+   "model_id": "google__gemini-1-0-ultra",
+   "confirmed": [
+    "first_available"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "announced",
+     "reason": "this page (Feb 8 2024) does not state the Dec 6 2023 announcement"
+    },
+    {
+     "field": "general_availability",
+     "reason": "2024-02-15 not stated"
+    },
+    {
+     "field": "api_available",
+     "reason": "2024-02-15 not stated"
+    },
+    {
+     "field": "count_date",
+     "reason": "not stated"
+    },
+    {
+     "field": "status",
+     "reason": "not stated"
+    },
+    {
+     "field": "retired_on",
+     "reason": "not stated"
+    },
+    {
+     "field": "licence",
+     "reason": "not stated"
+    },
+    {
+     "field": "input_modalities",
+     "reason": "not stated"
+    }
+   ]
+  },
+  {
+   "model_id": "google__gemma-1-2b-7b",
+   "confirmed": [
+    "first_available",
+    "open_weights",
+    "count_date",
+    "licence",
+    "input_modalities"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "announced",
+     "reason": "releases page records 'initial release', not an announcement"
+    },
+    {
+     "field": "status",
+     "reason": "not stated"
+    },
+    {
+     "field": "context_window_tokens",
+     "reason": "model card does not state context length"
+    },
+    {
+     "field": "architecture",
+     "reason": "card says decoder-only; 'dense' not stated"
+    }
+   ]
+  },
+  {
+   "model_id": "google__gemini-1-5-flash",
+   "confirmed": [
+    "general_availability",
+    "count_date",
+    "status",
+    "retired_on"
+   ],
+   "discrepancies": [
+    {
+     "field": "first_available",
+     "dataset": "2024-05-14",
+     "source": "2024-05-10 (changelog: 'Released Gemini 1.5 Flash in preview')",
+     "url": "https://ai.google.dev/gemini-api/docs/changelog"
+    },
+    {
+     "field": "api_available",
+     "dataset": "2024-05-14",
+     "source": "2024-05-10 (changelog: gemini-1.5-flash-latest released in preview)",
+     "url": "https://ai.google.dev/gemini-api/docs/changelog"
+    }
+   ],
+   "unverifiable": [
+    {
+     "field": "announced",
+     "reason": "changelog is a release log, no announcement entry"
+    },
+    {
+     "field": "context_window_tokens",
+     "reason": "not stated"
+    },
+    {
+     "field": "licence",
+     "reason": "not stated"
+    },
+    {
+     "field": "architecture",
+     "reason": "not stated"
+    },
+    {
+     "field": "input_modalities",
+     "reason": "not stated"
+    }
+   ]
+  },
+  {
+   "model_id": "google__gemini-1-5-pro",
+   "confirmed": [
+    "first_available",
+    "general_availability",
+    "api_available",
+    "count_date",
+    "status",
+    "retired_on"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "announced",
+     "reason": "2024-02-15 not on page"
+    },
+    {
+     "field": "licence",
+     "reason": "not stated"
+    },
+    {
+     "field": "architecture",
+     "reason": "not stated"
+    },
+    {
+     "field": "input_modalities",
+     "reason": "not stated"
+    }
+   ]
+  },
+  {
+   "model_id": "google__gemma-2",
+   "confirmed": [
+    "first_available",
+    "open_weights",
+    "count_date",
+    "licence",
+    "params_total_billions",
+    "input_modalities"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "announced",
+     "reason": "releases page records 'initial release'"
+    },
+    {
+     "field": "status",
+     "reason": "not stated"
+    },
+    {
+     "field": "context_window_tokens",
+     "reason": "model card does not state context length"
+    },
+    {
+     "field": "params_active_billions",
+     "reason": "card does not state active params"
+    },
+    {
+     "field": "architecture",
+     "reason": "card says decoder-only; 'dense' not stated"
+    }
+   ]
+  },
+  {
+   "model_id": "google__gemini-1-5-flash-8b",
+   "confirmed": [
+    "first_available",
+    "general_availability",
+    "api_available",
+    "count_date",
+    "status",
+    "retired_on"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "announced",
+     "reason": "changelog is a release log"
+    },
+    {
+     "field": "context_window_tokens",
+     "reason": "not stated"
+    },
+    {
+     "field": "licence",
+     "reason": "not stated"
+    },
+    {
+     "field": "params_total_billions",
+     "reason": "8B not stated"
+    },
+    {
+     "field": "input_modalities",
+     "reason": "not stated"
+    }
+   ]
+  },
+  {
+   "model_id": "google__gemini-2-0-flash-thinking-experimental",
+   "confirmed": [
+    "first_available",
+    "api_available",
+    "retired_on",
+    "reasoning_mode"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "announced",
+     "reason": "changelog is a release log"
+    },
+    {
+     "field": "status",
+     "reason": "changelog (Nov 4 2025) only announces scheduled shutdown Dec 2 2025; no page says it has shut down"
+    },
+    {
+     "field": "licence",
+     "reason": "not stated"
+    },
+    {
+     "field": "input_modalities",
+     "reason": "not stated"
+    }
+   ]
+  },
+  {
+   "model_id": "google__gemini-2-0-flash",
+   "confirmed": [
+    "first_available",
+    "general_availability",
+    "api_available",
+    "count_date",
+    "retired_on"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "announced",
+     "reason": "not stated"
+    },
+    {
+     "field": "status",
+     "reason": "deprecations page gives only earliest-possible shutdown date 2026-06-01; no statement it is shut down"
+    },
+    {
+     "field": "context_window_tokens",
+     "reason": "not on vendor_page (deprecations)"
+    },
+    {
+     "field": "max_output_tokens",
+     "reason": "not on vendor_page"
+    },
+    {
+     "field": "knowledge_cutoff",
+     "reason": "not on vendor_page"
+    },
+    {
+     "field": "input_usd_per_1m_tokens",
+     "reason": "deprecations page has no prices; pricing page no longer lists 2.0 Flash"
+    },
+    {
+     "field": "cached_input_usd_per_1m_tokens",
+     "reason": "deprecations page has no prices; pricing page no longer lists 2.0 Flash"
+    },
+    {
+     "field": "output_usd_per_1m_tokens",
+     "reason": "deprecations page has no prices; pricing page no longer lists 2.0 Flash"
+    },
+    {
+     "field": "licence",
+     "reason": "not stated"
+    },
+    {
+     "field": "input_modalities",
+     "reason": "not stated"
+    }
+   ]
+  },
+  {
+   "model_id": "google__gemini-2-0-pro-experimental",
+   "confirmed": [
+    "first_available",
+    "api_available",
+    "retired_on"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "announced",
+     "reason": "not stated"
+    },
+    {
+     "field": "status",
+     "reason": "only scheduled shutdown (changelog Nov 4 2025), not confirmed shut down"
+    },
+    {
+     "field": "context_window_tokens",
+     "reason": "not stated on vendor_page (model not listed in current deprecations table)"
+    },
+    {
+     "field": "licence",
+     "reason": "not stated"
+    },
+    {
+     "field": "input_modalities",
+     "reason": "not stated"
+    }
+   ]
+  },
+  {
+   "model_id": "google__gemini-2-0-flash-lite",
+   "confirmed": [
+    "first_available",
+    "general_availability",
+    "api_available",
+    "count_date",
+    "retired_on"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "announced",
+     "reason": "not stated"
+    },
+    {
+     "field": "status",
+     "reason": "only earliest-possible shutdown date given"
+    },
+    {
+     "field": "context_window_tokens",
+     "reason": "not on vendor_page"
+    },
+    {
+     "field": "max_output_tokens",
+     "reason": "not on vendor_page"
+    },
+    {
+     "field": "knowledge_cutoff",
+     "reason": "not on vendor_page"
+    },
+    {
+     "field": "input_usd_per_1m_tokens",
+     "reason": "no prices on vendor_page"
+    },
+    {
+     "field": "output_usd_per_1m_tokens",
+     "reason": "no prices on vendor_page"
+    },
+    {
+     "field": "licence",
+     "reason": "not stated"
+    },
+    {
+     "field": "input_modalities",
+     "reason": "not stated"
+    }
+   ]
+  },
+  {
+   "model_id": "google__gemma-3",
+   "confirmed": [
+    "first_available",
+    "open_weights",
+    "count_date",
+    "context_window_tokens",
+    "knowledge_cutoff",
+    "licence",
+    "params_total_billions",
+    "input_modalities"
+   ],
+   "discrepancies": [
+    {
+     "field": "max_output_tokens",
+     "dataset": "8192",
+     "source": "up to 128K tokens output for 4B/12B/27B (32K for 1B/270M), per request minus input tokens",
+     "url": "https://ai.google.dev/gemma/docs/core/model_card_3"
+    }
+   ],
+   "unverifiable": [
+    {
+     "field": "announced",
+     "reason": "2025-03-12 not stated; releases page lists 2025-03-10"
+    },
+    {
+     "field": "api_available",
+     "reason": "2025-03-12 not stated"
+    },
+    {
+     "field": "status",
+     "reason": "not stated"
+    },
+    {
+     "field": "params_active_billions",
+     "reason": "not stated"
+    },
+    {
+     "field": "architecture",
+     "reason": "not stated as dense"
+    }
+   ],
+   "notes": [
+    "context 131072 matches '128K tokens' on model card (4B/12B/27B)"
+   ]
+  },
+  {
+   "model_id": "google__gemini-2-5-flash",
+   "confirmed": [
+    "first_available",
+    "general_availability",
+    "api_available",
+    "count_date",
+    "input_usd_per_1m_tokens",
+    "output_usd_per_1m_tokens",
+    "reasoning_mode"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "announced",
+     "reason": "not stated"
+    },
+    {
+     "field": "status",
+     "reason": "deprecations page says 2.5 models not deprecated, access limited; 'legacy' label not used"
+    },
+    {
+     "field": "context_window_tokens",
+     "reason": "not on vendor_page"
+    },
+    {
+     "field": "max_output_tokens",
+     "reason": "not on vendor_page"
+    },
+    {
+     "field": "knowledge_cutoff",
+     "reason": "not on vendor_page"
+    },
+    {
+     "field": "licence",
+     "reason": "not stated"
+    },
+    {
+     "field": "input_modalities",
+     "reason": "not stated"
+    }
+   ],
+   "notes": [
+    "first_available/api_available via changelog (2025-04-17 preview); prices and 'hybrid' via pricing page (supplementary vendor pages, not the row's vendor_page)"
+   ]
+  },
+  {
+   "model_id": "google__gemini-2-5-pro",
+   "confirmed": [
+    "first_available",
+    "general_availability",
+    "api_available",
+    "count_date",
+    "input_usd_per_1m_tokens",
+    "output_usd_per_1m_tokens"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "announced",
+     "reason": "not stated"
+    },
+    {
+     "field": "status",
+     "reason": "'legacy' label not stated"
+    },
+    {
+     "field": "context_window_tokens",
+     "reason": "not on vendor_page"
+    },
+    {
+     "field": "max_output_tokens",
+     "reason": "not on vendor_page"
+    },
+    {
+     "field": "knowledge_cutoff",
+     "reason": "not on vendor_page"
+    },
+    {
+     "field": "licence",
+     "reason": "not stated"
+    },
+    {
+     "field": "architecture",
+     "reason": "not stated"
+    },
+    {
+     "field": "input_modalities",
+     "reason": "not stated"
+    },
+    {
+     "field": "reasoning_mode",
+     "reason": "pages say adaptive thinking; dataset label not stated"
+    }
+   ],
+   "notes": [
+    "first_available via changelog (2025-03-25 exp); prices via pricing page: $1.25/$10 for prompts <=200k, $2.50/$15 above"
+   ]
+  },
+  {
+   "model_id": "google__gemma-3n",
+   "confirmed": [
+    "first_available",
+    "open_weights",
+    "count_date"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "announced",
+     "reason": "2025-05-20 not stated for 3n"
+    },
+    {
+     "field": "status",
+     "reason": "not stated"
+    },
+    {
+     "field": "context_window_tokens",
+     "reason": "no Gemma 3n model card given/fetched"
+    },
+    {
+     "field": "knowledge_cutoff",
+     "reason": "not stated"
+    },
+    {
+     "field": "licence",
+     "reason": "not stated"
+    },
+    {
+     "field": "architecture",
+     "reason": "not stated"
+    },
+    {
+     "field": "input_modalities",
+     "reason": "not stated on releases page"
+    }
+   ]
+  },
+  {
+   "model_id": "google__gemini-2-5-flash-lite",
+   "confirmed": [
+    "first_available",
+    "general_availability",
+    "api_available",
+    "count_date"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "announced",
+     "reason": "not stated"
+    },
+    {
+     "field": "status",
+     "reason": "not stated"
+    },
+    {
+     "field": "context_window_tokens",
+     "reason": "not on vendor_page"
+    },
+    {
+     "field": "max_output_tokens",
+     "reason": "not on vendor_page"
+    },
+    {
+     "field": "knowledge_cutoff",
+     "reason": "not on vendor_page"
+    },
+    {
+     "field": "licence",
+     "reason": "not stated"
+    },
+    {
+     "field": "input_modalities",
+     "reason": "not stated"
+    }
+   ],
+   "notes": [
+    "first_available via changelog (2025-06-17 preview)"
+   ]
+  },
+  {
+   "model_id": "google__gemini-3-pro",
+   "confirmed": [
+    "first_available",
+    "api_available",
+    "status",
+    "retired_on"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "announced",
+     "reason": "not stated"
+    },
+    {
+     "field": "context_window_tokens",
+     "reason": "not on vendor_page"
+    },
+    {
+     "field": "max_output_tokens",
+     "reason": "not on vendor_page"
+    },
+    {
+     "field": "knowledge_cutoff",
+     "reason": "not on vendor_page"
+    },
+    {
+     "field": "input_usd_per_1m_tokens",
+     "reason": "no prices on vendor_page; model no longer on pricing page"
+    },
+    {
+     "field": "cached_input_usd_per_1m_tokens",
+     "reason": "same"
+    },
+    {
+     "field": "output_usd_per_1m_tokens",
+     "reason": "same"
+    },
+    {
+     "field": "licence",
+     "reason": "not stated"
+    },
+    {
+     "field": "architecture",
+     "reason": "not stated"
+    },
+    {
+     "field": "input_modalities",
+     "reason": "not stated"
+    }
+   ],
+   "notes": [
+    "status 'shut down' via changelog 2026-03-09 entry"
+   ]
+  },
+  {
+   "model_id": "google__gemini-3-flash",
+   "confirmed": [
+    "first_available",
+    "api_available",
+    "status",
+    "input_usd_per_1m_tokens",
+    "cached_input_usd_per_1m_tokens",
+    "output_usd_per_1m_tokens"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "announced",
+     "reason": "not stated"
+    },
+    {
+     "field": "context_window_tokens",
+     "reason": "pricing page does not state"
+    },
+    {
+     "field": "max_output_tokens",
+     "reason": "not stated"
+    },
+    {
+     "field": "knowledge_cutoff",
+     "reason": "not stated"
+    },
+    {
+     "field": "licence",
+     "reason": "not stated"
+    },
+    {
+     "field": "input_modalities",
+     "reason": "pricing page lists text/image/video/audio; PDF not stated"
+    }
+   ],
+   "notes": [
+    "first_available from deprecations page release date 2025-12-17 (gemini-3-flash-preview); prices are text/image/video rates"
+   ]
+  },
+  {
+   "model_id": "google__gemini-3-1-pro",
+   "confirmed": [
+    "announced",
+    "first_available",
+    "api_available",
+    "context_window_tokens",
+    "max_output_tokens",
+    "input_usd_per_1m_tokens",
+    "cached_input_usd_per_1m_tokens",
+    "output_usd_per_1m_tokens",
+    "input_modalities"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "status",
+     "reason": "page labels model 'preview'; no active/retired statement"
+    },
+    {
+     "field": "licence",
+     "reason": "not stated"
+    }
+   ],
+   "notes": [
+    "announced from model card 'Published 19 February 2026'; first/api from deprecations release date; prices via pricing page ($2/$12 and cache $0.20 for prompts <=200k; $4/$18 above)"
+   ]
+  },
+  {
+   "model_id": "google__gemma-4",
+   "confirmed": [
+    "first_available",
+    "open_weights",
+    "count_date",
+    "licence",
+    "params_total_billions",
+    "params_active_billions",
+    "architecture"
+   ],
+   "discrepancies": [
+    {
+     "field": "input_modalities",
+     "dataset": "t,i",
+     "source": "text, image, video (frames); audio on E2B/E4B/12B (31B and 26B A4B: text+image only)",
+     "url": "https://ai.google.dev/gemma/docs/core/model_card_4"
+    }
+   ],
+   "unverifiable": [
+    {
+     "field": "announced",
+     "reason": "releases page records release only"
+    },
+    {
+     "field": "api_available",
+     "reason": "not stated"
+    },
+    {
+     "field": "status",
+     "reason": "not stated"
+    }
+   ],
+   "notes": [
+    "params: 31B dense = 30.7B total; 3.8B active is the 26B A4B MoE variant only; row mixes family-level values"
+   ]
+  },
+  {
+   "model_id": "google__gemini-3-1-flash-lite",
+   "confirmed": [
+    "first_available",
+    "general_availability",
+    "api_available",
+    "count_date",
+    "retired_on",
+    "input_usd_per_1m_tokens",
+    "cached_input_usd_per_1m_tokens",
+    "output_usd_per_1m_tokens"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "announced",
+     "reason": "changelog is a release log"
+    },
+    {
+     "field": "status",
+     "reason": "deprecations page lists shutdown 2027-05-07 and replacement but does not label status"
+    },
+    {
+     "field": "licence",
+     "reason": "not stated"
+    },
+    {
+     "field": "input_modalities",
+     "reason": "not stated on changelog"
+    }
+   ],
+   "notes": [
+    "retired_on via deprecations page (2027-05-07 shutdown); prices via pricing page"
+   ]
+  },
+  {
+   "model_id": "google__gemini-3-5-flash",
+   "confirmed": [
+    "first_available",
+    "general_availability",
+    "api_available",
+    "count_date"
+   ],
+   "discrepancies": [
+    {
+     "field": "status",
+     "dataset": "legacy",
+     "source": "deprecated (changelog 2026-10-08: gemini-3.5-flash deprecated, routed to gemini-3.6-flash)",
+     "url": "https://ai.google.dev/gemini-api/docs/changelog"
+    }
+   ],
+   "unverifiable": [
+    {
+     "field": "announced",
+     "reason": "not stated"
+    },
+    {
+     "field": "licence",
+     "reason": "not stated"
+    },
+    {
+     "field": "input_modalities",
+     "reason": "not stated"
+    }
+   ]
+  },
+  {
+   "model_id": "google__gemini-3-5-flash-lite",
+   "confirmed": [
+    "first_available",
+    "general_availability",
+    "api_available",
+    "count_date",
+    "input_usd_per_1m_tokens",
+    "cached_input_usd_per_1m_tokens",
+    "output_usd_per_1m_tokens",
+    "input_modalities"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "announced",
+     "reason": "not stated"
+    },
+    {
+     "field": "status",
+     "reason": "page says 'No shutdown date announced'; 'active' not stated"
+    },
+    {
+     "field": "licence",
+     "reason": "not stated"
+    }
+   ],
+   "notes": [
+    "modalities/prices via pricing page: text/image/video/audio; PDF not stated (dataset omits pdf, consistent)"
+   ]
+  },
+  {
+   "model_id": "google__gemini-3-6-flash",
+   "confirmed": [
+    "first_available",
+    "general_availability",
+    "api_available",
+    "count_date",
+    "input_usd_per_1m_tokens",
+    "cached_input_usd_per_1m_tokens",
+    "output_usd_per_1m_tokens"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "announced",
+     "reason": "not stated"
+    },
+    {
+     "field": "status",
+     "reason": "not stated"
+    },
+    {
+     "field": "licence",
+     "reason": "not stated"
+    },
+    {
+     "field": "input_modalities",
+     "reason": "not stated on pricing page"
+    }
+   ],
+   "notes": [
+    "dates via deprecations page (2026-07-21); price is promo through 2026-12-31, then $1.50/$7.50 from 2027-01-01"
+   ]
+  },
+  {
+   "model_id": "google__gemini-3-7-flash",
+   "confirmed": [
+    "first_available",
+    "general_availability",
+    "api_available",
+    "count_date",
+    "status"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "announced",
+     "reason": "not stated"
+    },
+    {
+     "field": "licence",
+     "reason": "not stated"
+    },
+    {
+     "field": "input_modalities",
+     "reason": "not stated"
+    }
+   ],
+   "notes": [
+    "status via changelog 2026-10-08 (deprecated, routed to 3.8 Flash)"
+   ]
+  },
+  {
+   "model_id": "google__gemini-3-8-flash",
+   "confirmed": [
+    "announced",
+    "first_available",
+    "general_availability",
+    "api_available",
+    "count_date",
+    "context_window_tokens",
+    "max_output_tokens",
+    "input_usd_per_1m_tokens",
+    "cached_input_usd_per_1m_tokens",
+    "output_usd_per_1m_tokens",
+    "input_modalities"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "status",
+     "reason": "page says no shutdown announced; 'active' not stated"
+    },
+    {
+     "field": "licence",
+     "reason": "not stated"
+    }
+   ],
+   "notes": [
+    "price is promo through 2026-12-31 ($1.50/$7.50 regular, from 2027-01-01 per pricing page and model card)"
+   ]
+  },
+  {
+   "model_id": "meta__llama-2-7b-13b-70b",
+   "confirmed": [
+    "announced",
+    "first_available",
+    "open_weights",
+    "count_date"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "status",
+     "reason": "no vendor page states the model's lifecycle status (legacy/active)"
+    },
+    {
+     "field": "licence",
+     "reason": "page does not name the licence (only describes terms generally); page says only free for research and commercial use"
+    },
+    {
+     "field": "architecture",
+     "reason": "page does not state architecture"
+    },
+    {
+     "field": "input_modalities",
+     "reason": "page does not state modalities"
+    }
+   ]
+  },
+  {
+   "model_id": "meta__llama-3-8b-70b",
+   "confirmed": [
+    "announced",
+    "first_available",
+    "count_date",
+    "input_modalities"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "open_weights",
+     "reason": "page says 'available for broad use' and lists future platforms, but does not explicitly say weights are downloadable"
+    },
+    {
+     "field": "context_window_tokens",
+     "reason": "page states training sequence length of 8,192 tokens, not a context window"
+    },
+    {
+     "field": "status",
+     "reason": "no vendor page states the model's lifecycle status (legacy/active)"
+    },
+    {
+     "field": "licence",
+     "reason": "page does not name the licence (only describes terms generally)"
+    },
+    {
+     "field": "architecture",
+     "reason": "page says decoder-only transformer with GQA; word 'dense' not used"
+    }
+   ]
+  },
+  {
+   "model_id": "meta__llama-3-1-8b-70b-405b",
+   "confirmed": [
+    "announced",
+    "first_available",
+    "open_weights",
+    "count_date",
+    "context_window_tokens",
+    "params_total_billions",
+    "architecture"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "status",
+     "reason": "no vendor page states the model's lifecycle status (legacy/active)"
+    },
+    {
+     "field": "licence",
+     "reason": "page does not name the licence (only describes terms generally); page mentions licence changes only"
+    },
+    {
+     "field": "params_active_billions",
+     "reason": "page does not state active params (only that it is not MoE)"
+    },
+    {
+     "field": "input_modalities",
+     "reason": "page does not state input modalities (only mentions additional modalities as future work)"
+    }
+   ]
+  },
+  {
+   "model_id": "meta__llama-3-2-1b-3b-text-11b-90b-vision",
+   "confirmed": [
+    "announced",
+    "first_available",
+    "open_weights",
+    "count_date",
+    "params_total_billions",
+    "input_modalities"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "status",
+     "reason": "no vendor page states the model's lifecycle status (legacy/active)"
+    },
+    {
+     "field": "context_window_tokens",
+     "reason": "page states 128K only for the 1B and 3B models; not for 11B/90B vision models"
+    },
+    {
+     "field": "licence",
+     "reason": "page points to an acceptable use policy for EU multimodal availability but does not name the licence"
+    },
+    {
+     "field": "params_active_billions",
+     "reason": "page does not state active params"
+    },
+    {
+     "field": "architecture",
+     "reason": "page does not state dense/MoE (only that vision models use a new architecture)"
+    }
+   ]
+  },
+  {
+   "model_id": "meta__llama-3-3-70b",
+   "confirmed": [
+    "announced",
+    "first_available",
+    "count_date",
+    "context_window_tokens",
+    "knowledge_cutoff",
+    "licence",
+    "params_total_billions",
+    "input_modalities"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "open_weights",
+     "reason": "model card states release date but not that weights are openly downloadable"
+    },
+    {
+     "field": "status",
+     "reason": "no vendor page states the model's lifecycle status (legacy/active)"
+    },
+    {
+     "field": "params_active_billions",
+     "reason": "card does not state active params"
+    },
+    {
+     "field": "architecture",
+     "reason": "card says 'optimized transformer'; word 'dense' not used"
+    }
+   ]
+  },
+  {
+   "model_id": "meta__llama-4-maverick",
+   "confirmed": [
+    "announced",
+    "first_available",
+    "open_weights",
+    "count_date",
+    "params_total_billions",
+    "params_active_billions",
+    "architecture",
+    "input_modalities"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "status",
+     "reason": "no vendor page states the model's lifecycle status (legacy/active)"
+    },
+    {
+     "field": "licence",
+     "reason": "page does not name the licence (only describes terms generally)"
+    }
+   ]
+  },
+  {
+   "model_id": "meta__llama-4-scout",
+   "confirmed": [
+    "announced",
+    "first_available",
+    "open_weights",
+    "count_date",
+    "params_total_billions",
+    "params_active_billions",
+    "architecture",
+    "input_modalities",
+    "context_window_tokens"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "status",
+     "reason": "no vendor page states the model's lifecycle status (legacy/active)"
+    },
+    {
+     "field": "licence",
+     "reason": "page does not name the licence (only describes terms generally)"
+    }
+   ]
+  },
+  {
+   "model_id": "meta__muse-spark",
+   "confirmed": [
+    "announced",
+    "first_available",
+    "count_date",
+    "input_modalities"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "general_availability",
+     "reason": "page says available today on meta.ai and Meta AI app with only a private API preview; does not use the term general availability, and safety report (dated 2026-05-26) refers to controlled deployments before 'broad availability'"
+    },
+    {
+     "field": "status",
+     "reason": "no vendor page states the model's lifecycle status (legacy/active)"
+    },
+    {
+     "field": "licence",
+     "reason": "pages do not state a licence (safety report says 1P deployment without API)"
+    }
+   ]
+  },
+  {
+   "model_id": "meta__muse-spark-1-1",
+   "confirmed": [
+    "announced",
+    "first_available",
+    "api_available",
+    "input_modalities"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "context_window_tokens",
+     "reason": "page says '1 million tokens', not an exact 1,048,576"
+    },
+    {
+     "field": "input_usd_per_1m_tokens",
+     "reason": "no pricing on the vendor page or model card"
+    },
+    {
+     "field": "output_usd_per_1m_tokens",
+     "reason": "no pricing on the vendor page or model card"
+    },
+    {
+     "field": "status",
+     "reason": "no vendor page states the model's lifecycle status (legacy/active)"
+    },
+    {
+     "field": "licence",
+     "reason": "page does not state a licence"
+    }
+   ]
+  },
+  {
+   "model_id": "meta__muse-spark-1-2",
+   "confirmed": [
+    "announced",
+    "first_available",
+    "api_available"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "context_window_tokens",
+     "reason": "page does not state context window"
+    },
+    {
+     "field": "status",
+     "reason": "no vendor page states the model's lifecycle status (legacy/active)"
+    },
+    {
+     "field": "licence",
+     "reason": "page does not state a licence"
+    },
+    {
+     "field": "input_modalities",
+     "reason": "page does not state modalities"
+    }
+   ]
+  },
+  {
+   "model_id": "meta__muse-glimmer-30b",
+   "confirmed": [
+    "announced",
+    "first_available",
+    "open_weights",
+    "count_date",
+    "licence",
+    "params_total_billions",
+    "input_modalities"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "context_window_tokens",
+     "reason": "page does not state context window"
+    },
+    {
+     "field": "status",
+     "reason": "no vendor page states the model's lifecycle status (legacy/active)"
+    },
+    {
+     "field": "params_active_billions",
+     "reason": "page does not state active params"
+    },
+    {
+     "field": "architecture",
+     "reason": "page says 'compact architecture'; dense not stated"
+    }
+   ]
+  },
+  {
+   "model_id": "meta__muse-spark-1-3",
+   "confirmed": [
+    "announced",
+    "first_available",
+    "api_available"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "context_window_tokens",
+     "reason": "page does not state context window"
+    },
+    {
+     "field": "status",
+     "reason": "no vendor page states the model's lifecycle status (legacy/active)"
+    },
+    {
+     "field": "licence",
+     "reason": "page does not state a licence"
+    },
+    {
+     "field": "input_modalities",
+     "reason": "page and eval report excerpt do not state modalities"
+    }
+   ]
+  },
+  {
+   "model_id": "mistral__mistral-7b",
+   "confirmed": [
+    "announced",
+    "first_available",
+    "open_weights",
+    "count_date"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "api_available",
+     "reason": "page does not state an API availability date"
+    },
+    {
+     "field": "status",
+     "reason": "page does not state lifecycle status"
+    },
+    {
+     "field": "retired_on",
+     "reason": "page does not state a retirement date"
+    },
+    {
+     "field": "context_window_tokens",
+     "reason": "vendor page excerpt does not state this field"
+    },
+    {
+     "field": "licence",
+     "reason": "vendor page excerpt does not state this field"
+    },
+    {
+     "field": "params_total_billions",
+     "reason": "vendor page excerpt does not state this field"
+    },
+    {
+     "field": "params_active_billions",
+     "reason": "vendor page excerpt does not state this field"
+    },
+    {
+     "field": "architecture",
+     "reason": "vendor page excerpt does not state this field"
+    },
+    {
+     "field": "input_modalities",
+     "reason": "vendor page excerpt does not state this field"
+    }
+   ]
+  },
+  {
+   "model_id": "mistral__mistral-medium-mistral-medium-2312",
+   "confirmed": [
+    "announced",
+    "first_available",
+    "api_available"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "status",
+     "reason": "page does not state lifecycle status"
+    },
+    {
+     "field": "retired_on",
+     "reason": "la-plateforme page does not state retirement; changelog only says endpoint will be deprecated in three months from Feb 26"
+    },
+    {
+     "field": "context_window_tokens",
+     "reason": "vendor page excerpt does not state this field"
+    },
+    {
+     "field": "licence",
+     "reason": "vendor page excerpt does not state this field"
+    },
+    {
+     "field": "input_modalities",
+     "reason": "vendor page excerpt does not state this field"
+    }
+   ]
+  },
+  {
+   "model_id": "mistral__mixtral-8x7b",
+   "confirmed": [
+    "announced",
+    "first_available",
+    "open_weights",
+    "count_date"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "api_available",
+     "reason": "page does not state an API availability date"
+    },
+    {
+     "field": "status",
+     "reason": "page does not state lifecycle status"
+    },
+    {
+     "field": "retired_on",
+     "reason": "page does not state a retirement date"
+    },
+    {
+     "field": "context_window_tokens",
+     "reason": "vendor page excerpt does not state this field"
+    },
+    {
+     "field": "licence",
+     "reason": "vendor page excerpt does not state this field"
+    },
+    {
+     "field": "params_total_billions",
+     "reason": "vendor page excerpt does not state this field"
+    },
+    {
+     "field": "params_active_billions",
+     "reason": "vendor page excerpt does not state this field"
+    },
+    {
+     "field": "architecture",
+     "reason": "vendor page excerpt does not state this field"
+    },
+    {
+     "field": "input_modalities",
+     "reason": "vendor page excerpt does not state this field"
+    }
+   ]
+  },
+  {
+   "model_id": "mistral__mistral-large-mistral-large-2402",
+   "confirmed": [
+    "announced",
+    "first_available",
+    "api_available",
+    "count_date",
+    "context_window_tokens"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "general_availability",
+     "reason": "page gives a release date only, not a separate general-availability date"
+    },
+    {
+     "field": "status",
+     "reason": "page does not state lifecycle status"
+    },
+    {
+     "field": "retired_on",
+     "reason": "page does not state a retirement date"
+    },
+    {
+     "field": "licence",
+     "reason": "vendor page excerpt does not state this field"
+    },
+    {
+     "field": "input_modalities",
+     "reason": "vendor page excerpt does not state this field"
+    }
+   ]
+  },
+  {
+   "model_id": "mistral__mistral-small-mistral-small-2402",
+   "confirmed": [
+    "announced",
+    "first_available",
+    "api_available",
+    "count_date"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "general_availability",
+     "reason": "page gives a release date only, not a separate general-availability date"
+    },
+    {
+     "field": "status",
+     "reason": "page does not state lifecycle status"
+    },
+    {
+     "field": "retired_on",
+     "reason": "page does not state a retirement date"
+    },
+    {
+     "field": "context_window_tokens",
+     "reason": "vendor page excerpt does not state this field"
+    },
+    {
+     "field": "licence",
+     "reason": "vendor page excerpt does not state this field"
+    },
+    {
+     "field": "input_modalities",
+     "reason": "vendor page excerpt does not state this field"
+    }
+   ]
+  },
+  {
+   "model_id": "mistral__mixtral-8x22b",
+   "confirmed": [
+    "announced",
+    "first_available",
+    "open_weights",
+    "count_date"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "api_available",
+     "reason": "page does not state an API availability date"
+    },
+    {
+     "field": "status",
+     "reason": "page does not state lifecycle status"
+    },
+    {
+     "field": "retired_on",
+     "reason": "page does not state a retirement date"
+    },
+    {
+     "field": "context_window_tokens",
+     "reason": "vendor page excerpt does not state this field"
+    },
+    {
+     "field": "licence",
+     "reason": "vendor page excerpt does not state this field"
+    },
+    {
+     "field": "params_total_billions",
+     "reason": "vendor page excerpt does not state this field"
+    },
+    {
+     "field": "params_active_billions",
+     "reason": "vendor page excerpt does not state this field"
+    },
+    {
+     "field": "architecture",
+     "reason": "vendor page excerpt does not state this field"
+    },
+    {
+     "field": "input_modalities",
+     "reason": "vendor page excerpt does not state this field"
+    }
+   ]
+  },
+  {
+   "model_id": "mistral__mistral-nemo-12b",
+   "confirmed": [
+    "announced",
+    "first_available",
+    "api_available",
+    "open_weights",
+    "count_date",
+    "context_window_tokens",
+    "licence",
+    "params_total_billions"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "general_availability",
+     "reason": "page gives a release date only, not a separate general-availability date"
+    },
+    {
+     "field": "status",
+     "reason": "page does not state lifecycle status"
+    },
+    {
+     "field": "retired_on",
+     "reason": "page does not state a retirement date"
+    },
+    {
+     "field": "params_active_billions",
+     "reason": "vendor page excerpt does not state this field"
+    },
+    {
+     "field": "architecture",
+     "reason": "vendor page excerpt does not state this field"
+    },
+    {
+     "field": "input_modalities",
+     "reason": "vendor page excerpt does not state this field"
+    }
+   ]
+  },
+  {
+   "model_id": "mistral__mistral-large-2-24-07",
+   "confirmed": [
+    "announced",
+    "first_available",
+    "api_available",
+    "count_date",
+    "status",
+    "retired_on",
+    "context_window_tokens",
+    "licence",
+    "params_total_billions",
+    "params_active_billions"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "general_availability",
+     "reason": "page gives a release date only, not a separate general-availability date"
+    },
+    {
+     "field": "open_weights",
+     "reason": "page does not state an open-weights release date"
+    },
+    {
+     "field": "architecture",
+     "reason": "vendor page excerpt does not state this field"
+    },
+    {
+     "field": "input_modalities",
+     "reason": "vendor page excerpt does not state this field"
+    }
+   ]
+  },
+  {
+   "model_id": "mistral__pixtral-12b",
+   "confirmed": [
+    "announced",
+    "first_available",
+    "open_weights",
+    "count_date",
+    "api_available"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "general_availability",
+     "reason": "page gives a release date only, not a separate general-availability date"
+    },
+    {
+     "field": "status",
+     "reason": "page does not state lifecycle status"
+    },
+    {
+     "field": "retired_on",
+     "reason": "page does not state a retirement date"
+    },
+    {
+     "field": "context_window_tokens",
+     "reason": "vendor page excerpt does not state this field"
+    },
+    {
+     "field": "licence",
+     "reason": "vendor page excerpt does not state this field"
+    },
+    {
+     "field": "params_total_billions",
+     "reason": "vendor page excerpt does not state this field"
+    },
+    {
+     "field": "params_active_billions",
+     "reason": "vendor page excerpt does not state this field"
+    },
+    {
+     "field": "architecture",
+     "reason": "vendor page excerpt does not state this field"
+    },
+    {
+     "field": "input_modalities",
+     "reason": "vendor page excerpt does not state this field"
+    }
+   ]
+  },
+  {
+   "model_id": "mistral__mistral-small-v24-09-small-2-0",
+   "confirmed": [
+    "announced",
+    "first_available",
+    "api_available",
+    "count_date"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "general_availability",
+     "reason": "page gives a release date only, not a separate general-availability date"
+    },
+    {
+     "field": "open_weights",
+     "reason": "page does not state an open-weights release date"
+    },
+    {
+     "field": "status",
+     "reason": "page does not state lifecycle status"
+    },
+    {
+     "field": "retired_on",
+     "reason": "page does not state a retirement date"
+    },
+    {
+     "field": "context_window_tokens",
+     "reason": "vendor page excerpt does not state this field"
+    },
+    {
+     "field": "licence",
+     "reason": "vendor page excerpt does not state this field"
+    },
+    {
+     "field": "params_total_billions",
+     "reason": "vendor page excerpt does not state this field"
+    },
+    {
+     "field": "params_active_billions",
+     "reason": "vendor page excerpt does not state this field"
+    },
+    {
+     "field": "architecture",
+     "reason": "vendor page excerpt does not state this field"
+    },
+    {
+     "field": "input_modalities",
+     "reason": "vendor page excerpt does not state this field"
+    }
+   ]
+  },
+  {
+   "model_id": "mistral__ministral-3b",
+   "confirmed": [
+    "first_available",
+    "api_available",
+    "count_date"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "announced",
+     "reason": "vendor page excerpt does not state this field"
+    },
+    {
+     "field": "general_availability",
+     "reason": "page gives a release date only, not a separate general-availability date"
+    },
+    {
+     "field": "status",
+     "reason": "page does not state lifecycle status"
+    },
+    {
+     "field": "retired_on",
+     "reason": "page does not state a retirement date"
+    },
+    {
+     "field": "context_window_tokens",
+     "reason": "vendor page excerpt does not state this field"
+    },
+    {
+     "field": "licence",
+     "reason": "vendor page excerpt does not state this field"
+    },
+    {
+     "field": "params_total_billions",
+     "reason": "vendor page excerpt does not state this field"
+    },
+    {
+     "field": "params_active_billions",
+     "reason": "vendor page excerpt does not state this field"
+    },
+    {
+     "field": "architecture",
+     "reason": "vendor page excerpt does not state this field"
+    },
+    {
+     "field": "input_modalities",
+     "reason": "vendor page excerpt does not state this field"
+    }
+   ]
+  },
+  {
+   "model_id": "mistral__ministral-8b",
+   "confirmed": [
+    "first_available",
+    "api_available",
+    "count_date"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "announced",
+     "reason": "vendor page excerpt does not state this field"
+    },
+    {
+     "field": "general_availability",
+     "reason": "page gives a release date only, not a separate general-availability date"
+    },
+    {
+     "field": "status",
+     "reason": "page does not state lifecycle status"
+    },
+    {
+     "field": "retired_on",
+     "reason": "page does not state a retirement date"
+    },
+    {
+     "field": "context_window_tokens",
+     "reason": "vendor page excerpt does not state this field"
+    },
+    {
+     "field": "licence",
+     "reason": "vendor page excerpt does not state this field"
+    },
+    {
+     "field": "params_total_billions",
+     "reason": "vendor page excerpt does not state this field"
+    },
+    {
+     "field": "params_active_billions",
+     "reason": "vendor page excerpt does not state this field"
+    },
+    {
+     "field": "architecture",
+     "reason": "vendor page excerpt does not state this field"
+    },
+    {
+     "field": "input_modalities",
+     "reason": "vendor page excerpt does not state this field"
+    }
+   ]
+  },
+  {
+   "model_id": "mistral__mistral-large-2-1-24-11",
+   "confirmed": [
+    "announced",
+    "first_available",
+    "api_available",
+    "count_date"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "general_availability",
+     "reason": "page gives a release date only, not a separate general-availability date"
+    },
+    {
+     "field": "open_weights",
+     "reason": "page does not state an open-weights release date"
+    },
+    {
+     "field": "status",
+     "reason": "page does not state lifecycle status"
+    },
+    {
+     "field": "retired_on",
+     "reason": "page does not state a retirement date"
+    },
+    {
+     "field": "context_window_tokens",
+     "reason": "vendor page excerpt does not state this field"
+    },
+    {
+     "field": "licence",
+     "reason": "vendor page excerpt does not state this field"
+    },
+    {
+     "field": "params_total_billions",
+     "reason": "vendor page excerpt does not state this field"
+    },
+    {
+     "field": "params_active_billions",
+     "reason": "vendor page excerpt does not state this field"
+    },
+    {
+     "field": "architecture",
+     "reason": "vendor page excerpt does not state this field"
+    },
+    {
+     "field": "input_modalities",
+     "reason": "vendor page excerpt does not state this field"
+    }
+   ]
+  },
+  {
+   "model_id": "mistral__pixtral-large",
+   "confirmed": [
+    "announced",
+    "first_available",
+    "api_available",
+    "count_date"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "general_availability",
+     "reason": "page gives a release date only, not a separate general-availability date"
+    },
+    {
+     "field": "open_weights",
+     "reason": "page does not state an open-weights release date"
+    },
+    {
+     "field": "status",
+     "reason": "page does not state lifecycle status"
+    },
+    {
+     "field": "retired_on",
+     "reason": "page does not state a retirement date"
+    },
+    {
+     "field": "context_window_tokens",
+     "reason": "vendor page excerpt does not state this field"
+    },
+    {
+     "field": "licence",
+     "reason": "vendor page excerpt does not state this field"
+    },
+    {
+     "field": "params_total_billions",
+     "reason": "vendor page excerpt does not state this field"
+    },
+    {
+     "field": "params_active_billions",
+     "reason": "vendor page excerpt does not state this field"
+    },
+    {
+     "field": "architecture",
+     "reason": "vendor page excerpt does not state this field"
+    },
+    {
+     "field": "input_modalities",
+     "reason": "vendor page excerpt does not state this field"
+    }
+   ]
+  },
+  {
+   "model_id": "mistral__mistral-small-3",
+   "confirmed": [
+    "announced",
+    "first_available",
+    "api_available",
+    "count_date"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "general_availability",
+     "reason": "page gives a release date only, not a separate general-availability date"
+    },
+    {
+     "field": "open_weights",
+     "reason": "page does not state an open-weights release date"
+    },
+    {
+     "field": "status",
+     "reason": "page does not state lifecycle status"
+    },
+    {
+     "field": "retired_on",
+     "reason": "page does not state a retirement date"
+    },
+    {
+     "field": "context_window_tokens",
+     "reason": "vendor page excerpt does not state this field"
+    },
+    {
+     "field": "licence",
+     "reason": "vendor page excerpt does not state this field"
+    },
+    {
+     "field": "params_total_billions",
+     "reason": "vendor page excerpt does not state this field"
+    },
+    {
+     "field": "params_active_billions",
+     "reason": "vendor page excerpt does not state this field"
+    },
+    {
+     "field": "architecture",
+     "reason": "vendor page excerpt does not state this field"
+    },
+    {
+     "field": "input_modalities",
+     "reason": "vendor page excerpt does not state this field"
+    }
+   ]
+  },
+  {
+   "model_id": "mistral__mistral-saba",
+   "confirmed": [
+    "announced",
+    "first_available",
+    "api_available",
+    "count_date",
+    "params_total_billions"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "general_availability",
+     "reason": "page gives a release date only, not a separate general-availability date"
+    },
+    {
+     "field": "status",
+     "reason": "page does not state lifecycle status"
+    },
+    {
+     "field": "retired_on",
+     "reason": "page does not state a retirement date"
+    },
+    {
+     "field": "context_window_tokens",
+     "reason": "vendor page excerpt does not state this field"
+    },
+    {
+     "field": "licence",
+     "reason": "vendor page excerpt does not state this field"
+    },
+    {
+     "field": "params_active_billions",
+     "reason": "vendor page excerpt does not state this field"
+    },
+    {
+     "field": "architecture",
+     "reason": "vendor page excerpt does not state this field"
+    },
+    {
+     "field": "input_modalities",
+     "reason": "vendor page excerpt does not state this field"
+    }
+   ]
+  },
+  {
+   "model_id": "mistral__mistral-small-3-1",
+   "confirmed": [
+    "announced",
+    "first_available",
+    "api_available",
+    "open_weights",
+    "count_date",
+    "context_window_tokens",
+    "licence"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "general_availability",
+     "reason": "page gives a release date only, not a separate general-availability date"
+    },
+    {
+     "field": "status",
+     "reason": "page does not state lifecycle status"
+    },
+    {
+     "field": "retired_on",
+     "reason": "page does not state a retirement date"
+    },
+    {
+     "field": "params_total_billions",
+     "reason": "vendor page excerpt does not state this field"
+    },
+    {
+     "field": "params_active_billions",
+     "reason": "vendor page excerpt does not state this field"
+    },
+    {
+     "field": "architecture",
+     "reason": "vendor page excerpt does not state this field"
+    },
+    {
+     "field": "input_modalities",
+     "reason": "vendor page excerpt does not state this field"
+    }
+   ]
+  },
+  {
+   "model_id": "mistral__mistral-medium-3",
+   "confirmed": [
+    "announced",
+    "first_available",
+    "api_available",
+    "count_date",
+    "input_usd_per_1m_tokens",
+    "output_usd_per_1m_tokens"
+   ],
+   "discrepancies": [
+    {
+     "field": "status",
+     "dataset": "retired",
+     "source": "Active (Mistral Medium 3.0 row in lifecycle table)",
+     "url": "https://legal.mistral.ai/ai-governance/models/mistral-medium-3"
+    },
+    {
+     "field": "retired_on",
+     "dataset": "2026-08-31",
+     "source": "N/A (Mistral Medium 3.0 row in lifecycle table)",
+     "url": "https://legal.mistral.ai/ai-governance/models/mistral-medium-3"
+    }
+   ],
+   "unverifiable": [
+    {
+     "field": "general_availability",
+     "reason": "page gives a release date only, not a separate general-availability date"
+    },
+    {
+     "field": "context_window_tokens",
+     "reason": "vendor page excerpt does not state this field"
+    },
+    {
+     "field": "licence",
+     "reason": "vendor page excerpt does not state this field"
+    },
+    {
+     "field": "input_modalities",
+     "reason": "vendor page excerpt does not state this field"
+    }
+   ]
+  },
+  {
+   "model_id": "mistral__magistral-medium-1-0",
+   "confirmed": [
+    "announced",
+    "first_available",
+    "api_available",
+    "reasoning_mode"
+   ],
+   "discrepancies": [
+    {
+     "field": "retired_on",
+     "dataset": "2025-11-30",
+     "source": "2025-10-31 (lifecycle table, Magistral Medium 1.0)",
+     "url": "https://legal.mistral.ai/ai-governance/models/magistral-medium-1"
+    },
+    {
+     "field": "status",
+     "dataset": "retired",
+     "source": "Active (status column of lifecycle table, despite retirement date 2025-10-31)",
+     "url": "https://legal.mistral.ai/ai-governance/models/magistral-medium-1"
+    }
+   ],
+   "unverifiable": [
+    {
+     "field": "input_usd_per_1m_tokens",
+     "reason": "vendor page excerpt does not state this field"
+    },
+    {
+     "field": "output_usd_per_1m_tokens",
+     "reason": "vendor page excerpt does not state this field"
+    },
+    {
+     "field": "licence",
+     "reason": "vendor page excerpt does not state this field"
+    },
+    {
+     "field": "input_modalities",
+     "reason": "vendor page excerpt does not state this field"
+    }
+   ]
+  },
+  {
+   "model_id": "mistral__magistral-small-1-0",
+   "confirmed": [
+    "announced",
+    "first_available",
+    "open_weights",
+    "count_date",
+    "licence",
+    "params_total_billions",
+    "reasoning_mode"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "general_availability",
+     "reason": "page gives a release date only, not a separate general-availability date"
+    },
+    {
+     "field": "api_available",
+     "reason": "page does not state an API availability date"
+    },
+    {
+     "field": "status",
+     "reason": "page does not state lifecycle status"
+    },
+    {
+     "field": "retired_on",
+     "reason": "page does not state a retirement date"
+    },
+    {
+     "field": "input_usd_per_1m_tokens",
+     "reason": "vendor page excerpt does not state this field"
+    },
+    {
+     "field": "output_usd_per_1m_tokens",
+     "reason": "vendor page excerpt does not state this field"
+    },
+    {
+     "field": "params_active_billions",
+     "reason": "vendor page excerpt does not state this field"
+    },
+    {
+     "field": "architecture",
+     "reason": "vendor page excerpt does not state this field"
+    },
+    {
+     "field": "input_modalities",
+     "reason": "vendor page excerpt does not state this field"
+    }
+   ]
+  },
+  {
+   "model_id": "mistral__mistral-small-3-2",
+   "confirmed": [
+    "announced",
+    "first_available",
+    "open_weights",
+    "count_date",
+    "api_available",
+    "context_window_tokens",
+    "input_usd_per_1m_tokens",
+    "output_usd_per_1m_tokens",
+    "licence",
+    "params_total_billions",
+    "input_modalities",
+    "retired_on"
+   ],
+   "discrepancies": [
+    {
+     "field": "status",
+     "dataset": "retired",
+     "source": "Deprecated (retirement date 2026-07-31 already passed as of 2026-11-05)",
+     "url": "https://docs.mistral.ai/models/mistral-small-3-2-25-06.md"
+    }
+   ],
+   "unverifiable": [
+    {
+     "field": "general_availability",
+     "reason": "page gives a release date only, not a separate general-availability date"
+    },
+    {
+     "field": "params_active_billions",
+     "reason": "vendor page excerpt does not state this field"
+    },
+    {
+     "field": "architecture",
+     "reason": "vendor page excerpt does not state this field"
+    }
+   ]
+  },
+  {
+   "model_id": "mistral__magistral-medium-1-1",
+   "confirmed": [
+    "announced",
+    "first_available",
+    "api_available",
+    "count_date"
+   ],
+   "discrepancies": [
+    {
+     "field": "retired_on",
+     "dataset": "2025-11-30",
+     "source": "2025-10-31 (lifecycle table, Magistral Medium 1.1; family card, not the row's own page)",
+     "url": "https://legal.mistral.ai/ai-governance/models/magistral-medium-1"
+    },
+    {
+     "field": "status",
+     "dataset": "retired",
+     "source": "Active (status column of lifecycle table)",
+     "url": "https://legal.mistral.ai/ai-governance/models/magistral-medium-1"
+    }
+   ],
+   "unverifiable": [
+    {
+     "field": "general_availability",
+     "reason": "page gives a release date only, not a separate general-availability date"
+    },
+    {
+     "field": "licence",
+     "reason": "vendor page excerpt does not state this field"
+    },
+    {
+     "field": "input_modalities",
+     "reason": "vendor page excerpt does not state this field"
+    },
+    {
+     "field": "reasoning_mode",
+     "reason": "vendor page excerpt does not state this field"
+    }
+   ]
+  },
+  {
+   "model_id": "mistral__magistral-small-1-1",
+   "confirmed": [
+    "announced",
+    "first_available",
+    "api_available",
+    "count_date"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "general_availability",
+     "reason": "page gives a release date only, not a separate general-availability date"
+    },
+    {
+     "field": "open_weights",
+     "reason": "page does not state an open-weights release date"
+    },
+    {
+     "field": "status",
+     "reason": "page does not state lifecycle status"
+    },
+    {
+     "field": "retired_on",
+     "reason": "page does not state a retirement date"
+    },
+    {
+     "field": "licence",
+     "reason": "vendor page excerpt does not state this field"
+    },
+    {
+     "field": "params_total_billions",
+     "reason": "vendor page excerpt does not state this field"
+    },
+    {
+     "field": "params_active_billions",
+     "reason": "vendor page excerpt does not state this field"
+    },
+    {
+     "field": "architecture",
+     "reason": "vendor page excerpt does not state this field"
+    },
+    {
+     "field": "input_modalities",
+     "reason": "vendor page excerpt does not state this field"
+    },
+    {
+     "field": "reasoning_mode",
+     "reason": "vendor page excerpt does not state this field"
+    }
+   ]
+  },
+  {
+   "model_id": "mistral__mistral-medium-3-1",
+   "confirmed": [
+    "announced",
+    "first_available",
+    "count_date",
+    "context_window_tokens",
+    "input_usd_per_1m_tokens",
+    "output_usd_per_1m_tokens",
+    "input_modalities",
+    "retired_on"
+   ],
+   "discrepancies": [
+    {
+     "field": "status",
+     "dataset": "retired",
+     "source": "Deprecated (retirement date 2026-08-31 already passed as of 2026-11-05; legal card lifecycle table says Active/N/A)",
+     "url": "https://docs.mistral.ai/models/mistral-medium-3-1-25-08.md"
+    }
+   ],
+   "unverifiable": [
+    {
+     "field": "general_availability",
+     "reason": "page gives a release date only, not a separate general-availability date"
+    },
+    {
+     "field": "api_available",
+     "reason": "page does not state an API availability date"
+    },
+    {
+     "field": "licence",
+     "reason": "vendor page excerpt does not state this field"
+    }
+   ]
+  },
+  {
+   "model_id": "mistral__magistral-medium-1-2",
+   "confirmed": [
+    "api_available",
+    "context_window_tokens",
+    "input_usd_per_1m_tokens",
+    "output_usd_per_1m_tokens",
+    "input_modalities",
+    "reasoning_mode",
+    "retired_on"
+   ],
+   "discrepancies": [
+    {
+     "field": "announced",
+     "dataset": "2025-09-17",
+     "source": "2025-09-18 (docs \"Release date\" and legal lifecycle table; changelog lists Sept 17 for the same release)",
+     "url": "https://docs.mistral.ai/models/magistral-medium-1-2-25-09.md"
+    },
+    {
+     "field": "first_available",
+     "dataset": "2025-09-17",
+     "source": "2025-09-18 (docs \"Release date\" and legal lifecycle table; changelog lists Sept 17 for the same release)",
+     "url": "https://docs.mistral.ai/models/magistral-medium-1-2-25-09.md"
+    },
+    {
+     "field": "count_date",
+     "dataset": "2025-09-17",
+     "source": "2025-09-18 (docs \"Release date\" and legal lifecycle table; changelog lists Sept 17 for the same release)",
+     "url": "https://docs.mistral.ai/models/magistral-medium-1-2-25-09.md"
+    },
+    {
+     "field": "status",
+     "dataset": "retired",
+     "source": "Deprecated (retirement date 2026-07-31 already passed as of 2026-11-05)",
+     "url": "https://docs.mistral.ai/models/magistral-medium-1-2-25-09.md"
+    }
+   ],
+   "unverifiable": [
+    {
+     "field": "general_availability",
+     "reason": "page gives a release date only, not a separate general-availability date"
+    },
+    {
+     "field": "licence",
+     "reason": "vendor page excerpt does not state this field"
+    }
+   ]
+  },
+  {
+   "model_id": "mistral__magistral-small-1-2",
+   "confirmed": [
+    "api_available",
+    "context_window_tokens",
+    "input_usd_per_1m_tokens",
+    "output_usd_per_1m_tokens",
+    "licence",
+    "params_total_billions",
+    "input_modalities",
+    "reasoning_mode",
+    "retired_on"
+   ],
+   "discrepancies": [
+    {
+     "field": "announced",
+     "dataset": "2025-09-17",
+     "source": "2025-09-18 (docs \"Release date\"; changelog lists Sept 17 for the same release)",
+     "url": "https://docs.mistral.ai/models/magistral-small-1-2-25-09.md"
+    },
+    {
+     "field": "first_available",
+     "dataset": "2025-09-17",
+     "source": "2025-09-18 (docs \"Release date\"; changelog lists Sept 17 for the same release)",
+     "url": "https://docs.mistral.ai/models/magistral-small-1-2-25-09.md"
+    },
+    {
+     "field": "open_weights",
+     "dataset": "2025-09-17",
+     "source": "2025-09-18 (docs \"Release date\"; changelog lists Sept 17 for the same release)",
+     "url": "https://docs.mistral.ai/models/magistral-small-1-2-25-09.md"
+    },
+    {
+     "field": "count_date",
+     "dataset": "2025-09-17",
+     "source": "2025-09-18 (docs \"Release date\"; changelog lists Sept 17 for the same release)",
+     "url": "https://docs.mistral.ai/models/magistral-small-1-2-25-09.md"
+    },
+    {
+     "field": "status",
+     "dataset": "retired",
+     "source": "Deprecated (retirement date 2026-07-31 already passed as of 2026-11-05)",
+     "url": "https://docs.mistral.ai/models/magistral-small-1-2-25-09.md"
+    }
+   ],
+   "unverifiable": [
+    {
+     "field": "general_availability",
+     "reason": "page gives a release date only, not a separate general-availability date"
+    },
+    {
+     "field": "params_active_billions",
+     "reason": "vendor page excerpt does not state this field"
+    },
+    {
+     "field": "architecture",
+     "reason": "vendor page excerpt does not state this field"
+    }
+   ]
+  },
+  {
+   "model_id": "mistral__ministral-3-14b",
+   "confirmed": [
+    "announced",
+    "first_available",
+    "api_available",
+    "open_weights",
+    "count_date",
+    "licence",
+    "params_total_billions",
+    "params_active_billions",
+    "architecture",
+    "input_modalities",
+    "status"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "general_availability",
+     "reason": "page gives a release date only, not a separate general-availability date"
+    },
+    {
+     "field": "context_window_tokens",
+     "reason": "vendor page excerpt does not state this field"
+    },
+    {
+     "field": "input_usd_per_1m_tokens",
+     "reason": "vendor page excerpt does not state this field"
+    },
+    {
+     "field": "output_usd_per_1m_tokens",
+     "reason": "vendor page excerpt does not state this field"
+    }
+   ]
+  },
+  {
+   "model_id": "mistral__ministral-3-3b",
+   "confirmed": [
+    "announced",
+    "first_available",
+    "api_available",
+    "open_weights",
+    "count_date",
+    "licence",
+    "params_total_billions",
+    "params_active_billions",
+    "architecture",
+    "input_modalities",
+    "status"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "general_availability",
+     "reason": "page gives a release date only, not a separate general-availability date"
+    }
+   ]
+  },
+  {
+   "model_id": "mistral__ministral-3-8b",
+   "confirmed": [
+    "announced",
+    "first_available",
+    "api_available",
+    "open_weights",
+    "count_date",
+    "licence",
+    "params_total_billions",
+    "params_active_billions",
+    "architecture",
+    "input_modalities",
+    "status",
+    "input_usd_per_1m_tokens",
+    "output_usd_per_1m_tokens"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "general_availability",
+     "reason": "page gives a release date only, not a separate general-availability date"
+    }
+   ]
+  },
+  {
+   "model_id": "mistral__mistral-large-3",
+   "confirmed": [
+    "announced",
+    "first_available",
+    "api_available",
+    "open_weights",
+    "count_date",
+    "input_usd_per_1m_tokens",
+    "output_usd_per_1m_tokens",
+    "licence",
+    "params_total_billions",
+    "params_active_billions",
+    "architecture"
+   ],
+   "discrepancies": [
+    {
+     "field": "status",
+     "dataset": "deprecated",
+     "source": "Active (lifecycle table)",
+     "url": "https://legal.mistral.ai/ai-governance/models/mistral-large-3"
+    },
+    {
+     "field": "retired_on",
+     "dataset": "2027-04-30",
+     "source": "N/A (lifecycle table)",
+     "url": "https://legal.mistral.ai/ai-governance/models/mistral-large-3"
+    }
+   ],
+   "unverifiable": [
+    {
+     "field": "general_availability",
+     "reason": "page gives a release date only, not a separate general-availability date"
+    },
+    {
+     "field": "context_window_tokens",
+     "reason": "vendor page excerpt does not state this field"
+    },
+    {
+     "field": "input_modalities",
+     "reason": "vendor page excerpt does not state this field"
+    }
+   ]
+  },
+  {
+   "model_id": "mistral__mistral-small-4",
+   "confirmed": [
+    "announced",
+    "first_available",
+    "open_weights",
+    "count_date",
+    "context_window_tokens",
+    "input_usd_per_1m_tokens",
+    "output_usd_per_1m_tokens",
+    "licence",
+    "params_total_billions",
+    "params_active_billions",
+    "input_modalities",
+    "status"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "general_availability",
+     "reason": "page gives a release date only, not a separate general-availability date"
+    },
+    {
+     "field": "api_available",
+     "reason": "page does not state an API availability date"
+    },
+    {
+     "field": "architecture",
+     "reason": "vendor page excerpt does not state this field"
+    }
+   ]
+  },
+  {
+   "model_id": "mistral__mistral-medium-3-5",
+   "confirmed": [
+    "announced",
+    "count_date",
+    "open_weights",
+    "context_window_tokens",
+    "input_usd_per_1m_tokens",
+    "output_usd_per_1m_tokens",
+    "licence",
+    "params_total_billions",
+    "input_modalities",
+    "status",
+    "retired_on"
+   ],
+   "discrepancies": [
+    {
+     "field": "first_available",
+     "dataset": "2026-04-28",
+     "source": "2026-04-29 (legal lifecycle table for Medium family; docs page states 2026-04-28)",
+     "url": "https://legal.mistral.ai/ai-governance/models/mistral-medium-3"
+    }
+   ],
+   "unverifiable": [
+    {
+     "field": "general_availability",
+     "reason": "page gives a release date only, not a separate general-availability date"
+    },
+    {
+     "field": "api_available",
+     "reason": "page does not state an API availability date"
+    }
+   ]
+  },
+  {
+   "model_id": "mistral__mistral-large-4",
+   "confirmed": [
+    "announced",
+    "first_available",
+    "api_available",
+    "context_window_tokens",
+    "input_usd_per_1m_tokens",
+    "cached_input_usd_per_1m_tokens",
+    "output_usd_per_1m_tokens",
+    "licence",
+    "params_total_billions",
+    "params_active_billions",
+    "architecture",
+    "input_modalities"
+   ],
+   "discrepancies": [
+    {
+     "field": "status",
+     "dataset": "active",
+     "source": "Public Preview",
+     "url": "https://docs.mistral.ai/models/mistral-large-4-0.md"
+    }
+   ],
+   "unverifiable": [
+    {
+     "field": "open_weights",
+     "reason": "docs page lists weights but gives no weights date; technical documentation (Oct 6, 2026) says it will be updated on open-weights release and describes proprietary/bespoke licences"
+    },
+    {
+     "field": "count_date",
+     "reason": "derived from open-weights date 2026-10-29, which no fetched page states"
+    }
+   ]
+  },
+  {
+   "model_id": "openai__gpt-4",
+   "confirmed": [
+    "announced",
+    "first_available",
+    "api_available",
+    "status",
+    "retired_on",
+    "context_window_tokens",
+    "max_output_tokens",
+    "knowledge_cutoff",
+    "input_usd_per_1m_tokens",
+    "output_usd_per_1m_tokens",
+    "input_modalities"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "general_availability",
+     "reason": "DevDay page says GPT-4 GA in July 2023 but gives no day; vendor_page (launch post) predates GA"
+    },
+    {
+     "field": "count_date",
+     "reason": "GA day not stated on any fetched page"
+    },
+    {
+     "field": "licence",
+     "reason": "licence not stated on any fetched page (page does not say proprietary)"
+    }
+   ]
+  },
+  {
+   "model_id": "openai__gpt-4-turbo",
+   "confirmed": [
+    "announced",
+    "first_available",
+    "api_available",
+    "general_availability",
+    "count_date",
+    "status",
+    "retired_on",
+    "context_window_tokens",
+    "max_output_tokens",
+    "knowledge_cutoff",
+    "input_usd_per_1m_tokens",
+    "output_usd_per_1m_tokens",
+    "input_modalities"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "licence",
+     "reason": "licence not stated on any fetched page (page does not say proprietary)"
+    }
+   ]
+  },
+  {
+   "model_id": "openai__gpt-4o",
+   "confirmed": [
+    "first_available",
+    "api_available",
+    "count_date",
+    "status",
+    "retired_on",
+    "context_window_tokens",
+    "max_output_tokens",
+    "knowledge_cutoff",
+    "input_modalities"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "announced",
+     "reason": "no page fetched gives an announcement date (changelog/model page state API release only)"
+    },
+    {
+     "field": "general_availability",
+     "reason": "no fetched page states a GA date"
+    },
+    {
+     "field": "licence",
+     "reason": "licence not stated on any fetched page (page does not say proprietary)"
+    }
+   ]
+  },
+  {
+   "model_id": "openai__gpt-4o-mini",
+   "confirmed": [
+    "first_available",
+    "api_available",
+    "count_date",
+    "status",
+    "retired_on",
+    "context_window_tokens",
+    "max_output_tokens",
+    "knowledge_cutoff",
+    "input_usd_per_1m_tokens",
+    "output_usd_per_1m_tokens",
+    "input_modalities"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "announced",
+     "reason": "no page fetched gives an announcement date (changelog/model page state API release only)"
+    },
+    {
+     "field": "general_availability",
+     "reason": "no fetched page states a GA date"
+    },
+    {
+     "field": "licence",
+     "reason": "licence not stated on any fetched page (page does not say proprietary)"
+    }
+   ]
+  },
+  {
+   "model_id": "openai__o1-mini",
+   "confirmed": [
+    "first_available",
+    "api_available",
+    "status",
+    "retired_on",
+    "context_window_tokens",
+    "max_output_tokens",
+    "knowledge_cutoff",
+    "input_modalities",
+    "reasoning_mode"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "announced",
+     "reason": "no page fetched gives an announcement date (changelog/model page state API release only)"
+    },
+    {
+     "field": "licence",
+     "reason": "licence not stated on any fetched page (page does not say proprietary)"
+    }
+   ]
+  },
+  {
+   "model_id": "openai__o1-preview",
+   "confirmed": [
+    "first_available",
+    "api_available",
+    "status",
+    "retired_on",
+    "context_window_tokens",
+    "max_output_tokens",
+    "knowledge_cutoff",
+    "input_usd_per_1m_tokens",
+    "cached_input_usd_per_1m_tokens",
+    "output_usd_per_1m_tokens",
+    "input_modalities",
+    "reasoning_mode"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "announced",
+     "reason": "no page fetched gives an announcement date (changelog/model page state API release only)"
+    },
+    {
+     "field": "licence",
+     "reason": "licence not stated on any fetched page (page does not say proprietary)"
+    }
+   ]
+  },
+  {
+   "model_id": "openai__o1",
+   "confirmed": [
+    "api_available",
+    "status",
+    "retired_on",
+    "context_window_tokens",
+    "max_output_tokens",
+    "knowledge_cutoff",
+    "input_usd_per_1m_tokens",
+    "cached_input_usd_per_1m_tokens",
+    "output_usd_per_1m_tokens",
+    "input_modalities",
+    "reasoning_mode"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "announced",
+     "reason": "no page fetched gives an announcement date (changelog/model page state API release only)"
+    },
+    {
+     "field": "first_available",
+     "reason": "changelog lists o1 API models on Dec 17, 2024 and expanded access Jan 21, 2025; no Dec 5, 2024 entry on fetched pages"
+    },
+    {
+     "field": "general_availability",
+     "reason": "no Dec 5, 2024 entry on fetched pages"
+    },
+    {
+     "field": "count_date",
+     "reason": "no fetched page states this date"
+    },
+    {
+     "field": "licence",
+     "reason": "licence not stated on any fetched page (page does not say proprietary)"
+    }
+   ]
+  },
+  {
+   "model_id": "openai__o3-mini",
+   "confirmed": [
+    "first_available",
+    "api_available",
+    "count_date",
+    "status",
+    "retired_on",
+    "context_window_tokens",
+    "max_output_tokens",
+    "knowledge_cutoff",
+    "input_usd_per_1m_tokens",
+    "cached_input_usd_per_1m_tokens",
+    "output_usd_per_1m_tokens",
+    "input_modalities",
+    "reasoning_mode"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "announced",
+     "reason": "no page fetched gives an announcement date (changelog/model page state API release only)"
+    },
+    {
+     "field": "general_availability",
+     "reason": "no fetched page states a GA date"
+    },
+    {
+     "field": "licence",
+     "reason": "licence not stated on any fetched page (page does not say proprietary)"
+    }
+   ]
+  },
+  {
+   "model_id": "openai__gpt-4-5",
+   "confirmed": [
+    "announced",
+    "first_available",
+    "api_available",
+    "status",
+    "retired_on",
+    "input_modalities"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "licence",
+     "reason": "licence not stated on any fetched page (page does not say proprietary)"
+    }
+   ]
+  },
+  {
+   "model_id": "openai__o1-pro",
+   "confirmed": [
+    "first_available",
+    "api_available",
+    "count_date",
+    "status",
+    "retired_on",
+    "context_window_tokens",
+    "max_output_tokens",
+    "knowledge_cutoff",
+    "input_usd_per_1m_tokens",
+    "output_usd_per_1m_tokens",
+    "input_modalities",
+    "reasoning_mode"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "announced",
+     "reason": "no page fetched gives an announcement date (changelog/model page state API release only)"
+    },
+    {
+     "field": "general_availability",
+     "reason": "no fetched page states a GA date"
+    },
+    {
+     "field": "licence",
+     "reason": "licence not stated on any fetched page (page does not say proprietary)"
+    }
+   ]
+  },
+  {
+   "model_id": "openai__gpt-4-1",
+   "confirmed": [
+    "first_available",
+    "api_available",
+    "count_date",
+    "status",
+    "retired_on",
+    "context_window_tokens",
+    "max_output_tokens",
+    "knowledge_cutoff",
+    "input_usd_per_1m_tokens",
+    "cached_input_usd_per_1m_tokens",
+    "output_usd_per_1m_tokens",
+    "input_modalities"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "announced",
+     "reason": "no page fetched gives an announcement date (changelog/model page state API release only)"
+    },
+    {
+     "field": "general_availability",
+     "reason": "no fetched page states a GA date"
+    },
+    {
+     "field": "licence",
+     "reason": "licence not stated on any fetched page (page does not say proprietary)"
+    }
+   ]
+  },
+  {
+   "model_id": "openai__gpt-4-1-mini",
+   "confirmed": [
+    "first_available",
+    "api_available",
+    "count_date",
+    "status",
+    "retired_on",
+    "context_window_tokens",
+    "max_output_tokens",
+    "knowledge_cutoff",
+    "input_usd_per_1m_tokens",
+    "cached_input_usd_per_1m_tokens",
+    "output_usd_per_1m_tokens",
+    "input_modalities"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "announced",
+     "reason": "no page fetched gives an announcement date (changelog/model page state API release only)"
+    },
+    {
+     "field": "general_availability",
+     "reason": "no fetched page states a GA date"
+    },
+    {
+     "field": "licence",
+     "reason": "licence not stated on any fetched page (page does not say proprietary)"
+    }
+   ]
+  },
+  {
+   "model_id": "openai__gpt-4-1-nano",
+   "confirmed": [
+    "first_available",
+    "api_available",
+    "count_date",
+    "status",
+    "retired_on",
+    "context_window_tokens",
+    "max_output_tokens",
+    "knowledge_cutoff",
+    "input_usd_per_1m_tokens",
+    "cached_input_usd_per_1m_tokens",
+    "output_usd_per_1m_tokens",
+    "input_modalities"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "announced",
+     "reason": "no page fetched gives an announcement date (changelog/model page state API release only)"
+    },
+    {
+     "field": "general_availability",
+     "reason": "no fetched page states a GA date"
+    },
+    {
+     "field": "licence",
+     "reason": "licence not stated on any fetched page (page does not say proprietary)"
+    }
+   ]
+  },
+  {
+   "model_id": "openai__o3",
+   "confirmed": [
+    "first_available",
+    "api_available",
+    "count_date",
+    "status",
+    "retired_on",
+    "context_window_tokens",
+    "max_output_tokens",
+    "knowledge_cutoff",
+    "input_modalities",
+    "reasoning_mode"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "announced",
+     "reason": "no page fetched gives an announcement date (changelog/model page state API release only)"
+    },
+    {
+     "field": "general_availability",
+     "reason": "no fetched page states a GA date"
+    },
+    {
+     "field": "licence",
+     "reason": "licence not stated on any fetched page (page does not say proprietary)"
+    }
+   ]
+  },
+  {
+   "model_id": "openai__o4-mini",
+   "confirmed": [
+    "first_available",
+    "api_available",
+    "count_date",
+    "status",
+    "retired_on",
+    "context_window_tokens",
+    "max_output_tokens",
+    "knowledge_cutoff",
+    "input_usd_per_1m_tokens",
+    "cached_input_usd_per_1m_tokens",
+    "output_usd_per_1m_tokens",
+    "input_modalities",
+    "reasoning_mode"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "announced",
+     "reason": "no page fetched gives an announcement date (changelog/model page state API release only)"
+    },
+    {
+     "field": "general_availability",
+     "reason": "no fetched page states a GA date"
+    },
+    {
+     "field": "licence",
+     "reason": "licence not stated on any fetched page (page does not say proprietary)"
+    }
+   ]
+  },
+  {
+   "model_id": "openai__o3-pro",
+   "confirmed": [
+    "first_available",
+    "api_available",
+    "count_date",
+    "status",
+    "retired_on",
+    "context_window_tokens",
+    "max_output_tokens",
+    "knowledge_cutoff",
+    "input_usd_per_1m_tokens",
+    "output_usd_per_1m_tokens",
+    "input_modalities",
+    "reasoning_mode"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "announced",
+     "reason": "no page fetched gives an announcement date (changelog/model page state API release only)"
+    },
+    {
+     "field": "general_availability",
+     "reason": "no fetched page states a GA date"
+    },
+    {
+     "field": "licence",
+     "reason": "licence not stated on any fetched page (page does not say proprietary)"
+    }
+   ]
+  },
+  {
+   "model_id": "openai__gpt-oss-120b",
+   "confirmed": [
+    "announced",
+    "first_available",
+    "general_availability",
+    "open_weights",
+    "count_date",
+    "licence",
+    "params_total_billions",
+    "params_active_billions",
+    "architecture",
+    "input_modalities",
+    "reasoning_mode"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "status",
+     "reason": "launch post does not state status"
+    },
+    {
+     "field": "context_window_tokens",
+     "reason": "page says 'up to 128k' context, not the exact 131,072"
+    },
+    {
+     "field": "max_output_tokens",
+     "reason": "not stated on page"
+    },
+    {
+     "field": "knowledge_cutoff",
+     "reason": "cutoff not stated on launch post"
+    }
+   ]
+  },
+  {
+   "model_id": "openai__gpt-oss-20b",
+   "confirmed": [
+    "announced",
+    "first_available",
+    "general_availability",
+    "open_weights",
+    "count_date",
+    "licence",
+    "params_total_billions",
+    "params_active_billions",
+    "architecture",
+    "input_modalities",
+    "reasoning_mode"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "status",
+     "reason": "launch post does not state status"
+    },
+    {
+     "field": "context_window_tokens",
+     "reason": "page says 'up to 128k' context, not the exact 131,072"
+    }
+   ]
+  },
+  {
+   "model_id": "openai__gpt-5",
+   "confirmed": [
+    "announced",
+    "first_available",
+    "general_availability",
+    "api_available",
+    "count_date",
+    "status",
+    "retired_on",
+    "context_window_tokens",
+    "max_output_tokens",
+    "knowledge_cutoff",
+    "input_usd_per_1m_tokens",
+    "cached_input_usd_per_1m_tokens",
+    "output_usd_per_1m_tokens",
+    "input_modalities",
+    "reasoning_mode"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "licence",
+     "reason": "licence not stated on any fetched page (page does not say proprietary)"
+    }
+   ]
+  },
+  {
+   "model_id": "openai__gpt-5-pro",
+   "confirmed": [
+    "announced",
+    "first_available",
+    "general_availability",
+    "api_available",
+    "count_date",
+    "status",
+    "retired_on",
+    "context_window_tokens",
+    "max_output_tokens",
+    "knowledge_cutoff",
+    "input_usd_per_1m_tokens",
+    "output_usd_per_1m_tokens",
+    "input_modalities"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "licence",
+     "reason": "licence not stated on any fetched page (page does not say proprietary)"
+    }
+   ]
+  },
+  {
+   "model_id": "openai__gpt-5-mini",
+   "confirmed": [
+    "first_available",
+    "api_available",
+    "count_date",
+    "status",
+    "retired_on",
+    "context_window_tokens",
+    "max_output_tokens",
+    "knowledge_cutoff",
+    "input_usd_per_1m_tokens",
+    "cached_input_usd_per_1m_tokens",
+    "output_usd_per_1m_tokens",
+    "input_modalities"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "announced",
+     "reason": "no page fetched gives an announcement date (changelog/model page state API release only)"
+    },
+    {
+     "field": "general_availability",
+     "reason": "no fetched page states a GA date"
+    },
+    {
+     "field": "licence",
+     "reason": "licence not stated on any fetched page (page does not say proprietary)"
+    }
+   ]
+  },
+  {
+   "model_id": "openai__gpt-5-nano",
+   "confirmed": [
+    "first_available",
+    "api_available",
+    "count_date",
+    "status",
+    "retired_on",
+    "context_window_tokens",
+    "max_output_tokens",
+    "knowledge_cutoff",
+    "input_usd_per_1m_tokens",
+    "cached_input_usd_per_1m_tokens",
+    "output_usd_per_1m_tokens",
+    "input_modalities"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "announced",
+     "reason": "no page fetched gives an announcement date (changelog/model page state API release only)"
+    },
+    {
+     "field": "general_availability",
+     "reason": "no fetched page states a GA date"
+    },
+    {
+     "field": "licence",
+     "reason": "licence not stated on any fetched page (page does not say proprietary)"
+    }
+   ]
+  },
+  {
+   "model_id": "openai__gpt-5-1",
+   "confirmed": [
+    "api_available",
+    "status",
+    "retired_on",
+    "context_window_tokens",
+    "max_output_tokens",
+    "knowledge_cutoff",
+    "input_usd_per_1m_tokens",
+    "cached_input_usd_per_1m_tokens",
+    "output_usd_per_1m_tokens",
+    "input_modalities"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "announced",
+     "reason": "no page fetched gives an announcement date (changelog/model page state API release only)"
+    },
+    {
+     "field": "first_available",
+     "reason": "changelog gives API date 2025-11-13 only; ChatGPT launch date not on fetched pages"
+    },
+    {
+     "field": "general_availability",
+     "reason": "no fetched page states a GA date"
+    },
+    {
+     "field": "count_date",
+     "reason": "no fetched page states this date"
+    },
+    {
+     "field": "licence",
+     "reason": "licence not stated on any fetched page (page does not say proprietary)"
+    }
+   ]
+  },
+  {
+   "model_id": "openai__gpt-5-1-pro",
+   "confirmed": [
+    "first_available",
+    "general_availability",
+    "count_date",
+    "status",
+    "retired_on"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "announced",
+     "reason": "no page fetched gives an announcement date (changelog/model page state API release only)"
+    },
+    {
+     "field": "licence",
+     "reason": "licence not stated on any fetched page (page does not say proprietary)"
+    },
+    {
+     "field": "input_modalities",
+     "reason": "release notes do not list modalities"
+    }
+   ]
+  },
+  {
+   "model_id": "openai__gpt-5-2",
+   "confirmed": [
+    "first_available",
+    "api_available",
+    "count_date",
+    "context_window_tokens",
+    "max_output_tokens",
+    "knowledge_cutoff",
+    "input_usd_per_1m_tokens",
+    "cached_input_usd_per_1m_tokens",
+    "output_usd_per_1m_tokens",
+    "input_modalities"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "announced",
+     "reason": "no page fetched gives an announcement date (changelog/model page state API release only)"
+    },
+    {
+     "field": "general_availability",
+     "reason": "no fetched page states a GA date"
+    },
+    {
+     "field": "status",
+     "reason": "status 'legacy' not stated on model page or deprecations page"
+    },
+    {
+     "field": "licence",
+     "reason": "licence not stated on any fetched page (page does not say proprietary)"
+    }
+   ]
+  },
+  {
+   "model_id": "openai__gpt-5-2-pro",
+   "confirmed": [
+    "context_window_tokens",
+    "max_output_tokens",
+    "knowledge_cutoff",
+    "input_usd_per_1m_tokens",
+    "output_usd_per_1m_tokens",
+    "input_modalities"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "first_available",
+     "reason": "GPT-5.2 Pro not mentioned in changelog; model page has snapshot id gpt-5.2-pro-2025-12-11 only"
+    },
+    {
+     "field": "general_availability",
+     "reason": "not stated"
+    },
+    {
+     "field": "api_available",
+     "reason": "GPT-5.2 Pro not mentioned in changelog; model page has snapshot id only"
+    },
+    {
+     "field": "count_date",
+     "reason": "no fetched page states this date"
+    },
+    {
+     "field": "status",
+     "reason": "status 'legacy' not stated"
+    },
+    {
+     "field": "licence",
+     "reason": "licence not stated on any fetched page (page does not say proprietary)"
+    }
+   ]
+  },
+  {
+   "model_id": "openai__gpt-5-3-instant",
+   "confirmed": [
+    "announced",
+    "first_available",
+    "general_availability",
+    "api_available",
+    "count_date",
+    "status",
+    "context_window_tokens",
+    "max_output_tokens",
+    "knowledge_cutoff",
+    "input_usd_per_1m_tokens",
+    "cached_input_usd_per_1m_tokens",
+    "output_usd_per_1m_tokens",
+    "input_modalities"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "licence",
+     "reason": "licence not stated on any fetched page (page does not say proprietary)"
+    }
+   ]
+  },
+  {
+   "model_id": "openai__gpt-5-4",
+   "confirmed": [
+    "first_available",
+    "api_available",
+    "count_date",
+    "context_window_tokens",
+    "max_output_tokens",
+    "knowledge_cutoff",
+    "input_usd_per_1m_tokens",
+    "cached_input_usd_per_1m_tokens",
+    "output_usd_per_1m_tokens",
+    "input_modalities"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "announced",
+     "reason": "no page fetched gives an announcement date (changelog/model page state API release only)"
+    },
+    {
+     "field": "general_availability",
+     "reason": "no fetched page states a GA date"
+    },
+    {
+     "field": "status",
+     "reason": "status 'legacy' not stated on model page or deprecations page"
+    },
+    {
+     "field": "licence",
+     "reason": "licence not stated on any fetched page (page does not say proprietary)"
+    }
+   ]
+  },
+  {
+   "model_id": "openai__gpt-5-4-pro",
+   "confirmed": [
+    "first_available",
+    "api_available",
+    "count_date",
+    "context_window_tokens",
+    "max_output_tokens",
+    "knowledge_cutoff",
+    "input_usd_per_1m_tokens",
+    "output_usd_per_1m_tokens",
+    "input_modalities"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "announced",
+     "reason": "no page fetched gives an announcement date (changelog/model page state API release only)"
+    },
+    {
+     "field": "general_availability",
+     "reason": "no fetched page states a GA date"
+    },
+    {
+     "field": "status",
+     "reason": "status 'legacy' not stated"
+    },
+    {
+     "field": "licence",
+     "reason": "licence not stated on any fetched page (page does not say proprietary)"
+    }
+   ]
+  },
+  {
+   "model_id": "openai__gpt-5-4-mini",
+   "confirmed": [
+    "announced",
+    "first_available",
+    "general_availability",
+    "api_available",
+    "count_date",
+    "context_window_tokens",
+    "max_output_tokens",
+    "knowledge_cutoff",
+    "input_usd_per_1m_tokens",
+    "cached_input_usd_per_1m_tokens",
+    "output_usd_per_1m_tokens",
+    "input_modalities"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "status",
+     "reason": "status 'active' not stated"
+    },
+    {
+     "field": "licence",
+     "reason": "licence not stated on any fetched page (page does not say proprietary)"
+    }
+   ]
+  },
+  {
+   "model_id": "openai__gpt-5-4-nano",
+   "confirmed": [
+    "announced",
+    "first_available",
+    "general_availability",
+    "api_available",
+    "count_date",
+    "status",
+    "retired_on",
+    "context_window_tokens",
+    "max_output_tokens",
+    "knowledge_cutoff",
+    "input_usd_per_1m_tokens",
+    "cached_input_usd_per_1m_tokens",
+    "output_usd_per_1m_tokens",
+    "input_modalities"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "licence",
+     "reason": "licence not stated on any fetched page (page does not say proprietary)"
+    }
+   ]
+  },
+  {
+   "model_id": "openai__gpt-5-5",
+   "confirmed": [
+    "api_available",
+    "context_window_tokens",
+    "max_output_tokens",
+    "knowledge_cutoff",
+    "input_usd_per_1m_tokens",
+    "cached_input_usd_per_1m_tokens",
+    "output_usd_per_1m_tokens",
+    "input_modalities"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "announced",
+     "reason": "no page fetched gives an announcement date (changelog/model page state API release only)"
+    },
+    {
+     "field": "first_available",
+     "reason": "changelog gives API release 2026-04-24; 2026-04-23 not on fetched pages"
+    },
+    {
+     "field": "general_availability",
+     "reason": "no fetched page states a GA date"
+    },
+    {
+     "field": "count_date",
+     "reason": "no fetched page states this date"
+    },
+    {
+     "field": "status",
+     "reason": "status 'legacy' not stated"
+    },
+    {
+     "field": "licence",
+     "reason": "licence not stated on any fetched page (page does not say proprietary)"
+    }
+   ]
+  },
+  {
+   "model_id": "openai__gpt-5-5-pro",
+   "confirmed": [
+    "api_available",
+    "context_window_tokens",
+    "max_output_tokens",
+    "knowledge_cutoff",
+    "input_usd_per_1m_tokens",
+    "output_usd_per_1m_tokens",
+    "input_modalities"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "announced",
+     "reason": "no page fetched gives an announcement date (changelog/model page state API release only)"
+    },
+    {
+     "field": "first_available",
+     "reason": "no fetched page states this date"
+    },
+    {
+     "field": "general_availability",
+     "reason": "no fetched page states a GA date"
+    },
+    {
+     "field": "count_date",
+     "reason": "no fetched page states this date"
+    },
+    {
+     "field": "status",
+     "reason": "status 'legacy' not stated"
+    },
+    {
+     "field": "licence",
+     "reason": "licence not stated on any fetched page (page does not say proprietary)"
+    }
+   ]
+  },
+  {
+   "model_id": "openai__gpt-5-5-instant",
+   "confirmed": [
+    "announced",
+    "first_available",
+    "general_availability",
+    "api_available",
+    "count_date"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "licence",
+     "reason": "licence not stated on any fetched page (page does not say proprietary)"
+    },
+    {
+     "field": "input_modalities",
+     "reason": "launch post does not list input modalities"
+    }
+   ]
+  },
+  {
+   "model_id": "openai__gpt-5-6-luna",
+   "confirmed": [
+    "first_available",
+    "general_availability",
+    "api_available",
+    "count_date",
+    "context_window_tokens",
+    "max_output_tokens",
+    "knowledge_cutoff",
+    "input_modalities"
+   ],
+   "discrepancies": [
+    {
+     "field": "input_usd_per_1m_tokens",
+     "dataset": "1",
+     "source": "0.2 (current list price; launch post gpt-5-6 states the dataset value, later cut)",
+     "url": "https://developers.openai.com/api/docs/models/gpt-5.6-luna"
+    },
+    {
+     "field": "cached_input_usd_per_1m_tokens",
+     "dataset": "0.1",
+     "source": "0.02",
+     "url": "https://developers.openai.com/api/docs/models/gpt-5.6-luna"
+    },
+    {
+     "field": "output_usd_per_1m_tokens",
+     "dataset": "6",
+     "source": "1.2",
+     "url": "https://developers.openai.com/api/docs/models/gpt-5.6-luna"
+    }
+   ],
+   "unverifiable": [
+    {
+     "field": "announced",
+     "reason": "launch page (Jul 9) refers to an earlier limited preview without giving its date"
+    },
+    {
+     "field": "status",
+     "reason": "status not stated on any fetched page"
+    },
+    {
+     "field": "licence",
+     "reason": "licence not stated on any fetched page (page does not say proprietary)"
+    }
+   ]
+  },
+  {
+   "model_id": "openai__gpt-5-6-sol",
+   "confirmed": [
+    "first_available",
+    "general_availability",
+    "api_available",
+    "count_date",
+    "context_window_tokens",
+    "max_output_tokens",
+    "knowledge_cutoff",
+    "input_modalities"
+   ],
+   "discrepancies": [
+    {
+     "field": "input_usd_per_1m_tokens",
+     "dataset": "5",
+     "source": "4 (current list price; launch post gpt-5-6 states the dataset value, later cut)",
+     "url": "https://developers.openai.com/api/docs/models/gpt-5.6-sol"
+    },
+    {
+     "field": "cached_input_usd_per_1m_tokens",
+     "dataset": "0.5",
+     "source": "0.4",
+     "url": "https://developers.openai.com/api/docs/models/gpt-5.6-sol"
+    },
+    {
+     "field": "output_usd_per_1m_tokens",
+     "dataset": "30",
+     "source": "20",
+     "url": "https://developers.openai.com/api/docs/models/gpt-5.6-sol"
+    }
+   ],
+   "unverifiable": [
+    {
+     "field": "announced",
+     "reason": "launch page (Jul 9) refers to an earlier limited preview without giving its date"
+    },
+    {
+     "field": "status",
+     "reason": "status not stated on fetched pages"
+    },
+    {
+     "field": "licence",
+     "reason": "licence not stated on any fetched page (page does not say proprietary)"
+    }
+   ]
+  },
+  {
+   "model_id": "openai__gpt-5-6-terra",
+   "confirmed": [
+    "first_available",
+    "general_availability",
+    "api_available",
+    "count_date",
+    "context_window_tokens",
+    "max_output_tokens",
+    "knowledge_cutoff",
+    "input_modalities"
+   ],
+   "discrepancies": [
+    {
+     "field": "input_usd_per_1m_tokens",
+     "dataset": "2.5",
+     "source": "2 (current list price; launch post gpt-5-6 states the dataset value, later cut)",
+     "url": "https://developers.openai.com/api/docs/models/gpt-5.6-terra"
+    },
+    {
+     "field": "cached_input_usd_per_1m_tokens",
+     "dataset": "0.25",
+     "source": "0.2",
+     "url": "https://developers.openai.com/api/docs/models/gpt-5.6-terra"
+    },
+    {
+     "field": "output_usd_per_1m_tokens",
+     "dataset": "15",
+     "source": "12",
+     "url": "https://developers.openai.com/api/docs/models/gpt-5.6-terra"
+    }
+   ],
+   "unverifiable": [
+    {
+     "field": "announced",
+     "reason": "launch page (Jul 9) refers to an earlier limited preview without giving its date"
+    },
+    {
+     "field": "status",
+     "reason": "status not stated on any fetched page"
+    },
+    {
+     "field": "licence",
+     "reason": "licence not stated on any fetched page (page does not say proprietary)"
+    }
+   ]
+  },
+  {
+   "model_id": "openai__gpt-6-astra",
+   "confirmed": [
+    "first_available",
+    "api_available",
+    "context_window_tokens",
+    "max_output_tokens",
+    "knowledge_cutoff",
+    "input_usd_per_1m_tokens",
+    "cached_input_usd_per_1m_tokens",
+    "output_usd_per_1m_tokens",
+    "input_modalities"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "announced",
+     "reason": "page body shows no date; fetch tool metadata gave publish_date 2026-08-08 (conflicts with dataset 2026-09-03; changelog 'Released' entry is Sep 3), so not confirmed"
+    },
+    {
+     "field": "status",
+     "reason": "status not stated on any fetched page"
+    },
+    {
+     "field": "licence",
+     "reason": "licence not stated on any fetched page (page does not say proprietary)"
+    }
+   ]
+  },
+  {
+   "model_id": "openai__gpt-6-astra-pro",
+   "confirmed": [],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "announced",
+     "reason": "page body shows no date for Astra Pro"
+    },
+    {
+     "field": "status",
+     "reason": "status not stated on any fetched page"
+    },
+    {
+     "field": "licence",
+     "reason": "licence not stated on any fetched page (page does not say proprietary)"
+    },
+    {
+     "field": "input_modalities",
+     "reason": "modalities not stated on any fetched page"
+    }
+   ]
+  },
+  {
+   "model_id": "openai__gpt-6-luna",
+   "confirmed": [
+    "announced",
+    "first_available",
+    "general_availability",
+    "api_available",
+    "count_date",
+    "context_window_tokens",
+    "max_output_tokens",
+    "knowledge_cutoff",
+    "input_usd_per_1m_tokens",
+    "cached_input_usd_per_1m_tokens",
+    "output_usd_per_1m_tokens",
+    "input_modalities"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "status",
+     "reason": "status not stated on any fetched page"
+    },
+    {
+     "field": "licence",
+     "reason": "licence not stated on any fetched page (page does not say proprietary)"
+    }
+   ]
+  },
+  {
+   "model_id": "openai__gpt-6-sol",
+   "confirmed": [
+    "announced",
+    "first_available",
+    "general_availability",
+    "api_available",
+    "count_date",
+    "context_window_tokens",
+    "max_output_tokens",
+    "knowledge_cutoff",
+    "input_usd_per_1m_tokens",
+    "cached_input_usd_per_1m_tokens",
+    "output_usd_per_1m_tokens",
+    "input_modalities"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "status",
+     "reason": "status not stated on any fetched page"
+    },
+    {
+     "field": "licence",
+     "reason": "licence not stated on any fetched page (page does not say proprietary)"
+    }
+   ]
+  },
+  {
+   "model_id": "openai__gpt-6-1-sol",
+   "confirmed": [
+    "announced",
+    "first_available",
+    "general_availability",
+    "api_available",
+    "count_date",
+    "context_window_tokens",
+    "max_output_tokens",
+    "knowledge_cutoff",
+    "input_usd_per_1m_tokens",
+    "cached_input_usd_per_1m_tokens",
+    "output_usd_per_1m_tokens",
+    "input_modalities"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "status",
+     "reason": "status not stated on any fetched page"
+    },
+    {
+     "field": "licence",
+     "reason": "licence not stated on any fetched page (page does not say proprietary)"
+    }
+   ]
+  },
+  {
+   "model_id": "qwen__qwen-first-generation-qwen-7b-14b-72b-1-8b-chat-base",
+   "confirmed": [
+    "first_available",
+    "open_weights",
+    "count_date",
+    "licence"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "architecture",
+     "reason": "page does not state \"dense\""
+    },
+    {
+     "field": "input_modalities",
+     "reason": "page calls them language models but does not state input modalities"
+    }
+   ]
+  },
+  {
+   "model_id": "qwen__qwen-vl-qwen-vl-chat",
+   "confirmed": [
+    "first_available",
+    "open_weights",
+    "count_date",
+    "licence",
+    "architecture",
+    "input_modalities"
+   ],
+   "discrepancies": [],
+   "unverifiable": []
+  },
+  {
+   "model_id": "qwen__tongyi-qianwen-proprietary-chat-service-api-public-opening",
+   "confirmed": [
+    "announced",
+    "first_available"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "general_availability",
+     "reason": "press release of 2023-04-11 does not mention a 2023-09-13 public opening"
+    },
+    {
+     "field": "count_date",
+     "reason": "press release does not mention 2023-09-13"
+    },
+    {
+     "field": "licence",
+     "reason": "page calls Tongyi a proprietary pre-trained framework but does not state the model licence"
+    },
+    {
+     "field": "input_modalities",
+     "reason": "page says multimodal capabilities will be added soon; does not explicitly state text-only"
+    }
+   ]
+  },
+  {
+   "model_id": "qwen__qwen-vl-max",
+   "confirmed": [
+    "input_modalities"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "first_available",
+     "reason": "page is dated 2024-01-25 and introduces Plus and Max together; no Max-specific date"
+    },
+    {
+     "field": "general_availability",
+     "reason": "same: no Max-specific date"
+    },
+    {
+     "field": "count_date",
+     "reason": "same: no Max-specific date"
+    },
+    {
+     "field": "licence",
+     "reason": "page does not state the licence"
+    }
+   ]
+  },
+  {
+   "model_id": "qwen__qwen-vl-plus",
+   "confirmed": [
+    "first_available",
+    "general_availability",
+    "count_date",
+    "input_modalities"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "licence",
+     "reason": "page does not state the licence"
+    }
+   ]
+  },
+  {
+   "model_id": "qwen__qwen1-5-0-5b-110b-moe",
+   "confirmed": [
+    "first_available",
+    "open_weights",
+    "count_date",
+    "context_window_tokens"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "licence",
+     "reason": "page does not state the licence"
+    },
+    {
+     "field": "architecture",
+     "reason": "page only says a separate MoE model exists; \"dense\" not stated"
+    },
+    {
+     "field": "input_modalities",
+     "reason": "page does not explicitly state input modalities"
+    }
+   ]
+  },
+  {
+   "model_id": "qwen__qwen1-5-moe-a2-7b",
+   "confirmed": [
+    "first_available",
+    "open_weights",
+    "count_date",
+    "params_total_billions",
+    "params_active_billions",
+    "architecture"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "licence",
+     "reason": "page does not state the licence"
+    },
+    {
+     "field": "input_modalities",
+     "reason": "page does not explicitly state input modalities"
+    }
+   ]
+  },
+  {
+   "model_id": "qwen__qwen-max-qwen-max-0428-blog",
+   "confirmed": [
+    "first_available",
+    "general_availability",
+    "count_date"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "licence",
+     "reason": "page does not state the licence"
+    },
+    {
+     "field": "input_modalities",
+     "reason": "page does not explicitly state input modalities"
+    }
+   ]
+  },
+  {
+   "model_id": "qwen__qwen2-0-5b-72b-57b-a14b",
+   "confirmed": [
+    "first_available",
+    "open_weights",
+    "count_date",
+    "licence",
+    "params_total_billions",
+    "architecture"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "input_modalities",
+     "reason": "page does not explicitly state input modalities"
+    }
+   ]
+  },
+  {
+   "model_id": "qwen__qwen2-vl",
+   "confirmed": [
+    "first_available",
+    "open_weights",
+    "count_date",
+    "knowledge_cutoff",
+    "licence",
+    "architecture",
+    "input_modalities"
+   ],
+   "discrepancies": [],
+   "unverifiable": []
+  },
+  {
+   "model_id": "qwen__qwen-plus",
+   "confirmed": [
+    "first_available",
+    "general_availability",
+    "count_date"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "licence",
+     "reason": "page does not state the licence"
+    }
+   ]
+  },
+  {
+   "model_id": "qwen__qwen-turbo",
+   "confirmed": [
+    "first_available",
+    "general_availability",
+    "count_date"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "licence",
+     "reason": "page does not state the licence"
+    }
+   ]
+  },
+  {
+   "model_id": "qwen__qwen2-5-0-5b-72b",
+   "confirmed": [
+    "first_available",
+    "open_weights",
+    "count_date",
+    "licence",
+    "architecture"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "input_modalities",
+     "reason": "page does not explicitly state input modalities"
+    }
+   ]
+  },
+  {
+   "model_id": "qwen__qwen2-5-turbo-1m-context",
+   "confirmed": [
+    "first_available",
+    "general_availability",
+    "count_date",
+    "context_window_tokens"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "licence",
+     "reason": "page does not state the licence"
+    },
+    {
+     "field": "input_modalities",
+     "reason": "page does not explicitly state input modalities"
+    }
+   ]
+  },
+  {
+   "model_id": "qwen__qwq-32b-preview",
+   "confirmed": [
+    "first_available"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "open_weights",
+     "reason": "page text does not state weights are released"
+    },
+    {
+     "field": "count_date",
+     "reason": "depends on open-weights date, not stated"
+    },
+    {
+     "field": "context_window_tokens",
+     "reason": "page does not state the context window"
+    },
+    {
+     "field": "licence",
+     "reason": "page does not state the licence"
+    },
+    {
+     "field": "params_total_billions",
+     "reason": "page names a 32B model; 32.5 not stated"
+    },
+    {
+     "field": "architecture",
+     "reason": "page does not state this architecture detail"
+    },
+    {
+     "field": "input_modalities",
+     "reason": "page does not explicitly state input modalities"
+    }
+   ]
+  },
+  {
+   "model_id": "qwen__qvq-72b-preview",
+   "confirmed": [
+    "first_available",
+    "open_weights",
+    "count_date",
+    "input_modalities"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "licence",
+     "reason": "page does not state the licence"
+    },
+    {
+     "field": "params_total_billions",
+     "reason": "page only says built on Qwen2-VL-72B; 73 not stated"
+    },
+    {
+     "field": "architecture",
+     "reason": "page says built on Qwen2-VL-72B; \"dense\" not stated"
+    }
+   ]
+  },
+  {
+   "model_id": "qwen__qwen2-5-vl-3b-7b-32b-72b",
+   "confirmed": [
+    "first_available",
+    "input_modalities"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "open_weights",
+     "reason": "extracted page text does not state weights release"
+    },
+    {
+     "field": "count_date",
+     "reason": "depends on open-weights date"
+    },
+    {
+     "field": "licence",
+     "reason": "extracted page text names no licence"
+    },
+    {
+     "field": "architecture",
+     "reason": "extracted page text does not state dense"
+    }
+   ]
+  },
+  {
+   "model_id": "qwen__qwen2-5-max",
+   "confirmed": [
+    "first_available",
+    "general_availability",
+    "count_date",
+    "architecture"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "licence",
+     "reason": "page does not state the licence"
+    },
+    {
+     "field": "input_modalities",
+     "reason": "page does not explicitly state input modalities"
+    }
+   ]
+  },
+  {
+   "model_id": "qwen__qwq-max-preview",
+   "confirmed": [
+    "first_available"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "licence",
+     "reason": "page only promises a future Apache 2.0 open-source release; \"proprietary\" not stated"
+    },
+    {
+     "field": "input_modalities",
+     "reason": "page does not explicitly state input modalities"
+    }
+   ]
+  },
+  {
+   "model_id": "qwen__qwq-32b",
+   "confirmed": [
+    "first_available",
+    "open_weights",
+    "count_date",
+    "licence",
+    "params_total_billions"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "architecture",
+     "reason": "page does not state \"dense\""
+    },
+    {
+     "field": "input_modalities",
+     "reason": "page does not explicitly state input modalities"
+    }
+   ]
+  },
+  {
+   "model_id": "qwen__qwen2-5-omni",
+   "confirmed": [
+    "first_available",
+    "open_weights",
+    "count_date",
+    "params_total_billions",
+    "architecture",
+    "input_modalities"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "licence",
+     "reason": "page does not state the licence"
+    }
+   ]
+  },
+  {
+   "model_id": "qwen__qvq-max-first-version",
+   "confirmed": [
+    "first_available",
+    "input_modalities"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "licence",
+     "reason": "page does not state the licence"
+    }
+   ]
+  },
+  {
+   "model_id": "qwen__qwen3-0-6b-32b-dense-30b-a3b-235b-a22b",
+   "confirmed": [
+    "first_available",
+    "licence",
+    "params_total_billions",
+    "params_active_billions",
+    "architecture"
+   ],
+   "discrepancies": [
+    {
+     "field": "open_weights",
+     "dataset": "2025-04-28",
+     "source": "April 29, 2025 (page header; page metadata publish_date 2025-04-28)",
+     "url": "https://qwenlm.github.io/blog/qwen3/"
+    },
+    {
+     "field": "count_date",
+     "dataset": "2025-04-28",
+     "source": "April 29, 2025 (page header; page metadata publish_date 2025-04-28)",
+     "url": "https://qwenlm.github.io/blog/qwen3/"
+    }
+   ],
+   "unverifiable": [
+    {
+     "field": "status",
+     "reason": "page does not state lifecycle status"
+    },
+    {
+     "field": "context_window_tokens",
+     "reason": "page says 128K (32K for smallest models), not 128000 tokens"
+    },
+    {
+     "field": "input_modalities",
+     "reason": "page does not explicitly state input modalities"
+    }
+   ]
+  },
+  {
+   "model_id": "qwen__qwen3-next-80b-a3b",
+   "confirmed": [
+    "first_available",
+    "open_weights",
+    "count_date",
+    "context_window_tokens",
+    "params_total_billions",
+    "params_active_billions",
+    "architecture"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "status",
+     "reason": "page does not state lifecycle status"
+    },
+    {
+     "field": "licence",
+     "reason": "page does not state the licence"
+    },
+    {
+     "field": "input_modalities",
+     "reason": "page does not explicitly state input modalities"
+    }
+   ]
+  },
+  {
+   "model_id": "qwen__qwen3-omni",
+   "confirmed": [
+    "first_available",
+    "open_weights",
+    "count_date",
+    "architecture",
+    "input_modalities"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "general_availability",
+     "reason": "page does not mention 2025-12-04"
+    },
+    {
+     "field": "status",
+     "reason": "page does not state lifecycle status"
+    },
+    {
+     "field": "licence",
+     "reason": "page does not state the licence"
+    },
+    {
+     "field": "params_total_billions",
+     "reason": "page only names Qwen3-Omni-30B-A3B-Captioner, not the model size"
+    },
+    {
+     "field": "params_active_billions",
+     "reason": "same"
+    }
+   ]
+  },
+  {
+   "model_id": "qwen__qwen3-vl",
+   "confirmed": [
+    "first_available",
+    "open_weights",
+    "count_date",
+    "params_total_billions",
+    "params_active_billions",
+    "input_modalities"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "status",
+     "reason": "page does not state lifecycle status"
+    },
+    {
+     "field": "context_window_tokens",
+     "reason": "page says 256K (expandable to 1M), not 262144"
+    },
+    {
+     "field": "licence",
+     "reason": "page does not state the licence"
+    },
+    {
+     "field": "architecture",
+     "reason": "page does not state MoE"
+    }
+   ]
+  },
+  {
+   "model_id": "qwen__qwen3-max-instruct",
+   "confirmed": [
+    "general_availability",
+    "count_date",
+    "params_total_billions",
+    "architecture"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "first_available",
+     "reason": "page mentions a preview version without a date"
+    },
+    {
+     "field": "status",
+     "reason": "page does not state lifecycle status"
+    },
+    {
+     "field": "retired_on",
+     "reason": "page does not state a retirement date"
+    },
+    {
+     "field": "context_window_tokens",
+     "reason": "page does not state the context window"
+    },
+    {
+     "field": "max_output_tokens",
+     "reason": "page does not state a max output limit"
+    },
+    {
+     "field": "input_usd_per_1m_tokens",
+     "reason": "page does not state pricing"
+    },
+    {
+     "field": "output_usd_per_1m_tokens",
+     "reason": "page does not state pricing"
+    },
+    {
+     "field": "licence",
+     "reason": "page does not label it proprietary"
+    },
+    {
+     "field": "input_modalities",
+     "reason": "page does not explicitly state input modalities"
+    }
+   ]
+  },
+  {
+   "model_id": "qwen__qwen3-max-thinking",
+   "confirmed": [],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "first_available",
+     "reason": "page is dated 2026-01-25; only the API model ID suffix says 2026-01-23"
+    },
+    {
+     "field": "general_availability",
+     "reason": "same"
+    },
+    {
+     "field": "count_date",
+     "reason": "same"
+    },
+    {
+     "field": "status",
+     "reason": "page does not state lifecycle status"
+    },
+    {
+     "field": "retired_on",
+     "reason": "page does not state a retirement date"
+    },
+    {
+     "field": "context_window_tokens",
+     "reason": "page does not state the context window"
+    },
+    {
+     "field": "max_output_tokens",
+     "reason": "page does not state a max output limit"
+    },
+    {
+     "field": "input_usd_per_1m_tokens",
+     "reason": "page does not state pricing"
+    },
+    {
+     "field": "output_usd_per_1m_tokens",
+     "reason": "page does not state pricing"
+    },
+    {
+     "field": "licence",
+     "reason": "page does not state the licence"
+    },
+    {
+     "field": "params_total_billions",
+     "reason": "page does not state total parameters"
+    },
+    {
+     "field": "architecture",
+     "reason": "page does not state this architecture detail"
+    },
+    {
+     "field": "input_modalities",
+     "reason": "page does not explicitly state input modalities"
+    }
+   ]
+  },
+  {
+   "model_id": "qwen__qwen3-5-397b-a17b-and-smaller-open-models",
+   "confirmed": [
+    "first_available",
+    "open_weights",
+    "count_date",
+    "licence",
+    "params_total_billions",
+    "params_active_billions"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "status",
+     "reason": "page does not state lifecycle status"
+    },
+    {
+     "field": "retired_on",
+     "reason": "page does not state a retirement date"
+    },
+    {
+     "field": "input_usd_per_1m_tokens",
+     "reason": "page does not state pricing"
+    },
+    {
+     "field": "output_usd_per_1m_tokens",
+     "reason": "page does not state pricing"
+    },
+    {
+     "field": "architecture",
+     "reason": "JSON shows model_type qwen3_5_moe but not hybrid linear attention"
+    },
+    {
+     "field": "input_modalities",
+     "reason": "JSON shows image-text-to-text; video not stated"
+    }
+   ]
+  },
+  {
+   "model_id": "qwen__qwen3-5-plus",
+   "confirmed": [
+    "architecture"
+   ],
+   "discrepancies": [
+    {
+     "field": "first_available",
+     "dataset": "2026-02-16",
+     "source": "2026-02-15",
+     "url": "https://www.alibabacloud.com/help/zh/model-studio/newly-released-models"
+    },
+    {
+     "field": "general_availability",
+     "dataset": "2026-02-16",
+     "source": "2026-02-15",
+     "url": "https://www.alibabacloud.com/help/zh/model-studio/newly-released-models"
+    },
+    {
+     "field": "count_date",
+     "dataset": "2026-02-16",
+     "source": "2026-02-15",
+     "url": "https://www.alibabacloud.com/help/zh/model-studio/newly-released-models"
+    }
+   ],
+   "unverifiable": [
+    {
+     "field": "status",
+     "reason": "page does not state lifecycle status"
+    },
+    {
+     "field": "retired_on",
+     "reason": "page does not state a retirement date"
+    },
+    {
+     "field": "context_window_tokens",
+     "reason": "page does not state the context window"
+    },
+    {
+     "field": "max_output_tokens",
+     "reason": "page does not state a max output limit"
+    },
+    {
+     "field": "input_usd_per_1m_tokens",
+     "reason": "page does not state pricing"
+    },
+    {
+     "field": "output_usd_per_1m_tokens",
+     "reason": "page does not state pricing"
+    },
+    {
+     "field": "licence",
+     "reason": "page does not state the licence"
+    },
+    {
+     "field": "params_total_billions",
+     "reason": "page does not state total parameters"
+    },
+    {
+     "field": "params_active_billions",
+     "reason": "page does not state active parameters"
+    },
+    {
+     "field": "input_modalities",
+     "reason": "page says vision-language/visual understanding; video not stated"
+    }
+   ]
+  },
+  {
+   "model_id": "qwen__qwen3-5-flash",
+   "confirmed": [
+    "first_available",
+    "general_availability",
+    "count_date",
+    "architecture"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "status",
+     "reason": "page does not state lifecycle status"
+    },
+    {
+     "field": "context_window_tokens",
+     "reason": "page does not state the context window"
+    },
+    {
+     "field": "max_output_tokens",
+     "reason": "page does not state a max output limit"
+    },
+    {
+     "field": "input_usd_per_1m_tokens",
+     "reason": "page does not state pricing"
+    },
+    {
+     "field": "output_usd_per_1m_tokens",
+     "reason": "page does not state pricing"
+    },
+    {
+     "field": "licence",
+     "reason": "page does not state the licence"
+    },
+    {
+     "field": "params_total_billions",
+     "reason": "page lists qwen3.5-35b-a3b separately; Flash size not stated"
+    },
+    {
+     "field": "params_active_billions",
+     "reason": "same"
+    },
+    {
+     "field": "input_modalities",
+     "reason": "page says visual understanding; video not stated"
+    }
+   ]
+  },
+  {
+   "model_id": "qwen__qwen3-5-omni-plus-flash-light",
+   "confirmed": [
+    "architecture",
+    "input_modalities"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "first_available",
+     "reason": "page dated 2026-03-29 and says \"currently available\"; no 2026-03-26 date"
+    },
+    {
+     "field": "general_availability",
+     "reason": "same"
+    },
+    {
+     "field": "count_date",
+     "reason": "same"
+    },
+    {
+     "field": "status",
+     "reason": "page does not state lifecycle status"
+    },
+    {
+     "field": "context_window_tokens",
+     "reason": "page says 256k, not 262144"
+    },
+    {
+     "field": "max_output_tokens",
+     "reason": "page does not state a max output limit"
+    },
+    {
+     "field": "input_usd_per_1m_tokens",
+     "reason": "page does not state pricing"
+    },
+    {
+     "field": "output_usd_per_1m_tokens",
+     "reason": "page does not state pricing"
+    },
+    {
+     "field": "licence",
+     "reason": "page does not state the licence"
+    }
+   ]
+  },
+  {
+   "model_id": "qwen__qwen3-6-plus",
+   "confirmed": [
+    "first_available",
+    "general_availability",
+    "count_date",
+    "context_window_tokens",
+    "max_output_tokens",
+    "input_modalities"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "status",
+     "reason": "page does not state lifecycle status"
+    },
+    {
+     "field": "input_usd_per_1m_tokens",
+     "reason": "page does not state pricing"
+    },
+    {
+     "field": "output_usd_per_1m_tokens",
+     "reason": "page does not state pricing"
+    },
+    {
+     "field": "licence",
+     "reason": "page says \"hosted model\", no licence label"
+    }
+   ]
+  },
+  {
+   "model_id": "qwen__qwen3-6-flash-open-qwen3-6-35b-a3b",
+   "confirmed": [
+    "first_available",
+    "open_weights",
+    "count_date",
+    "params_total_billions",
+    "params_active_billions",
+    "architecture"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "status",
+     "reason": "page does not state lifecycle status"
+    },
+    {
+     "field": "licence",
+     "reason": "page says \"fully open-source\" but names no licence"
+    },
+    {
+     "field": "input_modalities",
+     "reason": "page says multimodal; video not explicitly stated"
+    }
+   ]
+  },
+  {
+   "model_id": "qwen__qwen3-6-max-preview",
+   "confirmed": [
+    "first_available",
+    "licence"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "status",
+     "reason": "page does not state lifecycle status"
+    },
+    {
+     "field": "retired_on",
+     "reason": "page does not state a retirement date"
+    },
+    {
+     "field": "context_window_tokens",
+     "reason": "page does not state the context window"
+    },
+    {
+     "field": "max_output_tokens",
+     "reason": "page does not state a max output limit"
+    },
+    {
+     "field": "input_usd_per_1m_tokens",
+     "reason": "page does not state pricing"
+    },
+    {
+     "field": "output_usd_per_1m_tokens",
+     "reason": "page does not state pricing"
+    },
+    {
+     "field": "input_modalities",
+     "reason": "page does not explicitly state input modalities"
+    }
+   ]
+  },
+  {
+   "model_id": "qwen__qwen3-6-27b",
+   "confirmed": [
+    "first_available",
+    "open_weights",
+    "count_date",
+    "params_total_billions",
+    "architecture",
+    "input_modalities"
+   ],
+   "discrepancies": [
+    {
+     "field": "context_window_tokens",
+     "dataset": "262144",
+     "source": "131072 (contextWindow in the OpenClaw/Model Studio config sample on the page)",
+     "url": "https://qwen.ai/blog?id=qwen3.6-27b"
+    },
+    {
+     "field": "max_output_tokens",
+     "dataset": "65536",
+     "source": "16384 (maxTokens in the same config sample)",
+     "url": "https://qwen.ai/blog?id=qwen3.6-27b"
+    }
+   ],
+   "unverifiable": [
+    {
+     "field": "status",
+     "reason": "page does not state lifecycle status"
+    },
+    {
+     "field": "input_usd_per_1m_tokens",
+     "reason": "page does not state pricing"
+    },
+    {
+     "field": "output_usd_per_1m_tokens",
+     "reason": "page does not state pricing"
+    },
+    {
+     "field": "licence",
+     "reason": "page says \"fully open-source\" but names no licence"
+    }
+   ]
+  },
+  {
+   "model_id": "qwen__qwen3-7-max",
+   "confirmed": [
+    "first_available",
+    "general_availability",
+    "count_date",
+    "context_window_tokens",
+    "licence",
+    "input_modalities"
+   ],
+   "discrepancies": [
+    {
+     "field": "max_output_tokens",
+     "dataset": "131072",
+     "source": "65536 (maxTokens in OpenClaw config sample on the page)",
+     "url": "https://qwen.ai/blog?id=qwen3.7"
+    }
+   ],
+   "unverifiable": [
+    {
+     "field": "status",
+     "reason": "page does not state lifecycle status"
+    },
+    {
+     "field": "input_usd_per_1m_tokens",
+     "reason": "page does not state pricing"
+    },
+    {
+     "field": "output_usd_per_1m_tokens",
+     "reason": "page does not state pricing"
+    }
+   ]
+  },
+  {
+   "model_id": "qwen__qwen3-7-plus",
+   "confirmed": [
+    "first_available",
+    "general_availability",
+    "count_date",
+    "context_window_tokens",
+    "input_modalities"
+   ],
+   "discrepancies": [
+    {
+     "field": "max_output_tokens",
+     "dataset": "131072",
+     "source": "65536 (maxTokens in OpenClaw config sample on the page)",
+     "url": "https://qwen.ai/blog?id=qwen3.7-plus"
+    }
+   ],
+   "unverifiable": [
+    {
+     "field": "status",
+     "reason": "page does not state lifecycle status"
+    },
+    {
+     "field": "input_usd_per_1m_tokens",
+     "reason": "page does not state pricing"
+    },
+    {
+     "field": "output_usd_per_1m_tokens",
+     "reason": "page does not state pricing"
+    },
+    {
+     "field": "licence",
+     "reason": "page does not state the licence"
+    }
+   ]
+  },
+  {
+   "model_id": "qwen__qwen3-7-flash",
+   "confirmed": [
+    "first_available",
+    "general_availability",
+    "count_date"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "status",
+     "reason": "page does not state lifecycle status"
+    },
+    {
+     "field": "context_window_tokens",
+     "reason": "page does not state the context window"
+    },
+    {
+     "field": "max_output_tokens",
+     "reason": "page does not state a max output limit"
+    },
+    {
+     "field": "input_usd_per_1m_tokens",
+     "reason": "page does not state pricing"
+    },
+    {
+     "field": "output_usd_per_1m_tokens",
+     "reason": "page does not state pricing"
+    },
+    {
+     "field": "licence",
+     "reason": "page does not state the licence"
+    },
+    {
+     "field": "input_modalities",
+     "reason": "page says visual understanding; video not stated"
+    }
+   ]
+  },
+  {
+   "model_id": "qwen__qwen3-8-max",
+   "confirmed": [
+    "first_available",
+    "general_availability",
+    "count_date",
+    "context_window_tokens",
+    "params_total_billions",
+    "params_active_billions",
+    "input_modalities"
+   ],
+   "discrepancies": [
+    {
+     "field": "max_output_tokens",
+     "dataset": "131072",
+     "source": "65536 (maxTokens in OpenClaw config sample on the page)",
+     "url": "https://qwen.ai/blog?id=qwen3.8"
+    }
+   ],
+   "unverifiable": [
+    {
+     "field": "open_weights",
+     "reason": "page says only \"open weights will be released next week\""
+    },
+    {
+     "field": "status",
+     "reason": "page does not state lifecycle status"
+    },
+    {
+     "field": "input_usd_per_1m_tokens",
+     "reason": "page does not state pricing"
+    },
+    {
+     "field": "output_usd_per_1m_tokens",
+     "reason": "page does not state pricing"
+    },
+    {
+     "field": "licence",
+     "reason": "page does not state the licence"
+    },
+    {
+     "field": "architecture",
+     "reason": "page does not state MoE/hybrid attention"
+    }
+   ]
+  },
+  {
+   "model_id": "qwen__qwen3-8-27b",
+   "confirmed": [
+    "licence",
+    "context_window_tokens",
+    "params_total_billions",
+    "architecture",
+    "input_modalities"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "first_available",
+     "reason": "HF model card states no release date"
+    },
+    {
+     "field": "open_weights",
+     "reason": "HF model card states no release date"
+    },
+    {
+     "field": "count_date",
+     "reason": "HF model card states no release date"
+    },
+    {
+     "field": "status",
+     "reason": "page does not state lifecycle status"
+    },
+    {
+     "field": "max_output_tokens",
+     "reason": "page gives only a recommended output setting (131,072 for final response), not a stated max"
+    },
+    {
+     "field": "input_usd_per_1m_tokens",
+     "reason": "page does not state pricing"
+    },
+    {
+     "field": "output_usd_per_1m_tokens",
+     "reason": "page does not state pricing"
+    }
+   ]
+  },
+  {
+   "model_id": "qwen__qwen3-8-flash-open-qwen3-8-flash-next",
+   "confirmed": [
+    "first_available",
+    "open_weights",
+    "count_date",
+    "context_window_tokens",
+    "input_usd_per_1m_tokens",
+    "output_usd_per_1m_tokens",
+    "params_total_billions",
+    "params_active_billions",
+    "architecture",
+    "input_modalities"
+   ],
+   "discrepancies": [
+    {
+     "field": "max_output_tokens",
+     "dataset": "131072",
+     "source": "65536 (maxTokens in OpenClaw config sample on the page)",
+     "url": "https://qwen.ai/blog?id=qwen3.8-flash-next"
+    }
+   ],
+   "unverifiable": [
+    {
+     "field": "status",
+     "reason": "page does not state lifecycle status"
+    },
+    {
+     "field": "licence",
+     "reason": "page names no licence"
+    }
+   ]
+  },
+  {
+   "model_id": "qwen__qwen3-8-omni-flash",
+   "confirmed": [
+    "context_window_tokens",
+    "architecture",
+    "input_modalities"
+   ],
+   "discrepancies": [
+    {
+     "field": "first_available",
+     "dataset": "2026-09-18",
+     "source": "Sep 17 2026",
+     "url": "https://www.alibabacloud.com/en/news/product/qwen38-omni-flash-officially-released-o86"
+    },
+    {
+     "field": "general_availability",
+     "dataset": "2026-09-18",
+     "source": "Sep 17 2026",
+     "url": "https://www.alibabacloud.com/en/news/product/qwen38-omni-flash-officially-released-o86"
+    },
+    {
+     "field": "count_date",
+     "dataset": "2026-09-18",
+     "source": "Sep 17 2026",
+     "url": "https://www.alibabacloud.com/en/news/product/qwen38-omni-flash-officially-released-o86"
+    }
+   ],
+   "unverifiable": [
+    {
+     "field": "status",
+     "reason": "page does not state lifecycle status"
+    },
+    {
+     "field": "max_output_tokens",
+     "reason": "page does not state a max output limit"
+    },
+    {
+     "field": "input_usd_per_1m_tokens",
+     "reason": "page does not state pricing"
+    },
+    {
+     "field": "output_usd_per_1m_tokens",
+     "reason": "page does not state pricing"
+    },
+    {
+     "field": "licence",
+     "reason": "page does not state the licence"
+    }
+   ]
+  },
+  {
+   "model_id": "xai__grok-1",
+   "confirmed": [
+    "announced",
+    "context_window_tokens",
+    "input_modalities"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "first_available",
+     "reason": "Page only describes limited US early access via waitlist; no availability date."
+    },
+    {
+     "field": "open_weights",
+     "reason": "Not stated on announcement or model card (Grok-1.5 page only says weights released \"two weeks ago\", not an exact date)."
+    },
+    {
+     "field": "count_date",
+     "reason": "Open-weights release date not stated on the Grok announcement or model card."
+    },
+    {
+     "field": "status",
+     "reason": "Vendor page does not state current lifecycle status (active/legacy/retired)."
+    },
+    {
+     "field": "licence",
+     "reason": "Vendor page does not state licence."
+    },
+    {
+     "field": "params_total_billions",
+     "reason": "Parameter count not stated on page or model card."
+    },
+    {
+     "field": "params_active_billions",
+     "reason": "Active parameter count not stated on page or model card."
+    },
+    {
+     "field": "architecture",
+     "reason": "Model card says autoregressive Transformer; MoE not stated."
+    }
+   ]
+  },
+  {
+   "model_id": "xai__grok-1-5",
+   "confirmed": [
+    "announced",
+    "count_date",
+    "context_window_tokens"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "status",
+     "reason": "Vendor page does not state current lifecycle status (active/legacy/retired)."
+    },
+    {
+     "field": "licence",
+     "reason": "Vendor page does not state licence."
+    },
+    {
+     "field": "input_modalities",
+     "reason": "Grok-1.5 page does not state input modalities."
+    }
+   ]
+  },
+  {
+   "model_id": "xai__grok-2-mini",
+   "confirmed": [
+    "announced",
+    "first_available"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "status",
+     "reason": "Vendor page does not state current lifecycle status (active/legacy/retired)."
+    },
+    {
+     "field": "licence",
+     "reason": "Vendor page does not state licence."
+    },
+    {
+     "field": "input_modalities",
+     "reason": "Page states vision only for Grok-2; mini modalities not stated."
+    }
+   ]
+  },
+  {
+   "model_id": "xai__grok-3",
+   "confirmed": [
+    "announced",
+    "first_available",
+    "context_window_tokens"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "general_availability",
+     "reason": "Page does not give a general-availability date (says API coming in weeks)."
+    },
+    {
+     "field": "api_available",
+     "reason": "Page says API \"coming soon\"; no API date given."
+    },
+    {
+     "field": "count_date",
+     "reason": "Depends on GA/API date 2025-04-03, not stated on page."
+    },
+    {
+     "field": "status",
+     "reason": "Vendor page does not state current lifecycle status (active/legacy/retired)."
+    },
+    {
+     "field": "retired_on",
+     "reason": "Retirement date not stated on the vendor page or fetched release notes."
+    },
+    {
+     "field": "licence",
+     "reason": "Vendor page does not state licence."
+    },
+    {
+     "field": "input_modalities",
+     "reason": "Page does not explicitly state input modalities."
+    }
+   ]
+  },
+  {
+   "model_id": "xai__grok-3-mini",
+   "confirmed": [
+    "announced"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "first_available",
+     "reason": "Page says both models still in training; Grok 3 mini availability date not stated."
+    },
+    {
+     "field": "general_availability",
+     "reason": "No GA date on page."
+    },
+    {
+     "field": "api_available",
+     "reason": "API \"coming soon\"; no date."
+    },
+    {
+     "field": "count_date",
+     "reason": "Depends on 2025-04-03 date not on page."
+    },
+    {
+     "field": "status",
+     "reason": "Vendor page does not state current lifecycle status (active/legacy/retired)."
+    },
+    {
+     "field": "licence",
+     "reason": "Vendor page does not state licence."
+    },
+    {
+     "field": "input_modalities",
+     "reason": "Modalities not stated for mini."
+    }
+   ]
+  },
+  {
+   "model_id": "xai__grok-4",
+   "confirmed": [
+    "announced",
+    "first_available",
+    "general_availability",
+    "api_available",
+    "count_date",
+    "context_window_tokens",
+    "input_modalities"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "status",
+     "reason": "Vendor page does not state current lifecycle status (active/legacy/retired)."
+    },
+    {
+     "field": "retired_on",
+     "reason": "Retirement date not stated on the vendor page or fetched release notes."
+    },
+    {
+     "field": "licence",
+     "reason": "Vendor page does not state licence."
+    }
+   ]
+  },
+  {
+   "model_id": "xai__grok-4-heavy",
+   "confirmed": [
+    "announced",
+    "first_available",
+    "count_date"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "general_availability",
+     "reason": "Heavy offered only to SuperGrok Heavy subscribers; page gives no general-availability date."
+    },
+    {
+     "field": "status",
+     "reason": "Vendor page does not state current lifecycle status (active/legacy/retired)."
+    },
+    {
+     "field": "licence",
+     "reason": "Vendor page does not state licence."
+    },
+    {
+     "field": "input_modalities",
+     "reason": "Page states multimodality for the Grok 4 API, not specifically for Heavy."
+    }
+   ]
+  },
+  {
+   "model_id": "xai__grok-2",
+   "confirmed": [
+    "announced",
+    "first_available"
+   ],
+   "discrepancies": [
+    {
+     "field": "input_modalities",
+     "dataset": "t",
+     "source": "Page says Grok-2 has \"advanced capabilities in both text and vision understanding\" (but also says multimodal understanding preview is coming soon; page is internally ambiguous)",
+     "url": "https://x.ai/news/grok-2"
+    }
+   ],
+   "unverifiable": [
+    {
+     "field": "api_available",
+     "reason": "Page only says API planned \"later this month\" (Aug 2024); actual API date not stated."
+    },
+    {
+     "field": "open_weights",
+     "reason": "Not stated on the Grok-2 page."
+    },
+    {
+     "field": "count_date",
+     "reason": "Open-weights date not stated on page."
+    },
+    {
+     "field": "status",
+     "reason": "Vendor page does not state current lifecycle status (active/legacy/retired)."
+    },
+    {
+     "field": "licence",
+     "reason": "Vendor page does not state licence."
+    }
+   ]
+  },
+  {
+   "model_id": "xai__grok-4-fast",
+   "confirmed": [
+    "announced",
+    "first_available",
+    "general_availability",
+    "api_available",
+    "count_date",
+    "context_window_tokens",
+    "input_usd_per_1m_tokens",
+    "cached_input_usd_per_1m_tokens",
+    "output_usd_per_1m_tokens"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "status",
+     "reason": "Vendor page does not state current lifecycle status (active/legacy/retired)."
+    },
+    {
+     "field": "retired_on",
+     "reason": "Retirement date not stated on the vendor page or fetched release notes."
+    },
+    {
+     "field": "licence",
+     "reason": "Vendor page does not state licence."
+    },
+    {
+     "field": "input_modalities",
+     "reason": "Page and model card do not state input modalities explicitly."
+    }
+   ]
+  },
+  {
+   "model_id": "xai__grok-4-1",
+   "confirmed": [
+    "announced",
+    "first_available",
+    "general_availability",
+    "count_date"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "status",
+     "reason": "Vendor page does not state current lifecycle status (active/legacy/retired)."
+    },
+    {
+     "field": "licence",
+     "reason": "Vendor page does not state licence."
+    },
+    {
+     "field": "input_modalities",
+     "reason": "Modalities not stated on page or model card."
+    }
+   ]
+  },
+  {
+   "model_id": "xai__grok-4-1-fast",
+   "confirmed": [
+    "announced",
+    "first_available",
+    "general_availability",
+    "api_available",
+    "count_date",
+    "context_window_tokens",
+    "input_usd_per_1m_tokens",
+    "cached_input_usd_per_1m_tokens",
+    "output_usd_per_1m_tokens"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "status",
+     "reason": "Vendor page does not state current lifecycle status (active/legacy/retired)."
+    },
+    {
+     "field": "retired_on",
+     "reason": "Retirement date not stated on the vendor page or fetched release notes."
+    },
+    {
+     "field": "licence",
+     "reason": "Vendor page does not state licence."
+    }
+   ]
+  },
+  {
+   "model_id": "xai__grok-4-20",
+   "confirmed": [
+    "announced",
+    "first_available",
+    "general_availability",
+    "count_date"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "api_available",
+     "reason": "docs.x.ai release notes say only \"March\" for Grok 4.20 live; no day given."
+    },
+    {
+     "field": "status",
+     "reason": "Vendor page does not state current lifecycle status (active/legacy/retired)."
+    },
+    {
+     "field": "context_window_tokens",
+     "reason": "Not stated on the fetched release-notes pages."
+    },
+    {
+     "field": "input_usd_per_1m_tokens",
+     "reason": "Pricing not stated on fetched pages."
+    },
+    {
+     "field": "output_usd_per_1m_tokens",
+     "reason": "Pricing not stated on fetched pages."
+    },
+    {
+     "field": "licence",
+     "reason": "Vendor page does not state licence."
+    },
+    {
+     "field": "input_modalities",
+     "reason": "Not stated on fetched pages."
+    }
+   ]
+  },
+  {
+   "model_id": "xai__grok-4-20-multi-agent",
+   "confirmed": [],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "announced",
+     "reason": "docs.x.ai release notes say only \"March\"; no day given."
+    },
+    {
+     "field": "first_available",
+     "reason": "docs.x.ai release notes say only \"March\"; no day given."
+    },
+    {
+     "field": "api_available",
+     "reason": "docs.x.ai release notes say only \"March\"; no day given."
+    },
+    {
+     "field": "status",
+     "reason": "Vendor page does not state current lifecycle status (active/legacy/retired)."
+    },
+    {
+     "field": "licence",
+     "reason": "Vendor page does not state licence."
+    },
+    {
+     "field": "input_modalities",
+     "reason": "Not stated on fetched pages."
+    }
+   ]
+  },
+  {
+   "model_id": "xai__grok-4-3",
+   "confirmed": [
+    "announced",
+    "first_available",
+    "knowledge_cutoff"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "status",
+     "reason": "Vendor page does not state current lifecycle status (active/legacy/retired)."
+    },
+    {
+     "field": "context_window_tokens",
+     "reason": "Context window not stated on the release-notes page."
+    },
+    {
+     "field": "input_usd_per_1m_tokens",
+     "reason": "Pricing not stated on page."
+    },
+    {
+     "field": "cached_input_usd_per_1m_tokens",
+     "reason": "Pricing not stated on page."
+    },
+    {
+     "field": "output_usd_per_1m_tokens",
+     "reason": "Pricing not stated on page."
+    },
+    {
+     "field": "licence",
+     "reason": "Vendor page does not state licence."
+    },
+    {
+     "field": "input_modalities",
+     "reason": "Not stated on page."
+    }
+   ]
+  },
+  {
+   "model_id": "xai__grok-4-5",
+   "confirmed": [
+    "input_usd_per_1m_tokens",
+    "output_usd_per_1m_tokens"
+   ],
+   "discrepancies": [],
+   "unverifiable": [
+    {
+     "field": "announced",
+     "reason": "docs release notes entry for Grok 4.5 has no unambiguous date (a \"July 8\" label sits adjacent to the EU-availability entry and the Grok 4.5 entry)."
+    },
+    {
+     "field": "first_available",
+     "reason": "docs release notes entry for Grok 4.5 has no unambiguous date (a \"July 8\" label sits adjacent to the EU-availability entry and the Grok 4.5 entry)."
+    },
+    {
+     "field": "general_availability",
+     "reason": "docs release notes entry for Grok 4.5 has no unambiguous date (a \"July 8\" label sits adjacent to the EU-availability entry and the Grok 4.5 entry)."
+    },
+    {
+     "field": "api_available",
+     "reason": "docs release notes entry for Grok 4.5 has no unambiguous date (a \"July 8\" label sits adjacent to the EU-availability entry and the Grok 4.5 entry)."
+    },
+    {
+     "field": "count_date",
+     "reason": "docs release notes entry for Grok 4.5 has no unambiguous date (a \"July 8\" label sits adjacent to the EU-availability entry and the Grok 4.5 entry)."
+    },
+    {
+     "field": "status",
+     "reason": "Vendor page does not state current lifecycle status (active/legacy/retired)."
+    },
+    {
+     "field": "context_window_tokens",
+     "reason": "Context window not stated on the docs release notes (overview page not given as vendor_page)."
+    },
+    {
+     "field": "cached_input_usd_per_1m_tokens",
+     "reason": "Cached input price not stated on release notes."
+    },
+    {
+     "field": "licence",
+     "reason": "Vendor page does not state licence."
+    },
+    {
+     "field": "input_modalities",
+     "reason": "Not stated on release notes."
+    }
+   ]
+  },
+  {
+   "model_id": "xai__grok-4-6",
+   "confirmed": [
+    "announced",
+    "first_available",
+    "general_availability",
+    "api_available",
+    "count_date",
+    "context_window_tokens",
+    "input_usd_per_1m_tokens",
+    "cached_input_usd_per_1m_tokens",
+    "output_usd_per_1m_tokens",
+    "input_modalities"
+   ],
+   "discrepancies": [
+    {
+     "field": "knowledge_cutoff",
+     "dataset": "2026-02",
+     "source": "Model card: pretraining data cutoff of January 2026 (supplemental training data as late as June 2026)",
+     "url": "https://media.x.ai/v1/website/card-4p6-4cd2dc57.pdf"
+    }
+   ],
+   "unverifiable": [
+    {
+     "field": "status",
+     "reason": "Vendor page does not state current lifecycle status (active/legacy/retired)."
+    },
+    {
+     "field": "licence",
+     "reason": "Vendor page does not state licence."
+    }
+   ]
+  },
+  {
+   "model_id": "xai__grok-4-7",
+   "confirmed": [
+    "announced",
+    "first_available",
+    "general_availability",
+    "api_available",
+    "count_date",
+    "context_window_tokens",
+    "input_usd_per_1m_tokens",
+    "cached_input_usd_per_1m_tokens",
+    "output_usd_per_1m_tokens",
+    "input_modalities"
+   ],
+   "discrepancies": [
+    {
+     "field": "knowledge_cutoff",
+     "dataset": "2026-05",
+     "source": "Model card: pretraining data cutoff of June 2026 (supplemental training data as late as August 2026)",
+     "url": "https://media.x.ai/v1/website/4p7card-5eccc980.pdf"
+    }
+   ],
+   "unverifiable": [
+    {
+     "field": "status",
+     "reason": "Vendor page does not state current lifecycle status (active/legacy/retired)."
+    },
+    {
+     "field": "licence",
+     "reason": "Vendor page does not state licence."
+    }
+   ]
+  }
+ ]
+}
