@@ -136,4 +136,4 @@ Version 4 (5 November 2026) replaces earlier date sets, which remain in the Comp
 
 ## Licence
 
-Data: Creative Commons Attribution 4.0 International (CC BY 4.0), see `LICENSE`. Please cite as (or use `CITATION.cff`): Kim, H. E., *Comparative list of AI model releases*, version 4, 5 November 2026.
+Data and explorer: Creative Commons Attribution 4.0 International (CC BY 4.0), see `LICENSE`. You may reuse, adapt and redistribute them, including commercially, with credit. Please cite as (or use `CITATION.cff`): Kim, H. E., *Comparative list of AI model releases*, version 4, 5 November 2026. The material is provided as is and is not legal or financial advice. Vendor names and any quoted vendor text remain their owners'.
