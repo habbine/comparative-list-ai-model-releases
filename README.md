@@ -145,7 +145,7 @@ This is a snapshot taken on 5 November 2026 and is not updated automatically. To
 
 ## Feedback and discussion
 
-If you have a recommendation on how to improve this list or the explorer, or any comment, please share it and let us discuss. Start or join a conversation in the **[Discussions](https://github.com/habbine/Publications-/discussions)**. For a specific error or missing source, open a GitHub issue with the model, the field and a vendor URL.
+Constructive criticism, collaboration, recommendations and advice are all welcome. If you see a way to improve this list or the explorer, spot something that looks wrong, or would like to work on it together, please start or join a conversation in the **[Discussions](https://github.com/habbine/Publications-/discussions)**. I am open to discussion and happy to hear how you would do it differently. For a specific error or missing source, open a GitHub issue with the model, the field and a vendor URL.
 
 ## CSV columns
 
