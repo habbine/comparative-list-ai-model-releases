@@ -6,6 +6,7 @@ A source-checked, dated list of **224 general-purpose AI models** from **eight d
 
 - [`data/ai_model_releases.xlsx`](data/ai_model_releases.xlsx): the workbook for reading and filtering (8 sheets).
 - [`data/ai_model_releases.csv`](data/ai_model_releases.csv): the same Models table as plain text (UTF-8, one row per model, primary key `model_id`) for scripts and version control. Empty means not verified, never zero; dates are ISO 8601.
+- [`docs/index.html`](docs/index.html): the AI model explorer, a self-contained page to pick a developer and choose which information to show. Open it in a browser (after download, or through GitHub Pages if enabled).
 
 ## What is in it
 
