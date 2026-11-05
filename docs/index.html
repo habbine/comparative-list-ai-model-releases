@@ -90,7 +90,7 @@ function renderCmp(){
  <div class="lab">3. Models included</div><div class="row"><label class="f ${cc?'on':''}"><input type="checkbox" id="cc" ${cc?'checked':''}> counted models only (strict rule)</label><label class="f ${cs?'on':''}"><input type="checkbox" id="cs" ${cs?'checked':''}> hide snapshots and size variants</label></div>`;
  if(!ds.length){$('cmp').innerHTML=h+'<p class="ct">Select at least one developer.</p>';return}
  const isN=!!NUM[cf];
- if(isN){const N=NUM[cf],val=r=>typeof r[cf]==='number'?r[cf]:null;
+ if(isN){const N=NUM[cf],val=r=>{const v=r[cf];if(typeof v==='number')return v;if(typeof v==='string'&&/^[\d,]+(\.\d+)?$/.test(v.trim()))return Number(v.replace(/,/g,''));return null};
   const S=ds.map(d=>{const rs=rowsFor(d),w=rs.filter(r=>val(r)!==null).sort((a,b)=>(a.cd||a.ci||a.fa||'9').localeCompare(b.cd||b.ci||b.fa||'9')),v=w.map(val);
    return {d,n:rs.length,k:v.length,min:v.length?Math.min(...v):null,med:v.length?med(v):null,max:v.length?Math.max(...v):null,last:w.length?w[w.length-1]:null,w}});
   const all=S.flatMap(s=>s.w.map(val)),lo=Math.min(...all),hi=Math.max(...all),meds=S.filter(s=>s.med!==null).map(s=>s.med),mlo=Math.min(...meds),mhi=Math.max(...meds);
