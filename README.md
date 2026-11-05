@@ -143,6 +143,10 @@ Six rows are not confirmed on a vendor page and should be checked before citing:
 
 This is a snapshot taken on 5 November 2026 and is not updated automatically. To report an error or a missing source, open a GitHub issue with the model, the field and a vendor URL.
 
+## Feedback and discussion
+
+Constructive criticism, collaboration, recommendations and advice are all welcome. If you see a way to improve this list or the explorer, spot something that looks wrong, or would like to work on it together, please start or join a conversation in the **[Discussions](https://github.com/habbine/Publications-/discussions)**. I am open to discussion and happy to hear how you would do it differently. For a specific error or missing source, open a GitHub issue with the model, the field and a vendor URL.
+
 ## CSV columns
 
 `model_id`, `developer`, `model`, `stage_at_launch`, `counted_strict`, `count_date`, `count_basis`, `reason_not_counted`, `count_date_any_stage`, `announced`, `first_available`, `general_availability`, `api_available`, `open_weights`, `status`, `retired_on`, `replaced_by`, `context_window_tokens`, `max_output_tokens`, `knowledge_cutoff`, `input_usd_per_1m_tokens`, `cached_input_usd_per_1m_tokens`, `output_usd_per_1m_tokens`, `licence`, `params_total_billions`, `params_active_billions`, `architecture`, `input_modalities`, `reasoning_mode`, `platforms`, `api_model_id`, `variant_of`, `vendor_page`, `model_card`, `confidence`, `unverified`, `notes`
