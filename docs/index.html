@@ -31,14 +31,27 @@ a{color:var(--acc)}.n{color:var(--mut);font-size:13px;margin-top:20px}
 .leg{display:flex;flex-wrap:wrap;gap:12px;margin:8px 0;font-size:13px}.leg span{display:flex;align-items:center;gap:5px}.leg i{display:inline-block;width:12px;height:12px;border-radius:3px;line-height:12px;border:0}
 .sg0{background:#2a5db0}.sg1{background:#c2570c}.sg2{background:#2f8f5b}.sg3{background:#8a4fb0}.sg4{background:#a8841a}.sg5{background:#5f6b7a}
 @media(max-width:560px){.sn{width:90px}.bar{width:70px}}
+
+:root{--ok:#1e7a43;--okbg:#e3f4ea;--wn:#8a5a00;--wnbg:#fbf0d9;--or:#a34a00;--orbg:#fde9d8;--bad:#b3261e;--badbg:#fbe3e1;--inf:#1f4f9c;--infbg:#e3ecfa;--neu:#5b5b56;--neubg:#ecebe6}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--ok:#7ddc9f;--okbg:#16301f;--wn:#e6b95c;--wnbg:#35290e;--or:#f0a368;--orbg:#38200d;--bad:#f28b82;--badbg:#3a1a18;--inf:#9bbcff;--infbg:#1e2b47;--neu:#b3b3ac;--neubg:#2b2b30}}
+:root[data-theme=dark]{--ok:#7ddc9f;--okbg:#16301f;--wn:#e6b95c;--wnbg:#35290e;--or:#f0a368;--orbg:#38200d;--bad:#f28b82;--badbg:#3a1a18;--inf:#9bbcff;--infbg:#1e2b47;--neu:#b3b3ac;--neubg:#2b2b30}
+.bd{display:inline-block;font-size:12px;font-weight:600;border-radius:999px;padding:1px 9px;border:1px solid currentColor;line-height:1.5}
+.bd.ok{color:var(--ok);background:var(--okbg)}.bd.wn{color:var(--wn);background:var(--wnbg)}.bd.or{color:var(--or);background:var(--orbg)}.bd.bad{color:var(--bad);background:var(--badbg)}.bd.inf{color:var(--inf);background:var(--infbg)}.bd.neu{color:var(--neu);background:var(--neubg)}
+.tn-ok{background:#2f8f5b}.tn-wn{background:#d9a62b;color:#1d1d1b!important}.tn-or{background:#c2570c}.tn-bad{background:#c0392b}.tn-inf{background:#2a5db0}.tn-neu{background:#7d7d77}
+.key{font-size:13px;color:var(--mut);margin:0 0 14px;display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center}
+.nv{display:inline-block;color:var(--neu);background:repeating-linear-gradient(45deg,var(--neubg),var(--neubg) 5px,transparent 5px,transparent 9px);border:1px dashed var(--neu);border-radius:6px;padding:0 8px;font-size:12.5px;font-style:italic;line-height:1.55;white-space:nowrap}
+tr.nvr td{background:var(--neubg)}tr.nvr td:first-child{color:var(--mut)}
 </style></head><body><div class="w">
 <h1>AI model explorer</h1>
 <p class="s" id="intro2" hidden>Pick one piece of information and see every developer side by side. Models without a verified value are left out of the figures, never counted as zero. Medians mix flagship and small models, so read them next to the model-by-model lists.</p>
+<p class="s" id="disc" style="border-left:3px solid var(--warn);padding:6px 10px;background:var(--card)"><b>Not every value could be found.</b> Vendor pages do not state every field, so some cells are blank. Blank means <i>not verified</i>, never zero, and says nothing about whether the vendor has a value. Check anything you rely on at the linked vendor page.</p>
+<div class="key"><span>Colour key:</span><span class="bd ok">active · high confidence · general availability</span><span class="bd wn">legacy · medium · preview or beta</span><span class="bd or">deprecated</span><span class="bd bad">retired · low confidence</span><span class="bd inf">open weights · reasoning</span><span class="bd neu">gated</span><span class="nv">not verified (value could not be found)</span><span>The label always carries the meaning; colour only helps scanning.</span></div>
 <div class="mt"><button data-mode="one" aria-pressed="true">Browse one developer</button><button data-mode="cmp" aria-pressed="false">Compare developers</button></div>
 <p class="s" id="intro1">Choose a developer, then tick the information you want to see. 224 general-purpose models, 14 Mar 2023 to 7 Oct 2026; 197 are counted under the strict rule. Blank means not verified at the vendor source, never zero.</p>
 <div id="one"><div class="lab">1. Developer</div><div class="row" id="devs"></div>
 <div class="lab">2. Information to show</div><div class="row" id="fields"></div>
 <div class="lab">3. Filter</div><div class="row"><input class="q" id="q" placeholder="Search model name"><label class="f"><input type="checkbox" id="hide"> hide snapshots and size variants</label><label class="f"><input type="checkbox" id="vo"> only vendor-verified rows</label></div>
+<div class="lab">4. Order and visibility</div><div class="row"><label class="f">Order <select id="sortb"></select></label><label class="f"><input type="checkbox" id="hnv"> hide fields that are “not verified”</label></div><div class="row" id="stf" style="margin-top:8px"></div>
 <div class="ct" id="ct"></div><div id="out"></div></div><div id="cmp" hidden></div>
 <p class="n">Dates are first public availability on the vendor's own page; GA, API and weights dates are kept separately. Preview, beta, experimental and gated launches are labelled by stage. Prices are USD per million tokens at launch or latest vendor page. Source: vendor pages listed per row; checked 5 Nov 2026.</p>
 </div><script>
@@ -56,17 +69,28 @@ const devs=[...new Set(D.map(r=>r.dev))].sort((a,b)=>a.toLowerCase().localeCompa
 const $=id=>document.getElementById(id);
 function bd(){ $('devs').innerHTML=devs.map(d=>`<button class="c" aria-pressed="${d===dev}" data-d="${d}">${d}<small>${D.filter(r=>r.dev===d).length}</small></button>`).join('');
 $('fields').innerHTML=Object.keys(G).map(g=>`<label class="f ${sel.has(g)?'on':''}"><input type="checkbox" data-g="${g}" ${sel.has(g)?'checked':''}>${g}</label>`).join('');}
-function fmt(k,v){ if(v==null||v==='')return null; if(k=='src'||k=='card')return `<a href="${v}" target="_blank" rel="noopener">${v.replace(/^https?:\/\//,'').slice(0,60)}</a>`; if(['ctx','mx'].includes(k))return Number(v).toLocaleString('en-GB'); if(['pi','pc','po'].includes(k))return '$'+v; if(k=='mi')return v.split(',').map(x=>({t:'text',i:'image',a:'audio',v:'video'}[x]||x)).join(', '); if(k=='plat')return v.split(',').join(', '); return String(v).replace(/</g,'&lt;');}
-function render(){ if(!dev){$('out').innerHTML='';$('ct').textContent='Select a developer above.';return}
+const TONE={stat:{active:'ok',legacy:'wn',deprecated:'or',retired:'bad'},conf:{high:'ok',medium:'wn',low:'bad'},st:{ga:'ok',open_weights_release:'inf',preview:'wn',beta:'wn',experimental:'wn',gated:'neu'},rm:{reasoning:'inf',hybrid:'inf'}};
+const badge=(k,v)=>TONE[k]&&TONE[k][v]?`<span class="bd ${TONE[k][v]}">${String(v).replace(/_/g,' ')}</span>`:null;
+const dk=r=>r.cd||r.ci||r.fa||'';
+const rank=(m,v)=>{const i=m.indexOf(v);return i<0?m.length:i};
+const SORT={chrono:(a,b)=>!dk(a)-!dk(b)||dk(a).localeCompare(dk(b)),anti:(a,b)=>!dk(a)-!dk(b)||dk(b).localeCompare(dk(a)),
+stat:(a,b)=>rank(['active','legacy','deprecated','retired'],a.stat)-rank(['active','legacy','deprecated','retired'],b.stat)||SORT.chrono(a,b),
+conf:(a,b)=>rank(['high','medium','low'],a.conf)-rank(['high','medium','low'],b.conf)||SORT.chrono(a,b),
+name:(a,b)=>a.name.toLowerCase().localeCompare(b.name.toLowerCase())};
+const SORTL=[['chrono','Chronological (oldest first)'],['anti','Antichronological (newest first)'],['stat','Status (active first)'],['conf','Confidence (high first)'],['name','Name A to Z']];
+const STS=['active','legacy','deprecated','retired','unknown'];let fst=new Set(STS),hnv=false;
+const fsHtml=()=>STS.map(x=>`<label class="f ${fst.has(x)?'on':''}"><input type="checkbox" data-fs="${x}" ${fst.has(x)?'checked':''}>${x==='unknown'?'<span class="nv">status not verified</span>':badge('stat',x)}</label>`).join('');
+function fmt(k,v){ if(v==null||v==='')return null; {const bg=badge(k,v);if(bg)return bg} if(k=='src'||k=='card')return `<a href="${v}" target="_blank" rel="noopener">${v.replace(/^https?:\/\//,'').slice(0,60)}</a>`; if(['ctx','mx'].includes(k))return Number(v).toLocaleString('en-GB'); if(['pi','pc','po'].includes(k))return '$'+v; if(k=='mi')return v.split(',').map(x=>({t:'text',i:'image',a:'audio',v:'video'}[x]||x)).join(', '); if(k=='plat')return v.split(',').join(', '); return String(v).replace(/</g,'&lt;');}
+function render(){ $('stf').innerHTML=fsHtml(); if(!dev){$('out').innerHTML='';$('ct').textContent='Select a developer above.';return}
  const q=$('q').value.toLowerCase(),h=$('hide').checked,vo=$('vo').checked;
- let rs=D.filter(r=>r.dev===dev&&(!q||r.name.toLowerCase().includes(q))&&(!h||!r.snap)&&(!vo||!r.unv&&r.conf!=='low')).sort((a,b)=>((a.cd||a.ci||a.fa||'9')).localeCompare(b.cd||b.ci||b.fa||'9'));
+ let rs=D.filter(r=>r.dev===dev&&(!q||r.name.toLowerCase().includes(q))&&(!h||!r.snap)&&(!vo||!r.unv&&r.conf!=='low')&&fst.has(r.stat||'unknown')).sort(SORT[$('sortb').value||'chrono']);
  $('ct').textContent=rs.length+' models';
- $('out').innerHTML=rs.map(r=>{let tags=(r.st!=='ga'&&r.st!=='open_weights_release'?`<span class="tag w">${r.st} at launch</span>`:'')+(r.counted?'':'<span class="tag w">not counted</span>')+(r.snap?'<span class="tag">variant</span>':'')+(r.unv?'<span class="tag w">unverified</span>':'');
- let rows='';for(const g of sel)for(const [k,l] of G[g]){const v=(k=='why'&&r.counted)?'counted':fmt(k,r[k]);rows+=`<dt>${l}</dt><dd>${v??'<span style="color:var(--mut)">not verified</span>'}</dd>`}
+ $('out').innerHTML=rs.map(r=>{let tags=(r.stat?badge('stat',r.stat):'')+(r.st!=='ga'&&r.st!=='open_weights_release'?`<span class="bd ${(TONE.st[r.st]||'neu')}">${r.st} at launch</span>`:'')+(r.counted?'':'<span class="bd neu">not counted</span>')+(r.snap?'<span class="tag">variant</span>':'')+(r.unv?'<span class="tag w">unverified</span>':'');
+ let rows='';for(const g of sel)for(const [k,l] of G[g]){const v=(k=='why'&&r.counted)?'counted':fmt(k,r[k]);if(v==null&&$('hnv').checked)continue;rows+=`<dt>${l}</dt><dd>${v??'<span class="nv">not verified</span>'}</dd>`}
  return `<div class="m"><h3>${r.name.replace(/</g,'&lt;')} ${tags}</h3><dl>${rows||'<dt>Select information above</dt><dd></dd>'}</dl></div>`}).join('');}
 document.addEventListener('click',e=>{const b=e.target.closest('[data-d]');if(b){dev=b.dataset.d;bd();render()}});
 document.addEventListener('change',e=>{const g=e.target.dataset.g;if(g){e.target.checked?sel.add(g):sel.delete(g);bd();render()}else render()});
-$('q').addEventListener('input',render);bd();render();
+$('sortb').innerHTML=SORTL.map(([k,l])=>`<option value="${k}">${l}</option>`).join('');$('q').addEventListener('input',render);bd();render();
 /* ---- compare developers ---- */
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const tokf=v=>v>=1e6?(v/1e6).toFixed(v%1e6?1:0).replace(/\.0$/,'')+'M':v>=1e3?Math.round(v/1e3)+'k':String(v);
@@ -82,42 +106,49 @@ let cdev=new Set(devs),cf='po',cc=false,cs=true,csort='dev',cdir=1;
 const med=a=>{const s=[...a].sort((x,y)=>x-y),n=s.length;return n%2?s[(n-1)/2]:(s[n/2-1]+s[n/2])/2};
 const cname=k=>(NUM[k]||CAT[k]).l;
 function cbar(v,lo,hi,log){let w=hi===lo?100:log?100*(Math.log10(v)-Math.log10(lo))/(Math.log10(hi)-Math.log10(lo)):100*v/hi;return `<span class="bar"><i style="width:${Math.max(4,Math.min(100,w))}%"></i></span>`}
-function rowsFor(d){return D.filter(r=>r.dev===d&&(!cc||r.counted)&&(!cs||!r.snap))}
+let cord='chrono';
+function rowsFor(d){return D.filter(r=>r.dev===d&&(!cc||r.counted)&&(!cs||!r.snap)&&fst.has(r.stat||'unknown'))}
 function renderCmp(){
  const ds=devs.filter(d=>cdev.has(d));
  let h=`<div class="lab">1. Developers to compare</div><div class="row">${devs.map(d=>`<label class="f ${cdev.has(d)?'on':''}"><input type="checkbox" data-cd="${esc(d)}" ${cdev.has(d)?'checked':''}>${esc(d)}</label>`).join('')}</div>
  <div class="lab">2. Compare on</div>${CG.map(([g,ks])=>`<div class="row" style="margin-bottom:6px"><span class="gl">${g}</span>${ks.map(k=>`<button class="c" aria-pressed="${k===cf}" data-cf="${k}">${cname(k)}</button>`).join('')}</div>`).join('')}
- <div class="lab">3. Models included</div><div class="row"><label class="f ${cc?'on':''}"><input type="checkbox" id="cc" ${cc?'checked':''}> counted models only (strict rule)</label><label class="f ${cs?'on':''}"><input type="checkbox" id="cs" ${cs?'checked':''}> hide snapshots and size variants</label></div>`;
+ <div class="lab">3. Models included</div><div class="row"><label class="f ${cc?'on':''}"><input type="checkbox" id="cc" ${cc?'checked':''}> counted models only (strict rule)</label><label class="f ${cs?'on':''}"><input type="checkbox" id="cs" ${cs?'checked':''}> hide snapshots and size variants</label></div>
+ <div class="lab">4. Status of models</div><div class="row">${fsHtml()}</div>
+ <div class="lab">5. Order and visibility</div><div class="row"><label class="f">Order of model lists <select id="cord">${[['chrono','Chronological (oldest first)'],['anti','Antichronological (newest first)'],['hi','Highest value first'],['lo','Lowest value first']].map(([k,l])=>`<option value="${k}" ${cord===k?'selected':''}>${l}</option>`).join('')}</select></label><label class="f ${hnv?'on':''}"><input type="checkbox" id="chnv" ${hnv?'checked':''}> hide developers and years with no verified value</label></div>`;
  if(!ds.length){$('cmp').innerHTML=h+'<p class="ct">Select at least one developer.</p>';return}
  const isN=!!NUM[cf];
  if(isN){const N=NUM[cf],val=r=>{const v=r[cf];if(typeof v==='number')return v;if(typeof v==='string'&&/^[\d,]+(\.\d+)?$/.test(v.trim()))return Number(v.replace(/,/g,''));return null};
-  const S=ds.map(d=>{const rs=rowsFor(d),w=rs.filter(r=>val(r)!==null).sort((a,b)=>(a.cd||a.ci||a.fa||'9').localeCompare(b.cd||b.ci||b.fa||'9')),v=w.map(val);
+  let S=ds.map(d=>{const rs=rowsFor(d),w=rs.filter(r=>val(r)!==null).sort((a,b)=>(a.cd||a.ci||a.fa||'9').localeCompare(b.cd||b.ci||b.fa||'9')),v=w.map(val);
    return {d,n:rs.length,k:v.length,min:v.length?Math.min(...v):null,med:v.length?med(v):null,max:v.length?Math.max(...v):null,last:w.length?w[w.length-1]:null,w}});
+  if(hnv)S=S.filter(s=>s.k);if(!S.length){$('cmp').innerHTML=h+'<p class="ct">No developer has a verified value for this selection.</p>';return}
   const all=S.flatMap(s=>s.w.map(val)),lo=Math.min(...all),hi=Math.max(...all),meds=S.filter(s=>s.med!==null).map(s=>s.med),mlo=Math.min(...meds),mhi=Math.max(...meds);
   const key={dev:s=>s.d.toLowerCase(),k:s=>s.k/(s.n||1),min:s=>s.min,med:s=>s.med,max:s=>s.max};
   S.sort((a,b)=>{const x=key[csort](a),y=key[csort](b);if(x==null)return 1;if(y==null)return -1;return (x<y?-1:x>y?1:0)*cdir});
   const th=(k,t)=>`<th><button class="sb" data-cs="${k}">${t}${csort===k?(cdir>0?' ▲':' ▼'):''}</button></th>`;
   h+=`<div class="ct">${N.l}, ${N.u}. Only models with a verified value are counted; “with data” shows how many that is. Bars compare medians${N.log?' on a log scale':''}.</div>
-  <div class="tw"><table><thead><tr>${th('dev','Developer')}${th('k','With data')}${th('min','Lowest')}${th('med','Median')}${th('max','Highest')}<th>Latest model with a value</th><th>Median</th></tr></thead><tbody>${S.map(s=>`<tr><td>${esc(s.d)}</td><td>${s.k} of ${s.n}</td><td>${s.min==null?'–':N.f(s.min)}</td><td><b>${s.med==null?'–':N.f(s.med)}</b></td><td>${s.max==null?'–':N.f(s.max)}</td><td>${s.last?esc(s.last.name)+' <span class="mu">'+N.f(val(s.last))+'</span>':'–'}</td><td>${s.med==null?'':cbar(s.med,mlo,mhi,N.log)}</td></tr>`).join('')}</tbody></table></div>`;
+  <div class="tw"><table><thead><tr>${th('dev','Developer')}${th('k','With data')}${th('min','Lowest')}${th('med','Median')}${th('max','Highest')}<th>Latest model with a value</th><th>Median</th></tr></thead><tbody>${S.map(s=>`<tr class="${s.k?'':'nvr'}"><td>${esc(s.d)}</td><td>${s.k} of ${s.n}</td><td>${s.min==null?'<span class="nv">not verified</span>':N.f(s.min)}</td><td><b>${s.med==null?'<span class="nv">not verified</span>':N.f(s.med)}</b></td><td>${s.max==null?'<span class="nv">not verified</span>':N.f(s.max)}</td><td>${s.last?esc(s.last.name)+' <span class="mu">'+N.f(val(s.last))+'</span>':'<span class="nv">not verified</span>'}</td><td>${s.med==null?'':cbar(s.med,mlo,mhi,N.log)}</td></tr>`).join('')}</tbody></table></div>`;
   const ys=[...new Set(S.flatMap(s=>s.w.map(yr)))].sort();
-  h+=`<div class="lab">Median by year of release</div><div class="tw"><table><thead><tr><th>Developer</th>${ys.map(y=>`<th>${y}</th>`).join('')}</tr></thead><tbody>${S.map(s=>`<tr><td>${esc(s.d)}</td>${ys.map(y=>{const v=s.w.filter(r=>yr(r)===y).map(val);return `<td>${v.length?N.f(med(v))+' <span class="mu">('+v.length+')</span>':'<span class="mu">–</span>'}</td>`}).join('')}</tr>`).join('')}</tbody></table></div><div class="ct">Figures in brackets are the number of models with a value that year.</div>`;
-  h+=`<div class="lab">Model by model, side by side (oldest first)</div><div class="cols">${S.map(s=>`<div class="col"><h4>${esc(s.d)}<small>${s.k} of ${s.n}</small></h4>${s.w.length?s.w.map(r=>{const v=val(r);return `<div class="it${v===hi?' top':v===lo?' low':''}"><span>${esc(r.name)}</span><b>${N.f(v)}</b></div>`}).join(''):'<div class="mu">no verified values</div>'}</div>`).join('')}</div><div class="ct">Highest value overall is outlined in the accent colour, lowest is dashed.</div>`;
+  h+=`<div class="lab">Median by year of release</div><div class="tw"><table><thead><tr><th>Developer</th>${ys.map(y=>`<th>${y}</th>`).join('')}</tr></thead><tbody>${S.map(s=>`<tr><td>${esc(s.d)}</td>${ys.map(y=>{const v=s.w.filter(r=>yr(r)===y).map(val);return `<td>${v.length?N.f(med(v))+' <span class="mu">('+v.length+')</span>':hnv?'':'<span class="nv">not verified</span>'}</td>`}).join('')}</tr>`).join('')}</tbody></table></div><div class="ct">Figures in brackets are the number of models with a value that year.</div>`;
+  h+=`<div class="lab">Model by model, side by side</div><div class="cols">${S.map(s=>`<div class="col"><h4>${esc(s.d)}<small>${s.k} of ${s.n}</small></h4>${s.w.length?[...s.w].sort(cord==='hi'?(a,b)=>val(b)-val(a):cord==='lo'?(a,b)=>val(a)-val(b):cord==='anti'?SORT.anti:SORT.chrono).map(r=>{const v=val(r);return `<div class="it${v===hi?' top':v===lo?' low':''}"><span>${esc(r.name)}</span><b>${N.f(v)}</b></div>`}).join(''):'<div class="nv">no verified values</div>'}</div>`).join('')}</div><div class="ct">Highest value overall is outlined in the accent colour, lowest is dashed.</div>`;
  }else{const C=CAT[cf];
-  const S=ds.map(d=>{const rs=rowsFor(d),m={};let k=0;rs.forEach(r=>{const c=C.f(r);if(c!=null){m[c]=(m[c]||0)+1;k++}});return {d,n:rs.length,k,m}});
+  let S=ds.map(d=>{const rs=rowsFor(d),m={};let k=0;rs.forEach(r=>{const c=C.f(r);if(c!=null){m[c]=(m[c]||0)+1;k++}});return {d,n:rs.length,k,m}});
+  if(hnv)S=S.filter(s=>s.k);if(!S.length){$('cmp').innerHTML=h+'<p class="ct">No developer has a verified value for this selection.</p>';return}
   const cats=[...new Set(S.flatMap(s=>Object.keys(s.m)))].sort();
+  const tn=c=>TONE[cf]&&TONE[cf][c]?'tn-'+TONE[cf][c]:null,cl=(c,i)=>tn(c)||'sg'+(i%6);
   const key=csort==='dev'?s=>s.d.toLowerCase():csort==='k'?s=>s.k/(s.n||1):s=>(s.m[csort]||0)/(s.k||1);
   S.sort((a,b)=>{const x=key(a),y=key(b);return (x<y?-1:x>y?1:0)*cdir});
   const th=(k,t)=>`<th><button class="sb" data-cs="${k}">${t}${csort===k?(cdir>0?' ▲':' ▼'):''}</button></th>`;
   h+=`<div class="ct">${C.l}: number of models in each category, with the share of the developer’s models that have a verified value in brackets. Click a column to sort by share.</div>
-  <div class="tw"><table><thead><tr>${th('dev','Developer')}${th('k','With data')}${cats.map(c=>th(c,esc(c))).join('')}</tr></thead><tbody>${S.map(s=>`<tr><td>${esc(s.d)}</td><td>${s.k} of ${s.n}</td>${cats.map(c=>{const x=s.m[c]||0;return `<td>${x?`<b>${x}</b> <span class="mu">(${Math.round(100*x/s.k)}%)</span>`:'<span class="mu">0</span>'}</td>`}).join('')}</tr>`).join('')}</tbody></table></div>`;
-  h+=`<div class="lab">Share by developer</div>${S.map(s=>`<div class="sr"><span class="sn">${esc(s.d)}</span><span class="stack">${cats.map((c,i)=>s.m[c]?`<i class="sg${i%6}" style="width:${100*s.m[c]/s.k}%" title="${esc(c)}: ${s.m[c]}">${s.m[c]/s.k>.09?s.m[c]:''}</i>`:'').join('')}</span></div>`).join('')}<div class="leg">${cats.map((c,i)=>`<span><i class="sg${i%6}"></i>${esc(c)}</span>`).join('')}</div>`;
+  <div class="tw"><table><thead><tr>${th('dev','Developer')}${th('k','With data')}${cats.map(c=>th(c,TONE[cf]&&TONE[cf][c]?badge(cf,c):esc(c))).join('')}</tr></thead><tbody>${S.map(s=>`<tr><td>${esc(s.d)}</td><td>${s.k} of ${s.n}</td>${cats.map(c=>{const x=s.m[c]||0;return `<td>${x?`<b>${x}</b> <span class="mu">(${Math.round(100*x/s.k)}%)</span>`:'<span class="mu">0</span>'}</td>`}).join('')}</tr>`).join('')}</tbody></table></div>`;
+  h+=`<div class="lab">Share by developer</div>${S.map(s=>`<div class="sr"><span class="sn">${esc(s.d)}</span><span class="stack">${cats.map((c,i)=>s.m[c]?`<i class="${cl(c,i)}" style="width:${100*s.m[c]/s.k}%" title="${esc(c)}: ${s.m[c]}">${s.m[c]/s.k>.09?s.m[c]:''}</i>`:'').join('')}</span></div>`).join('')}<div class="leg">${cats.map((c,i)=>`<span><i class="${cl(c,i)}"></i>${esc(c)}</span>`).join('')}</div>`;
  }
  $('cmp').innerHTML=h;}
 function setMode(m){$('intro1').hidden=m!=='one';$('intro2').hidden=m!=='cmp';$('one').hidden=m!=='one';$('cmp').hidden=m!=='cmp';document.querySelectorAll('[data-mode]').forEach(b=>b.setAttribute('aria-pressed',b.dataset.mode===m));if(m==='cmp')renderCmp();try{history.replaceState(null,'','#'+m)}catch(e){}}
 document.addEventListener('click',e=>{const m=e.target.closest('[data-mode]');if(m)return setMode(m.dataset.mode);
  const f=e.target.closest('[data-cf]');if(f){cf=f.dataset.cf;csort='dev';cdir=1;return renderCmp()}
  const s=e.target.closest('[data-cs]');if(s){const k=s.dataset.cs;if(csort===k)cdir=-cdir;else{csort=k;cdir=k==='dev'?1:-1}renderCmp()}});
-document.addEventListener('change',e=>{const t=e.target;if(t.dataset.cd){t.checked?cdev.add(t.dataset.cd):cdev.delete(t.dataset.cd);renderCmp()}else if(t.id==='cc'){cc=t.checked;renderCmp()}else if(t.id==='cs'){cs=t.checked;renderCmp()}});
+document.addEventListener('change',e=>{const t=e.target;if(t.dataset.fs){t.checked?fst.add(t.dataset.fs):fst.delete(t.dataset.fs);render();if(!$('cmp').hidden)renderCmp();return}
+ if(t.id==='cord'){cord=t.value;return renderCmp()}if(t.id==='chnv'){hnv=t.checked;return renderCmp()}if(t.dataset.cd){t.checked?cdev.add(t.dataset.cd):cdev.delete(t.dataset.cd);renderCmp()}else if(t.id==='cc'){cc=t.checked;renderCmp()}else if(t.id==='cs'){cs=t.checked;renderCmp()}});
 setMode(location.hash==='#cmp'?'cmp':'one');
 
 </script></body></html>
