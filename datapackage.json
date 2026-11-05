@@ -1,0 +1,209 @@
+{
+ "name": "ai-model-releases",
+ "title": "AI model releases, 14 March 2023 to 7 October 2026",
+ "version": "4.0.0",
+ "licenses": [
+  {
+   "name": "CC-BY-4.0",
+   "path": "https://creativecommons.org/licenses/by/4.0/"
+  }
+ ],
+ "resources": [
+  {
+   "name": "models",
+   "path": "data/ai_model_releases.csv",
+   "format": "csv",
+   "encoding": "utf-8",
+   "schema": {
+    "fields": [
+     {
+      "name": "dev",
+      "type": "string",
+      "description": "Developer"
+     },
+     {
+      "name": "name",
+      "type": "string",
+      "description": "Model name as the vendor writes it"
+     },
+     {
+      "name": "st",
+      "type": "string",
+      "description": "Stage at launch (ga, open_weights_release, preview, beta, experimental, gated)"
+     },
+     {
+      "name": "counted",
+      "type": "integer",
+      "description": "1 if counted under the strict rule"
+     },
+     {
+      "name": "cd",
+      "type": "date",
+      "description": "Count date (YYYY-MM-DD)"
+     },
+     {
+      "name": "cb",
+      "type": "string",
+      "description": "Which date was used for counting"
+     },
+     {
+      "name": "why",
+      "type": "string",
+      "description": "Reason not counted"
+     },
+     {
+      "name": "ci",
+      "type": "date",
+      "description": "Date used if every stage is counted"
+     },
+     {
+      "name": "an",
+      "type": "date",
+      "description": "Announcement date"
+     },
+     {
+      "name": "fa",
+      "type": "date",
+      "description": "First date the public could use the model"
+     },
+     {
+      "name": "ga",
+      "type": "date",
+      "description": "General-availability date"
+     },
+     {
+      "name": "api",
+      "type": "date",
+      "description": "First date available through the API"
+     },
+     {
+      "name": "wt",
+      "type": "date",
+      "description": "Open-weights publication date"
+     },
+     {
+      "name": "stat",
+      "type": "string",
+      "description": "active, legacy, deprecated or retired"
+     },
+     {
+      "name": "ret",
+      "type": "date",
+      "description": "Vendor retirement date"
+     },
+     {
+      "name": "rep",
+      "type": "string",
+      "description": "Vendor-named successor"
+     },
+     {
+      "name": "ctx",
+      "type": "integer",
+      "description": "Context window, tokens"
+     },
+     {
+      "name": "mx",
+      "type": "integer",
+      "description": "Maximum output, tokens"
+     },
+     {
+      "name": "ck",
+      "type": "string",
+      "description": "Knowledge cutoff, YYYY-MM"
+     },
+     {
+      "name": "pi",
+      "type": "number",
+      "description": "USD per 1M input tokens"
+     },
+     {
+      "name": "pc",
+      "type": "number",
+      "description": "USD per 1M cached input tokens"
+     },
+     {
+      "name": "po",
+      "type": "number",
+      "description": "USD per 1M output tokens"
+     },
+     {
+      "name": "lic",
+      "type": "string",
+      "description": "Licence"
+     },
+     {
+      "name": "pt",
+      "type": "number",
+      "description": "Total parameters, billions"
+     },
+     {
+      "name": "pa",
+      "type": "number",
+      "description": "Active parameters, billions"
+     },
+     {
+      "name": "ar",
+      "type": "string",
+      "description": "dense or moe"
+     },
+     {
+      "name": "mi",
+      "type": "string",
+      "description": "Input modalities: t text, i image, a audio, v video, pdf"
+     },
+     {
+      "name": "rm",
+      "type": "string",
+      "description": "Reasoning mode"
+     },
+     {
+      "name": "plat",
+      "type": "string",
+      "description": "Platforms (comma separated)"
+     },
+     {
+      "name": "apiid",
+      "type": "string",
+      "description": "API model ID"
+     },
+     {
+      "name": "snap",
+      "type": "string",
+      "description": "Parent model if a variant"
+     },
+     {
+      "name": "src",
+      "type": "string",
+      "description": "Vendor page"
+     },
+     {
+      "name": "card",
+      "type": "string",
+      "description": "Model or system card"
+     },
+     {
+      "name": "conf",
+      "type": "string",
+      "description": "high, medium or low"
+     },
+     {
+      "name": "unv",
+      "type": "integer",
+      "description": "1 if not confirmed against a vendor page"
+     },
+     {
+      "name": "note",
+      "type": "string",
+      "description": "Conflicts and caveats"
+     },
+     {
+      "name": "id",
+      "type": "string",
+      "description": "Stable key developer__slug (primary key)"
+     }
+    ],
+    "primaryKey": "id"
+   }
+  }
+ ]
+}
