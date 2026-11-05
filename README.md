@@ -28,8 +28,9 @@ For each model the workbook gives, where a vendor source states it: stage at lau
 | Sheet | Use |
 |---|---|
 | Read me | Scope and rules, inside the file |
-| Models | The data. Filter with the header arrows; alphabetical by developer, then by date |
-| Counts | Models per developer and year, computed live from Models; last 12 months against the previous 12; exact binomial p-value |
+| Summary | Short view: 11 key columns for each model, linked to Models |
+| Models | The data, 37 columns. Filter with the header arrows; alphabetical by developer, then by date |
+| Counts | Models per developer and year, computed live from Models; last 12 months against the previous 12; exact binomial p-value; chart of models per quarter |
 | Compare versions | First-public dates in four successive versions of the list, with the spread in days and a change flag |
 | Not counted | Models in the list but outside the strict count, with the reason |
 | Coverage | How many models have each field filled |
@@ -59,8 +60,20 @@ Do not use it as: a live tracker (it is a snapshot of 5 November 2026); a benchm
 
 - **Dates** are first public availability from the vendor's own dated page, API changelog or release notes. Press and third-party trackers were used only to settle conflicts between vendor pages.
 - **Confidence** is high where a vendor page states the facts directly (132 models, 59%), medium where a vendor page supports the date but some detail rests on one source or conflicts with another (87, 39%), and low where the date or stage was not confirmed on a vendor page (5, 2%). Six rows are flagged and should be checked before citing: Gemini 1.0 Ultra (retirement date), GPT-6 Astra Pro, Qwen-Plus, Qwen-Turbo, Qwen3.7-Flash and Grok-1.5.
-- **Coverage** is uneven. Of 224 models: vendor page 100%, first available 99%, licence 99%, status 90%, announced 80%, context window 73%, general availability 67%, API date 67%, list input price 48%, retirement date 42%, open-weights date 35%, knowledge cutoff 28%, model card 26%. Blank means not stated at a vendor source or not verified, never zero.
+- **Coverage** is uneven. Of 224 models: vendor page 100%, first available 99%, licence 99%, status 90%, announced 80%, context window 72%, general availability 67%, API date 67%, list input price 48%, retirement date 42%, open-weights date 35%, knowledge cutoff 28%, model card 26%. Blank means not stated at a vendor source or not verified, never zero.
 - **Known limits:** prices are list prices from vendor pages and may be tiered or promotional (see Notes); some vendors do not publish general-availability dates; vendor blog headers and page metadata sometimes differ by a day; a few dates come from a single vendor page.
+
+## Known issues
+
+Six rows are not confirmed on a vendor page and should be checked before citing: Gemini 1.0 Ultra (retirement date rests on a forum post quoting the vendor notice), GPT-6 Astra Pro (no separate start date or API ID), Qwen-Plus and Qwen-Turbo (launch date not stated on the vendor blog), Qwen3.7-Flash (two vendor pages give 21 and 25 July 2026; the earlier is kept) and Grok-1.5 (vendor states only that access followed "in the coming days"; the announcement date is used). Models launched as preview, beta, experimental or gated and with no verified general-availability date are listed in the Not counted sheet. Size variants and snapshots are counted as separate models; the `variant_of` column names the parent model so families can be counted instead.
+
+## Checking the CSV
+
+`python3 scripts/check_dataset.py` validates the CSV (unique keys, ISO dates, known stage and confidence codes, source URL on every row, date order, counting consistency) and exits non-zero on any error.
+
+## Updates and corrections
+
+This is a snapshot taken on 5 November 2026 and is not updated automatically. To report an error or a missing source, open a GitHub issue with the model, the field and a vendor URL.
 
 ## CSV columns
 
