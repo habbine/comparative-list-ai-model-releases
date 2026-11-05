@@ -6,7 +6,24 @@ A source-checked, dated list of **224 general-purpose AI models** from **eight d
 
 - [`data/ai_model_releases.xlsx`](data/ai_model_releases.xlsx): the workbook for reading and filtering (8 sheets).
 - [`data/ai_model_releases.csv`](data/ai_model_releases.csv): the same Models table as plain text (UTF-8, one row per model, primary key `model_id`) for scripts and version control. Empty means not verified, never zero; dates are ISO 8601.
-- [`docs/index.html`](docs/index.html): the AI model explorer, a self-contained page to browse one developer or compare all developers side by side on one piece of information. Open it in a browser (after download, or through GitHub Pages if enabled).
+- [`docs/index.html`](docs/index.html): the AI model explorer, a self-contained page (see [The explorer](#the-explorer)). Open it in a browser after downloading, or through GitHub Pages if enabled.
+
+## The explorer
+
+`docs/index.html` is a single page with the dataset embedded; it needs no server and makes no outside requests. It has two modes.
+
+- **Browse one developer.** Pick a developer, tick the groups of information to show (dates, counting, pricing, limits, licence and architecture, status, platforms, sources), and read its models one by one, oldest first. Filters: model name, hide snapshots and size variants, hide unverified or low-confidence rows.
+- **Compare developers.** Pick **one piece of information** and see every developer side by side on it. For numbers (input, cached and output price, context window, maximum output, parameters) it shows how many of each developer's models have a value, the lowest, median and highest, the latest model with a value, medians by year of release, and each developer's models in columns with the highest and lowest value marked. For categories (release year, licence type, architecture, input modalities, reasoning, stage at launch, current status, confidence) it shows counts and shares per developer. You can choose which developers to include, restrict to counted models (strict rule), and hide snapshots and size variants.
+
+How to read the comparison:
+
+- A model with no verified value is left out of the figures. It is never treated as zero. The **With data** column (for example "3 of 16") shows how much of a developer's list a figure rests on; a median from 3 models is not comparable with one from 22.
+- A median mixes flagship and small models. Read it with the model-by-model lists.
+- Prices and limits are those stated at launch or on the vendor page checked on 5 November 2026. Tiered or time-limited prices (for example long-context tiers or promotional rates) are recorded at the base tier.
+
+### Not every value could be found
+
+Vendor pages do not state every field. Licence, status, retirement date, context window, maximum output, parameter counts and knowledge cutoff are often absent from the page a row cites, and several launches state a date but no separate general-availability date. Those cells are blank, which means **not verified**, never zero and never "none". A blank does not show that the vendor has no such value, only that this list could not source it. Check any value you rely on at the linked vendor page before using it, and treat the explorer as a way to find and compare sourced values, not as a complete record.
 
 ## What is in it
 
@@ -47,7 +64,7 @@ For each model the workbook gives, where a vendor source states it: stage at lau
 
 ## When to use it, and when not
 
-Use it for release timelines, comparisons of vendors' cadence, price and context-window comparisons at launch, and to find the vendor source of a date.
+Use it for release timelines, comparisons of vendors' cadence, price and context-window comparisons at launch (in the workbook, or side by side in the explorer's compare mode), and to find the vendor source of a date.
 
 Do not use it as: a live tracker (it is a snapshot of 5 November 2026); a benchmark or quality ranking; a complete list of every model each vendor has released (specialised lines for code, mathematics, speech, image and OCR, and restricted releases, are out of scope); or a source for fields that are blank.
 
