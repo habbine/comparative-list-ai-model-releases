@@ -1,9 +1,0 @@
-cff-version: 1.2.0
-message: If you use this dataset, please cite it.
-title: "AI model releases, 14 March 2023 to 7 October 2026"
-version: 4.0.0
-date-released: 2026-11-05
-authors:
-  - family-names: Kim
-    given-names: Habbine Estelle
-license: CC-BY-4.0
