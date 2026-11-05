@@ -2,11 +2,27 @@
 
 A source-checked, dated list of **224 general-purpose AI models** from **eight developers**, first made public between **14 March 2023 and 7 October 2026**. Data retrieved **5 November 2026**.
 
+## Use the explorer
+
+Nothing to install. The explorer is one web page that runs in your browser.
+
+1. **Online:** open **https://www.kimavocat.com/ai-model-explorer/**.
+2. **Offline:** download [`docs/index.html`](docs/index.html) (on GitHub, open the file and choose **Download raw file**) and double-click it. It works without a network connection and sends nothing anywhere.
+3. **From a clone:** `git clone https://github.com/habbine/comparative-list-ai-model-releases` and open `docs/index.html` in any current browser.
+
+Then:
+
+- **Compare developers:** switch to *Compare developers*, pick one piece of information (for example context window or status) and read every developer side by side.
+- **Browse one developer:** pick a developer and read its models in order. Reverse the order, sort by status or confidence, and filter by status.
+- **Hide what is not verified:** tick the option to hide unverified rows. Unverified values are shown in grey, never guessed.
+
+For scripts and spreadsheets use [`data/ai_model_releases.csv`](data/ai_model_releases.csv) or the workbook (see [How to use it](#how-to-use-it)).
+
 **Files**
 
 - [`data/ai_model_releases.xlsx`](data/ai_model_releases.xlsx): the workbook for reading and filtering (8 sheets).
 - [`data/ai_model_releases.csv`](data/ai_model_releases.csv): the same Models table as plain text (UTF-8, one row per model, primary key `model_id`) for scripts and version control. Empty means not verified, never zero; dates are ISO 8601.
-- [`docs/index.html`](docs/index.html): the AI model explorer, a self-contained page (see [The explorer](#the-explorer)). Open it in a browser after downloading, or through GitHub Pages if enabled.
+- [`docs/index.html`](docs/index.html): the AI model explorer, a self-contained page (see [The explorer](#the-explorer)). Open it online at [kimavocat.com/ai-model-explorer](https://www.kimavocat.com/ai-model-explorer/) or in a browser after downloading (see [Use the explorer](#use-the-explorer)).
 
 ## The explorer
 
