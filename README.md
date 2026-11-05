@@ -1,5 +1,8 @@
 # Comparative list of AI model releases
 
+> ### [**Open the explorer: kimavocat.com/ai-model-explorer →**](https://www.kimavocat.com/ai-model-explorer/)
+> Compare 224 AI models from 8 developers. No install, runs in your browser.
+
 A source-checked, dated list of **224 general-purpose AI models** from **eight developers**, first made public between **14 March 2023 and 7 October 2026**. Data retrieved **5 November 2026**.
 
 ## Use the explorer
