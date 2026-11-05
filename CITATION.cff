@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: If you use this dataset, please cite it.
+title: "Comparative list of AI model releases"
+version: 4.0.0
+date-released: 2026-11-05
+type: dataset
+authors:
+  - family-names: Kim
+    given-names: Habbine Estelle
+license: CC-BY-4.0
+repository-code: https://github.com/habbine/comparative-list-ai-model-releases
+abstract: "Source-checked dates and specifications of 224 general-purpose AI models from eight developers, 14 March 2023 to 7 October 2026."

@@ -2,7 +2,10 @@
 
 A source-checked, dated list of **224 general-purpose AI models** from **eight developers**, first made public between **14 March 2023 and 7 October 2026**. Data retrieved **5 November 2026**.
 
-**File:** [`data/ai_model_releases.xlsx`](data/ai_model_releases.xlsx) (Excel, 8 sheets, one row per model)
+**Files**
+
+- [`data/ai_model_releases.xlsx`](data/ai_model_releases.xlsx): the workbook for reading and filtering (8 sheets).
+- [`data/ai_model_releases.csv`](data/ai_model_releases.csv): the same Models table as plain text (UTF-8, one row per model, primary key `model_id`) for scripts and version control. Empty means not verified, never zero; dates are ISO 8601.
 
 ## What is in it
 
@@ -59,10 +62,16 @@ Do not use it as: a live tracker (it is a snapshot of 5 November 2026); a benchm
 - **Coverage** is uneven. Of 224 models: vendor page 100%, first available 99%, licence 99%, status 90%, announced 80%, context window 73%, general availability 67%, API date 67%, list input price 48%, retirement date 42%, open-weights date 35%, knowledge cutoff 28%, model card 26%. Blank means not stated at a vendor source or not verified, never zero.
 - **Known limits:** prices are list prices from vendor pages and may be tiered or promotional (see Notes); some vendors do not publish general-availability dates; vendor blog headers and page metadata sometimes differ by a day; a few dates come from a single vendor page.
 
+## CSV columns
+
+`model_id`, `developer`, `model`, `stage_at_launch`, `counted_strict`, `count_date`, `count_basis`, `reason_not_counted`, `count_date_any_stage`, `announced`, `first_available`, `general_availability`, `api_available`, `open_weights`, `status`, `retired_on`, `replaced_by`, `context_window_tokens`, `max_output_tokens`, `knowledge_cutoff`, `input_usd_per_1m_tokens`, `cached_input_usd_per_1m_tokens`, `output_usd_per_1m_tokens`, `licence`, `params_total_billions`, `params_active_billions`, `architecture`, `input_modalities`, `reasoning_mode`, `platforms`, `api_model_id`, `variant_of`, `vendor_page`, `model_card`, `confidence`, `unverified`, `notes`
+
+Stage codes: `ga`, `open_weights_release`, `preview`, `beta`, `experimental`, `gated`. Platforms are comma-separated; input modalities are `t` text, `i` image, `a` audio, `v` video, `pdf`. `counted_strict` is 1 or 0. The Fields sheet of the workbook defines every column.
+
 ## Versions
 
 Version 4 (5 November 2026) replaces earlier date sets, which remain in the Compare versions sheet.
 
 ## Licence
 
-Data: Creative Commons Attribution 4.0 International (CC BY 4.0), see `LICENSE`. Please cite as: Kim, H. E., *Comparative list of AI model releases*, version 4, 5 November 2026.
+Data: Creative Commons Attribution 4.0 International (CC BY 4.0), see `LICENSE`. Please cite as (or use `CITATION.cff`): Kim, H. E., *Comparative list of AI model releases*, version 4, 5 November 2026.
