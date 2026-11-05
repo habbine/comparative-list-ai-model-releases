@@ -23,7 +23,22 @@ How to read the comparison:
 
 ### Not every value could be found
 
-Vendor pages do not state every field. Licence, status, retirement date, context window, maximum output, parameter counts and knowledge cutoff are often absent from the page a row cites, and several launches state a date but no separate general-availability date. Those cells are blank, which means **not verified**, never zero and never "none". A blank does not show that the vendor has no such value, only that this list could not source it. Check any value you rely on at the linked vendor page before using it, and treat the explorer as a way to find and compare sourced values, not as a complete record.
+Vendor pages do not state every field. Licence, status, retirement date, context window, maximum output, parameter counts and knowledge cutoff are often absent from the page a row cites, and several launches state a date but no separate general-availability date. About two fifths of field checks in the source check could not be confirmed from the page cited. Those cells are blank, which means **not verified**, never zero and never "none". A blank does not show that the vendor has no such value, only that this list could not source it. Check any value you rely on at the linked vendor page before using it, and treat the explorer as a way to find and compare sourced values, not as a complete record.
+
+## Source check of 5 November 2026
+
+Every row was re-checked against its cited vendor page and model card (and, where that page did not carry a field, other pages on the same vendor site). The log is [`data/source_check_2026-11-05.json`](data/source_check_2026-11-05.json): for each model, which fields a page confirmed, which differed, and which the pages do not state. The check was automated and a page counts as confirming a field only if it states the value; the log is a record of that check, not a guarantee.
+
+Across 2,537 field checks: **1,465 confirmed (58%)**, **56 differed (2%)**, **1,016 could not be verified (40%)** because the page does not state the field. Status, retirement date and licence are the fields most often not stated; they come from deprecation and licence pages that are not the row's cited page.
+
+Corrections applied after the check (each is recorded in the row's Notes with the earlier value):
+
+- **Prices:** GPT-5.6 Terra and Luna now show their current model-page prices (the launch prices are in Notes); Claude Sonnet 5.5 cached input is $0.10; GPT-5.6 Sol keeps its list price and Notes record the promotional price to 30 November 2026.
+- **Knowledge cutoff:** Grok 4.6 (2026-01) and Grok 4.7 (2026-06) now follow the model cards' pretraining cutoffs.
+- **Dates:** Gemini 1.5 Flash first available and API 10 May 2024; Qwen3.5-Plus 15 February 2026; Qwen3.8-Omni-Flash 17 September 2026; retirement of Magistral Medium 1.0 and 1.1 on 31 October 2025.
+- **Status and fields:** Gemini 3.5 Flash is deprecated; Grok-2 and Gemma 4 input modalities updated; Gemma 3 maximum output left blank because the card gives a per-request limit by size.
+
+Where vendor pages conflict with each other, or the evidence is weaker than a stated limit (for example values read from a sample configuration), the value was kept and the conflict is written in Notes.
 
 ## What is in it
 
