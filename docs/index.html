@@ -78,12 +78,12 @@ stat:(a,b)=>rank(['active','legacy','deprecated','retired'],a.stat)-rank(['activ
 conf:(a,b)=>rank(['high','medium','low'],a.conf)-rank(['high','medium','low'],b.conf)||SORT.chrono(a,b),
 name:(a,b)=>a.name.toLowerCase().localeCompare(b.name.toLowerCase())};
 const SORTL=[['chrono','Chronological (oldest first)'],['anti','Antichronological (newest first)'],['stat','Status (active first)'],['conf','Confidence (high first)'],['name','Name A to Z']];
-const STS=['active','legacy','deprecated','retired','unknown'];let fst=new Set(STS),hnv=false;
-const fsHtml=()=>STS.map(x=>`<label class="f ${fst.has(x)?'on':''}"><input type="checkbox" data-fs="${x}" ${fst.has(x)?'checked':''}>${x==='unknown'?'<span class="nv">status not verified</span>':badge('stat',x)}</label>`).join('');
+const STS=['active','legacy','deprecated','retired'];let fst=new Set(STS),hnv=false;
+const fsHtml=()=>STS.map(x=>`<label class="f ${fst.has(x)?'on':''}"><input type="checkbox" data-fs="${x}" ${fst.has(x)?'checked':''}>${badge('stat',x)}</label>`).join('');
 function fmt(k,v){ if(v==null||v==='')return null; {const bg=badge(k,v);if(bg)return bg} if(k=='src'||k=='card')return `<a href="${v}" target="_blank" rel="noopener">${v.replace(/^https?:\/\//,'').slice(0,60)}</a>`; if(['ctx','mx'].includes(k))return Number(v).toLocaleString('en-GB'); if(['pi','pc','po'].includes(k))return '$'+v; if(k=='mi')return v.split(',').map(x=>({t:'text',i:'image',a:'audio',v:'video'}[x]||x)).join(', '); if(k=='plat')return v.split(',').join(', '); return String(v).replace(/</g,'&lt;');}
 function render(){ $('stf').innerHTML=fsHtml(); if(!dev){$('out').innerHTML='';$('ct').textContent='Select a developer above.';return}
  const q=$('q').value.toLowerCase(),h=$('hide').checked,vo=$('vo').checked;
- let rs=D.filter(r=>r.dev===dev&&(!q||r.name.toLowerCase().includes(q))&&(!h||!r.snap)&&(!vo||!r.unv&&r.conf!=='low')&&fst.has(r.stat||'unknown')).sort(SORT[$('sortb').value||'chrono']);
+ let rs=D.filter(r=>r.dev===dev&&(!q||r.name.toLowerCase().includes(q))&&(!h||!r.snap)&&(!vo||!r.unv&&r.conf!=='low')&&(!r.stat||fst.has(r.stat))).sort(SORT[$('sortb').value||'chrono']);
  $('ct').textContent=rs.length+' models';
  $('out').innerHTML=rs.map(r=>{let tags=(r.stat?badge('stat',r.stat):'')+(r.st!=='ga'&&r.st!=='open_weights_release'?`<span class="bd ${(TONE.st[r.st]||'neu')}">${r.st} at launch</span>`:'')+(r.counted?'':'<span class="bd neu">not counted</span>')+(r.snap?'<span class="tag">variant</span>':'')+(r.unv?'<span class="tag w">unverified</span>':'');
  let rows='';for(const g of sel)for(const [k,l] of G[g]){const v=(k=='why'&&r.counted)?'counted':fmt(k,r[k]);if(v==null&&$('hnv').checked)continue;rows+=`<dt>${l}</dt><dd>${v??'<span class="nv">not verified</span>'}</dd>`}
@@ -107,7 +107,7 @@ const med=a=>{const s=[...a].sort((x,y)=>x-y),n=s.length;return n%2?s[(n-1)/2]:(
 const cname=k=>(NUM[k]||CAT[k]).l;
 function cbar(v,lo,hi,log){let w=hi===lo?100:log?100*(Math.log10(v)-Math.log10(lo))/(Math.log10(hi)-Math.log10(lo)):100*v/hi;return `<span class="bar"><i style="width:${Math.max(4,Math.min(100,w))}%"></i></span>`}
 let cord='chrono';
-function rowsFor(d){return D.filter(r=>r.dev===d&&(!cc||r.counted)&&(!cs||!r.snap)&&fst.has(r.stat||'unknown'))}
+function rowsFor(d){return D.filter(r=>r.dev===d&&(!cc||r.counted)&&(!cs||!r.snap)&&(!r.stat||fst.has(r.stat)))}
 function renderCmp(){
  const ds=devs.filter(d=>cdev.has(d));
  let h=`<div class="lab">1. Developers to compare</div><div class="row">${devs.map(d=>`<label class="f ${cdev.has(d)?'on':''}"><input type="checkbox" data-cd="${esc(d)}" ${cdev.has(d)?'checked':''}>${esc(d)}</label>`).join('')}</div>
