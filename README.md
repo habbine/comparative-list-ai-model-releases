@@ -1,9 +1,9 @@
 # Comparative list of AI model releases
 
 > ### [**Open the explorer: kimavocat.com/ai-model-explorer →**](https://www.kimavocat.com/ai-model-explorer/)
-> Compare 224 AI models from 8 developers. No install, runs in your browser.
+> Compare 240 AI models from 8 developers. No install, runs in your browser.
 
-A source-checked, dated list of **224 general-purpose AI models** from **eight developers**, first made public between **14 March 2023 and 7 October 2026**. Data retrieved **5 November 2026**.
+A source-checked, dated list of **240 general-purpose AI models** from **eight developers**, first made public between **14 March 2023 and 18 November 2026**. Version 5, updated **22 November 2026**: every row was source-checked on 5 November 2026; releases and changes after that date were added from vendor pages on 22 November 2026 (see [`CHANGELOG.md`](CHANGELOG.md)).
 
 ## Use the explorer
 
@@ -54,7 +54,7 @@ How to read the comparison:
 
 - A model with no verified value is left out of the figures. It is never treated as zero. The **With data** column (for example "3 of 16") shows how much of a developer's list a figure rests on; a median from 3 models is not comparable with one from 22.
 - A median mixes flagship and small models. Read it with the model-by-model lists.
-- Prices and limits are those stated at launch or on the vendor page checked on 5 November 2026. Tiered or time-limited prices (for example long-context tiers or promotional rates) are recorded at the base tier.
+- Prices and limits are those stated at launch or on the vendor page checked on 5 November 2026 (rows added or changed on 22 November 2026 carry that date in Notes). Tiered or time-limited prices (for example long-context tiers or promotional rates) are recorded at the base tier.
 
 ### Not every value could be found
 
@@ -79,15 +79,15 @@ Where vendor pages conflict with each other, or the evidence is weaker than a st
 
 | Developer | Models | Counted (strict) | Confidence: high / medium / low |
 |---|---:|---:|---:|
-| Anthropic | 29 | 27 | 24 / 5 / 0 |
-| DeepSeek | 20 | 18 | 17 / 3 / 0 |
-| Google | 28 | 23 | 12 / 16 / 0 |
-| Meta | 12 | 9 | 9 / 3 / 0 |
-| Mistral | 33 | 30 | 19 / 14 / 0 |
-| OpenAI | 42 | 37 | 26 / 15 / 1 |
-| Qwen (Alibaba) | 43 | 40 | 20 / 20 / 3 |
+| Anthropic | 30 | 28 | 25 / 5 / 0 |
+| DeepSeek | 21 | 19 | 17 / 4 / 0 |
+| Google | 32 | 27 | 13 / 19 / 0 |
+| Meta | 16 | 10 | 11 / 4 / 1 |
+| Mistral | 34 | 30 | 19 / 15 / 0 |
+| OpenAI | 45 | 40 | 29 / 15 / 1 |
+| Qwen (Alibaba) | 45 | 41 | 20 / 22 / 3 |
 | xAI | 17 | 13 | 5 / 11 / 1 |
-| **Total** | **224** | **197** | **132 / 87 / 5** |
+| **Total** | **240** | **208** | **139 / 95 / 6** |
 
 For each model the workbook gives, where a vendor source states it: stage at launch (general availability, preview, beta, experimental, gated, open weights), announcement, first-available, general-availability, API and open-weights dates, status and retirement date, context window, maximum output, knowledge cutoff, list prices per million tokens, licence, parameters and architecture, input modalities, platforms, API model ID, and the vendor page and model card used.
 
@@ -116,19 +116,19 @@ For each model the workbook gives, where a vendor source states it: stage at lau
 
 Use it for release timelines, comparisons of vendors' cadence, price and context-window comparisons at launch (in the workbook, or side by side in the explorer's compare mode), and to find the vendor source of a date.
 
-Do not use it as: a live tracker (it is a snapshot of 5 November 2026); a benchmark or quality ranking; a complete list of every model each vendor has released (specialised lines for code, mathematics, speech, image and OCR, and restricted releases, are out of scope); or a source for fields that are blank.
+Do not use it as: a live tracker (it is a snapshot, last updated 22 November 2026); a benchmark or quality ranking; a complete list of every model each vendor has released (specialised lines for code, mathematics, speech, image and OCR, and restricted releases, are out of scope); or a source for fields that are blank.
 
 ## Counting rules
 
-- **Strict count (197 models):** each model counts once, at its first general-availability date. General-availability launches count at first availability; open-weights releases at the weights date; preview, beta, experimental and gated launches count at their verified general-availability date, or are not counted if none is verified.
-- **Inclusive count (224 models):** every model counts at its first date, whatever its stage. Column "Date if any stage counted".
+- **Strict count (208 models):** each model counts once, at its first general-availability date. General-availability launches count at first availability; open-weights releases at the weights date; preview, beta, experimental and gated launches count at their verified general-availability date, or are not counted if none is verified.
+- **Inclusive count (240 models):** every model counts at its first date, whatever its stage. Column "Date if any stage counted".
 - The two give different totals and different trends. The choice is the user's; both are in the file.
 
 ## Method and confidence
 
 - **Dates** are first public availability from the vendor's own dated page, API changelog or release notes. Press and third-party trackers were used only to settle conflicts between vendor pages.
 - **Confidence** is high where a vendor page states the facts directly (132 models, 59%), medium where a vendor page supports the date but some detail rests on one source or conflicts with another (87, 39%), and low where the date or stage was not confirmed on a vendor page (5, 2%). Six rows are flagged and should be checked before citing: Gemini 1.0 Ultra (retirement date), GPT-6 Astra Pro, Qwen-Plus, Qwen-Turbo, Qwen3.7-Flash and Grok-1.5.
-- **Coverage** is uneven. Of 224 models: vendor page 100%, first available 99%, licence 99%, status 90%, announced 80%, context window 72%, general availability 67%, API date 67%, list input price 48%, retirement date 42%, open-weights date 35%, knowledge cutoff 28%, model card 26%. Blank means not stated at a vendor source or not verified, never zero.
+- **Coverage** is uneven. Of 240 models: vendor page 100%, first available 98%, licence 98%, status 92%, announced 80%, context window 73%, general availability 66%, API date 68%, list input price 51%, retirement date 41%, open-weights date 34%, knowledge cutoff 29%, model card 28%. Blank means not stated at a vendor source or not verified, never zero.
 - **Known limits:** prices are list prices from vendor pages and may be tiered or promotional (see Notes); some vendors do not publish general-availability dates; vendor blog headers and page metadata sometimes differ by a day; a few dates come from a single vendor page.
 
 ## Known issues
@@ -141,7 +141,7 @@ Six rows are not confirmed on a vendor page and should be checked before citing:
 
 ## Updates and corrections
 
-This is a snapshot taken on 5 November 2026 and is not updated automatically. To report an error or a missing source, open a GitHub issue with the model, the field and a vendor URL.
+This is a snapshot, last updated on 22 November 2026, and is not updated automatically. To report an error or a missing source, open a GitHub issue with the model, the field and a vendor URL.
 
 ## Feedback and discussion
 
@@ -155,7 +155,11 @@ Stage codes: `ga`, `open_weights_release`, `preview`, `beta`, `experimental`, `g
 
 ## Versions
 
-Version 4 (5 November 2026) replaces earlier date sets, which remain in the Compare versions sheet.
+Version 5 (22 November 2026) adds 16 models released or first documented from 8 October 2025 to 18 November 2026 and applies status, retirement, price and modality changes found on vendor pages; each changed row says so in Notes, with the earlier value. Per-model feature and status changes are in [`CHANGELOG.md`](CHANGELOG.md). Where two vendor pages conflicted, the existing value was kept and the conflict written in Notes.
+
+The workbook [`data/ai_model_releases.xlsx`](data/ai_model_releases.xlsx) is still version 4 (5 November 2026) and has not been regenerated: its sheets, counts and windows are fixed to 224 models and 7 October 2026. Use the CSV or the explorer for version 5.
+
+Version 4 (5 November 2026) replaced earlier date sets, which remain in the Compare versions sheet.
 
 ## Licence
 

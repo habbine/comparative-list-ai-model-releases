@@ -34,7 +34,7 @@ for r in rows:
         cd = d(r["count_date"])
         if not cd:
             err(r, "counted but no count_date")
-        elif not (date(2023, 3, 14) <= cd <= date(2026, 10, 7)):
+        elif not (date(2023, 3, 14) <= cd <= date(2026, 11, 22)):
             err(r, f"count_date outside window: {cd}")
     elif not r["reason_not_counted"]:
         err(r, "not counted but no reason_not_counted")
